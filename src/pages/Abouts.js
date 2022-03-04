@@ -30,10 +30,12 @@ import coverage5 from "../Images/About/coverage5.png";
 import coverage6 from "../Images/About/coverage6.png";
 import { Hidden } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {useNavigate} from 'react-router-dom';
 
 
 
 function Abouts() {
+  const navigate=useNavigate();
   const smallScreen = useMediaQuery("(max-width:768px)");
   return (
     <div className='w-full overflow-hidden'>
@@ -210,7 +212,7 @@ function Abouts() {
             </div>
           </div>
           <p className='sm:text-base md:text-xl font-normal text-white gap-2 text-center mx-1 md:mx-5 pt-2'>With CarterPorter's CarterX, your Baggage is efficiently picked up and securely transported from the first mile to the last. Book, Move and Track your Baggage at the tip of your fingers on your smart phone, tablet or PC and stay updated throughout the service. Your Baggage is waiting ahead of you making your travel light, stress free without the weight and chaos.</p>
-          <button className='bg-[#F47521] px-5 py-1.5 md:px-10 md:py-2 lg:px-14 lg:py-3 rounded-full font-bold text-lg text-white md:mb-1 lg:mb-5' > Call Us </button>
+          <button className='bg-[#F47521] px-5 py-1.5 md:px-10 md:py-2 lg:px-14 lg:py-3 rounded-full font-bold text-lg text-white md:mb-1 lg:mb-5' onClick={()=>navigate("/privacy")}> Call Us </button>
           <div className='absolute -bottom-6 flex flex-row justify-center items-center bg-white rounded-full 
           mt-2 px-2 border-2 border-white'>
             <PlayCircleIcon fontSize='large' className='text-[#F47521]'/>
