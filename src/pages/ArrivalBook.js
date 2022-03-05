@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ArrivalBook() {
+  const navigate=useNavigate();
   return (
     <div className="bg-[#EEEEEE]">
       <div className="flex flex-col  gap-3 w-full px-2 md:w-10/12 md:mx-auto pt-12">
-        <h2 className="font-bold text-2xl md:text-4xl pb-10 text-center md:text-left">
+        <h2 className="font-bold text-2xl md:text-4xl pb-10 text-center md:text-left" onClick={()=>navigate('/trip')} >
           Arrival Booking Information
         </h2>
         <div className="bg-white rounded-2xl p-4 md:p-8 flex flex-col gap-5 mb-6 ">
