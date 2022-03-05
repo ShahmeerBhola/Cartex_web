@@ -1,12 +1,10 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom';
 
 function PrivacyPolicy() {
-  const navigate=useNavigate();
   return (
     <div className="bg-[#EEEEEE]">
       <div className="flex flex-col gap-3 w-11/12 md:w-10/12 mx-auto pt-12">
-        <h2 className="font-bold text-4xl"onClick={()=>navigate("/terms")}>Privacy Policy</h2>
+        <h2 className="font-bold text-4xl">Privacy Policy</h2>
         <p className="font-normal text-lg py-8">
           Your privacy matters to Carterporter private Limited
         </p>

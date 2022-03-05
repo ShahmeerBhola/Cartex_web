@@ -31,6 +31,7 @@ import coverage6 from "../Images/About/coverage6.png";
 import { Hidden } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {useNavigate} from 'react-router-dom';
+import Header from './Header';
 
 
 
@@ -39,6 +40,7 @@ function Abouts() {
   const smallScreen = useMediaQuery("(max-width:768px)");
   return (
     <div className='w-full overflow-hidden'>
+     
       <div className='w-full '>
         <img className='h-[300px]'  src={Slider} width="100%" alt=""/>
       </div>
