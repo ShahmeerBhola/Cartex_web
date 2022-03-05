@@ -45,8 +45,8 @@ function Abouts() {
       <div className='bg-[#EEEEEE] w-full '>
         {/* section1 */}
         <div className='flex flex-col items-center justify-center gap-2'>
-          <div className='mt-[40px] font-bold sm:text-2xl md:text-4xl '> Effortless Air Travel</div>
-          <div className=' font-normal sm:text-base md:text-2xl ' >Hassle free Baggage Transfer to and from Airport</div>
+          <div className='mt-[40px] font-bold text-2xl md:text-4xl '> Effortless Air Travel</div>
+          <div className=' font-normal text-base md:text-2xl ' >Hassle free Baggage Transfer to and from Airport</div>
         </div>
         <div className='flex mt-3 flex-col md:flex-row justify-center gap-3 p-2     '>
           <div className='flex flex-col gap-2 p-4 bg-white  shadow-lg rounded-xl h-auto md:w-1/2 lg:w-1/3'>
