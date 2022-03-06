@@ -7,6 +7,7 @@ import Terms from './pages/Terms';
 import Profile from './pages/Profile';
 import ArrivalBook from './pages/ArrivalBook';
 import MyTrips from './pages/MyTrips';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="profile" element={<Profile/>} />
         <Route path="arrivalbook" element={<ArrivalBook/>} />
         <Route path="trip" element={<MyTrips/>}/>
-      </Routes>
+        </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
