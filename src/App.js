@@ -7,7 +7,8 @@ import Terms from './pages/Terms';
 import Profile from './pages/Profile';
 import ArrivalBook from './pages/ArrivalBook';
 import MyTrips from './pages/MyTrips';
-import Footer from './component/Footer';
+import Footer from '../src/component/Footer';
+import EditProfile from './pages/EditProfile';
 import Header from './pages/Header';
 import Blog from './pages/Blog';
 
@@ -21,12 +22,12 @@ function App() {
         <Route path="privacy" element={<PrivacyPolicy/>} />
         <Route path="terms" element={<Terms/>} />
         <Route path="profile" element={<Profile/>} />
+        <Route path="/profile/editprofile" element={<EditProfile/>} />
         <Route path="arrivalbook" element={<ArrivalBook/>} />
         <Route path="trip" element={<MyTrips/>}/>
         <Route path='blog' element={<Blog/>} />
-        <Footer/>
-        
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
