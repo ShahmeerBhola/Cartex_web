@@ -23,9 +23,9 @@ function App() {
         <Route path="profile" element={<Profile/>} />
         <Route path="arrivalbook" element={<ArrivalBook/>} />
         <Route path="trip" element={<MyTrips/>}/>
-        </Routes>
-        <Footer/>
         <Route path='blog' element={<Blog/>} />
+        <Footer/>
+        
       </Routes>
       </BrowserRouter>
     </div>
