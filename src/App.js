@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import ArrivalBook from './pages/ArrivalBook';
 import MyTrips from './pages/MyTrips';
 import Header from './pages/Header';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="profile" element={<Profile/>} />
         <Route path="arrivalbook" element={<ArrivalBook/>} />
         <Route path="trip" element={<MyTrips/>}/>
-        {/* <Route path='header' element={<Header/>} /> */}
+        <Route path='blog' element={<Blog/>} />
       </Routes>
       </BrowserRouter>
     </div>

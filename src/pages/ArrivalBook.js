@@ -10,7 +10,7 @@ function ArrivalBook() {
         </h2>
         <div className="bg-white rounded-2xl p-4 md:p-8 flex flex-col gap-5 mb-6 ">
           <h2 className="font-bold text-2xl">Mandatory:</h2>
-          <p className="text-lg font-medium ">
+          <p className="text-lg font-normal ">
             Passenger must certify status of his/her health through the Aarogya
             Setu App. Green/Safe is mandatory for pickup of order and delivery
             of order
@@ -21,7 +21,7 @@ function ArrivalBook() {
             Arriving passenger needs to meet CarterX personnel before leaving
             the terminal
           </h2>
-          <div className="flex flex-col text-lg font-medium gap-2  ">
+          <div className="flex flex-col text-lg gap-2 font-normal ">
           <p >
             Booking address can be modified upto 24 hours prior to the slot time
           </p>
