@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 function Header() {
     const navigate=useNavigate();
     const [toggler,setToggler]=useState(false);
-  const smallScreen = useMediaQuery("(max-width:768px)");
+  const smallScreen = useMediaQuery("(max-width:786px)");
 
   return (
     <div className='bg-white w-full shadow-lg'>
@@ -60,7 +60,7 @@ function Header() {
                   </div>)
                 }
                 </>:<>
-                <div className= ' font-medium text-lg  flex flex-row justify-between  gap-6'>
+                <div className= ' font-medium text-lg  flex flex-row justify-between md:gap-3 lg:gap-6'>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/privacy')}>Privacy</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/terms')}>Terms</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/arrivalbook')}>Arrival Book</a>
