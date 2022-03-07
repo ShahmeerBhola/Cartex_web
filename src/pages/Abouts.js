@@ -39,6 +39,7 @@ function Abouts() {
   const smallScreen = useMediaQuery("(max-width:768px)");
   return (
     <div className='w-full overflow-hidden'>
+     
       <div className='w-full '>
         <img className='h-[300px]'  src={Slider} width="100%" alt=""/>
       </div>
@@ -87,8 +88,8 @@ function Abouts() {
         </div>
         {/* //section2 */}
         <div className='flex flex-col items-center justify-center gap-2'>
-          <div className='mt-[40px] font-bold sm:text-2xl md:text-4xl'> Effortless Cargo Transfers</div>
-          <div className='font-normal sm:text-base md:text-2xl' >Hassle free Cargo Transfer</div>
+          <div className='mt-[40px] font-bold text-2xl md:text-4xl'> Effortless Cargo Transfers</div>
+          <div className='font-normal text-base md:text-2xl' >Hassle free Cargo Transfer</div>
         </div>
         <div className='flex mt-3 flex-col  md:flex-row p-2 items-center justify-center gap-3'>
           <div className='flex flex-col gap-2 p-4 bg-white  shadow-lg rounded-xl h-auto md:w-1/2 lg:w-1/3'>
@@ -120,8 +121,8 @@ function Abouts() {
         </div>
         {/* section3 */}
         <div className='flex flex-col items-center justify-center gap-2'>
-          <div className='mt-[40px] font-bold sm:text-2xl md:text-4xl'> Effortless Hyperlocal Transfers</div>
-          <div className='font-normal sm:text-base md:text-2xl' >Hassle free Local Transfer</div>
+          <div className='mt-[40px] font-bold text-2xl md:text-4xl'> Effortless Hyperlocal Transfers</div>
+          <div className='font-normal text-base md:text-2xl' >Hassle free Local Transfer</div>
         </div>
         <div className='flex mt-3 flex-col  md:flex-row p-2 justify-center gap-3'>
           <div className='flex flex-col gap-2 p-4 bg-white shadow-lg rounded-xl h-auto md:w-1/2 lg:w-1/3'>

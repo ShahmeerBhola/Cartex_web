@@ -8,13 +8,16 @@ import Profile from './pages/Profile';
 import ArrivalBook from './pages/ArrivalBook';
 import MyTrips from './pages/MyTrips';
 import Footer from './component/Footer';
+import Header from './pages/Header';
+import Blog from './pages/Blog';
 
 function App() {
   return (
     <div >
       <BrowserRouter>
+      <Header/>
       <Routes>
-        <Route path="/" element={<Abouts/>} />
+        <Route index element={<Abouts/>} />
         <Route path="privacy" element={<PrivacyPolicy/>} />
         <Route path="terms" element={<Terms/>} />
         <Route path="profile" element={<Profile/>} />
@@ -22,6 +25,8 @@ function App() {
         <Route path="trip" element={<MyTrips/>}/>
         </Routes>
         <Footer/>
+        <Route path='blog' element={<Blog/>} />
+      </Routes>
       </BrowserRouter>
     </div>
   );
