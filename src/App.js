@@ -11,6 +11,7 @@ import Footer from '../src/component/Footer';
 import EditProfile from './pages/EditProfile';
 import Header from './pages/Header';
 import Blog from './pages/Blog';
+import Cancellation from './pages/Cancellation';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="arrivalbook" element={<ArrivalBook/>} />
         <Route path="trip" element={<MyTrips/>}/>
         <Route path='blog' element={<Blog/>} />
+        <Route path='cancellation' element={<Cancellation/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>

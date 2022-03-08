@@ -53,7 +53,7 @@ function Header() {
                   toggler && (<div className= ' p-2 bottom-0 z-50 absolute right-0 font-medium text-lg top-12 w-[150px] flex flex-col bg-white  gap-5'>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/privacy') ;setToggler(!toggler)}}>Privacy</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/terms');setToggler(!toggler)}}>Terms</a>
-                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/arrivalbook');setToggler(!toggler)}}>Arrival Book</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/arrivalbook');setToggler(!toggler)}}>Arrival Details</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/trip');setToggler(!toggler)}}>MyTrip</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/profile');setToggler(!toggler)}}>Profile</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/blog');setToggler(!toggler)}}>Blog</a>
