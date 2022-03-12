@@ -7,12 +7,12 @@ import { useNavigate } from 'react-router-dom'
 function Profile() {
     const navigate=useNavigate()
     return (<div className='bg-[#EEEEEE] pb-10 '>
-        <h2 className='p-10 mx-10 w-11/12 text-2xl md:text-4xl font-bold' onClick={()=>navigate('/profile/editprofile')}>Edit Profile</h2>
+        <h2 className='p-10 mx-10 w-11/12 text-2xl md:text-4xl font-bold'>Edit Profile</h2>
         <div className='flex flex-col md:flex-row mx-auto w-10/12 md:w-11/12 gap-2 md:gap-2'>
             <Card css=" w-full md:w-3/4 min-h-[348px]">
             <div className='flex flex-col pt-4 justify-center items-center'>
                 <img className='rounded-full p-0 ' src={profilepic} alt='profile pic' height="180px" width="180px" ></img>
-                <div className='bg-[#F47521] m-3 p-2 px-5 rounded-3xl text-center text-white w-[170px]'>Edit profile</div>
+                <div className='bg-[#F47521] m-3 p-2 px-5 rounded-3xl text-center text-white w-[170px]'  onClick={()=>navigate('/profile/editprofile')}>Edit profile</div>
                 
             </div>
             <div className='flex flex-col md:px-12 '>

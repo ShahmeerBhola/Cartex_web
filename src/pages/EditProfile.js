@@ -35,7 +35,7 @@ const EditProfile = () => {
                           <p className='font-bold text-2xl' contentEditable={true}>janedoe@gmail.com</p>
                       </div>
                       <div className='flex flex-col justify-center items-center gap-2 md:w-3/4'>
-                      <div className='bg-[#F47521] rounded-3xl text-center text-white w-[280px] md:w-[340px] h-[48px] flex justify-center items-center'>Save Changes</div>
+                      <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[340px] h-[48px] flex justify-center items-center'>Save Changes</div>
                 <div className=' rounded-3xl text-center text-[#F47521] w-[170px] px-2 py-3'>Discard Changes</div>
                </div>       
             </div>

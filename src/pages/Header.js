@@ -7,13 +7,15 @@ import { Divider, Hidden, useMediaQuery } from '@mui/material';
 import logo from '../Images/Main/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router-dom';
-
+import LoginModal from '../component/LoginModal';
 function Header() {
+    const[modal,setModal]=useState(false)
     const navigate=useNavigate();
     const [toggler,setToggler]=useState(false);
   const smallScreen = useMediaQuery("(max-width:786px)");
 
   return (
+    <>
     <div className='bg-white w-full shadow-lg'>
       {
         smallScreen?Hidden:<>
@@ -32,10 +34,11 @@ function Header() {
                 <p>Support</p>
                 </div>
             </div>
-            <div className='flex flex-row justify-center items-center'>
+            <div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=>setModal(!modal)}>
                 <PersonOutlineIcon style={{fontSize:"16px"}}/>
                 <p>Login to Track order</p>
             </div>
+            
         </div>
         <Divider/></>
 
@@ -73,7 +76,11 @@ function Header() {
               }
             </div>
         </div>
+        
+
         </div>
+       {/* {modal?<LoginModal/>:''} */}
+    </>
   )
 }
 

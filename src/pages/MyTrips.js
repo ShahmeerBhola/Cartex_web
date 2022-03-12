@@ -1,10 +1,12 @@
 import React from "react";
 import Divider from "@mui/material/Divider";
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from "@mui/material";
 
 
 function MyTrips() {
+  const navigate=useNavigate();
   const smallScreen = useMediaQuery("(max-width:768px)");
   return (
     <div className="bg-[#EEEEEE]">
@@ -49,13 +51,13 @@ function MyTrips() {
             {
                 smallScreen?<>
                 <div className="flex flex-row gap-3">
-                <button className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
-                  Order Details
+                <button onClick={()=>navigate("orderdetail")} className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
+                  Order Details 
                 </button>
               </div>
                 </> :<>
                 <div className="flex flex-row gap-3">
-                <button className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
+                <button onClick={()=>navigate("orderdetail")}  className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
                   Order Details
                 </button>
                 <button className="text-[#F47521] font-bold text-lg border-2 border-[#F47521] rounded-full px-3 py-2">
@@ -113,13 +115,13 @@ function MyTrips() {
               {
                 smallScreen?<>
                 <div className="flex flex-row gap-3">
-                <button className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
+                <button onClick={()=>navigate("orderdetail")}  className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
                   Order Details
                 </button>
               </div>
                 </> :<>
                 <div className="flex flex-row gap-3">
-                <button className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
+                <button onClick={()=>navigate("orderdetail")}  className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
                   Order Details
                 </button>
                 <button className="text-[#F47521] font-bold text-lg border-2 border-[#F47521] rounded-full px-3 py-2">
@@ -178,13 +180,13 @@ function MyTrips() {
             {
                 smallScreen?<>
                 <div className="flex flex-row gap-3">
-                <button className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
+                <button onClick={()=>navigate("orderdetail")}  className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
                   Order Details
                 </button>
               </div>
                 </> :<>
                 <div className="flex flex-row gap-3">
-                <button className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
+                <button onClick={()=>navigate("orderdetail")}  className="text-white bg-[#1A7DC1] font-bold text-lg border-2 border-[#1A7DC1] rounded-full px-3 py-2">
                   Order Details
                 </button>
                 <button className="text-[#F47521] font-bold text-lg border-2 border-[#F47521] rounded-full px-3 py-2">

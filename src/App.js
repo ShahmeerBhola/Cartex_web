@@ -38,7 +38,7 @@ function App() {
         <Route path="second" element={<LoginModal/>} />
         <Route path="third" element={<QueryModal/>} />
         <Route path="fourth" element={<OrderModal/>} />
-        <Route path="orderdetail" element={<OrderDetail/>} />
+        <Route path="trip/orderdetail" element={<OrderDetail/>} />
         <Route path='blog' element={<Blog/>} />
         <Route path='cancellation' element={<Cancellation/>} />
         <Route path='contactus' element={<Contact/>} />

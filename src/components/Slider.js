@@ -9,11 +9,12 @@ function Slider({children }) {
 
     const flickityOptions = {
         freeScroll: true,
-        cellAlign: 'right',
+        cellAlign: 'left',
         pageDots: false,
-        prevNextButtons: false,
+        prevNextButtons: true,
         autoPlay: true,
-        wrapAround: true,
+        wrapAround: false,
+
 
     }
   return (
