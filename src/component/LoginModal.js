@@ -8,10 +8,13 @@ const LoginModal = () => {
               <div className='flex flex-col gap-3 md:gap-4'>
               <div className='rounded-lg border-[#CCCCCC]  border-2 w-[250px] md:w-[352px] px-2 py-2'>
                           <div className='text-[15px] text-[#F47521] font-bold'>Mobile No. *</div>
-              <p className='font-bold text:lg md:text-2xl text-[#707070]' contentEditable={true}><span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select  id="phonecode">
+                          <div className='flex flex-row'>
+          <span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select  id="phonecode">
                 <option value="+1">+1</option>
               
-              </select></label></span> Enter Mobile No.</p>
+          </select></label></span>
+          <input className='font-bold text:lg md:text-2xl text-[#707070] w-full outline-0 indent-2' placeholder='Enter Mobile NO.'></input>
+          </div>
                   </div>
                   
                   <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center'>Login</div>
