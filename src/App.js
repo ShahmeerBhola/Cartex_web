@@ -18,6 +18,8 @@ import OrderDetail from './pages/OrderDetail';
 
 import Header from './pages/Header';
 import Blog from './pages/Blog';
+import Cancellation from './pages/Cancellation';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -38,9 +40,10 @@ function App() {
         <Route path="fourth" element={<OrderModal/>} />
         <Route path="orderdetail" element={<OrderDetail/>} />
         <Route path='blog' element={<Blog/>} />
-        
-        </Routes>
-        <Footer/>
+        <Route path='cancellation' element={<Cancellation/>} />
+        <Route path='contactus' element={<Contact/>} />
+      </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
