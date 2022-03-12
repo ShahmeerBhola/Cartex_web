@@ -12,6 +12,7 @@ import EditProfile from './pages/EditProfile';
 import Header from './pages/Header';
 import Blog from './pages/Blog';
 import Cancellation from './pages/Cancellation';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="trip" element={<MyTrips/>}/>
         <Route path='blog' element={<Blog/>} />
         <Route path='cancellation' element={<Cancellation/>} />
+        <Route path='contactus' element={<Contact/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
