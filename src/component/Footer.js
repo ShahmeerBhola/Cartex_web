@@ -16,10 +16,10 @@ function Footer() {
           <div className='flex flex-col justify-center md:flex-row md:justify-evenly w-full px-4 md:px-0 md:w-11/12  lg:w-10/12 mx-auto pb-4'>
               <div className='flex flex-col w-full md:mx-0 md:w-1/2 justify-between py-2 gap-4 '>
                   <h1 className=' text-2xl font-bold  '>Informations</h1>
-                  <a className='text-xl ' >Terms And Conditions</a>
-                  <div className='text-xl ' >Privacy Policy</div>
-                  <div className='text-xl ' >Cancellation And Refund Policy</div>
-                  <div className='text-xl ' >Arrival Details</div>
+                  <a className='text-base md:text-xl' >Terms And Conditions</a>
+                  <div className='text-base md:text-xl' >Privacy Policy</div>
+                  <div className='text-base md:text-xl ' >Cancellation And Refund Policy</div>
+                  <div className='text-base md:text-xl ' >Arrival Details</div>
                  
           </div>
               <div className='flex flex-col  lg:w-1/4 md:1/2 md:mx-0 justify-between py-2 gap-4 '>
@@ -28,14 +28,14 @@ function Footer() {
                       <img className='w-[32px] h-[32px]' src={phone} alt="phone img" ></img>
                       <div className='flex flex-col'>
                           <div className='text-[#F47521] text-[15px]'>Phone</div>
-                          <div className='text-xl'>+91 911 063 5588</div>
+                          <div className='text-base md:text-xl'>+91 911 063 5588</div>
                       </div>
                   </div>
                   <div className='flex flex-row items-center gap-2'>
                       <img className='w-[32px] h-[32px] ' src={mail} alt="Email img" ></img>
                       <div className='flex flex-col'>
                           <div className='text-[#F47521] text-[15px]'>Email</div>
-                          <div className='text-xl'>customercare@carterporter.in</div>
+                          <div className='text-base md:text-xl'>customercare@carterporter.in</div>
                       </div>
                   </div>
                   <div className='flex flex-row gap-3 '>
