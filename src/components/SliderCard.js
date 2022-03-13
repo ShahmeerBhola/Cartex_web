@@ -17,15 +17,8 @@ function SliderCard(props) {
   } = props.packages;
   return (
 
-        <Grid
-      key={id}
-        direction="row"
-        style={{
-          margin:"0 auto",
-          maxWidth: "350px",
-        }}
-      >
-        <div className=" pb-2  bg-white shadow-2xl rounded-2xl">
+    <>
+          <div className=" pb-2 w-[350px] bg-white shadow-2xl rounded-2xl">
         <div className='flex flex-col gap-1.5'>
             <img src={image} className=" relative h-[200px]" />
             <img src={tag} className="absolute pl-3 pt-2" />
@@ -55,7 +48,7 @@ function SliderCard(props) {
             </div>
             </div>
         </div>
-      </Grid>
+     </>
   );
 }
 

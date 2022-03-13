@@ -1,71 +1,9 @@
 import React from "react";
 import slider from "../Images/Main/slider2.png";
 import InfoIcon from "@mui/icons-material/Info";
-import SliderCard from "../components/SliderCard";
-import Slider from "../components/Slider";
-import { Grid } from "@material-ui/core";
-
-import img1 from "../../src/Images/Contact/img1.png";
-import tag1 from "../../src/Images/Contact/tag1.png";
+import PackagesSection from "../components/PackagesSection";
 
 function Contact() {
-  const packages=[{
-    id:'1',
-    image:img1,
-    tag:tag1,
-    title:'Hyderabad RGIA',
-    description:"Rajiv Gandhi International Airport",
-    location:"24/7 CarterX kiosk",
-    departure:"Delivery till terminal entry gates",
-    arrival:"Bags to be dropped at CarterX kiosk at Arrivals village. Opp Café Coffee Day",
-    luggage:"Available",
-    transfer:"Available"
-  },{
-    id:'2',
-    image:img1,
-    tag:tag1,
-    title:'Hyderabad RGIA',
-    description:"Rajiv Gandhi International Airport",
-    location:"24/7 CarterX kiosk",
-    departure:"Delivery till terminal entry gates",
-    arrival:"Bags to be dropped at CarterX kiosk at Arrivals village. Opp Café Coffee Day",
-    luggage:"Available",
-    transfer:"Available"
-  },{
-    id:'3',
-    image:img1,
-    tag:tag1,
-    title:'Hyderabad RGIA',
-    description:"Rajiv Gandhi International Airport",
-    location:"24/7 CarterX kiosk",
-    departure:"Delivery till terminal entry gates",
-    arrival:"Bags to be dropped at CarterX kiosk at Arrivals village. Opp Café Coffee Day",
-    luggage:"Available",
-    transfer:"Available"
-  },{
-    id:'4',
-    image:img1,
-    tag:tag1,
-    title:'Hyderabad RGIA',
-    description:"Rajiv Gandhi International Airport",
-    location:"24/7 CarterX kiosk",
-    departure:"Delivery till terminal entry gates",
-    arrival:"Bags to be dropped at CarterX kiosk at Arrivals village. Opp Café Coffee Day",
-    luggage:"Available",
-    transfer:"Available"
-  }
-  ,{
-    id:'4',
-    image:img1,
-    tag:tag1,
-    title:'Hyderabad RGIA',
-    description:"Rajiv Gandhi International Airport",
-    location:"24/7 CarterX kiosk",
-    departure:"Delivery till terminal entry gates",
-    arrival:"Bags to be dropped at CarterX kiosk at Arrivals village. Opp Café Coffee Day",
-    luggage:"Available",
-    transfer:"Available"
-  }];
   return (
     <div className="w-full overflow-hidden">
       <div className="relative h-screen w-full ">
@@ -167,21 +105,11 @@ function Contact() {
         <div className="flex flex-col gap-3">
           <h3 className="text-4xl font-bold">Airport Transfer</h3>
         </div>
-      </div>
-      
-<div className="flex flex-row flex-nowrap">
-{packages.map((v, i) => (
-                          <SliderCard packages={v} />
-                      ))}
-</div>
-        {/* <div className="flex flex-row gap-2">
         
-          <SliderCard />
-          <SliderCard />
-          <SliderCard />
-          <SliderCard />
-          <SliderCard />
-        </div> */}
+      </div>
+      <div className="w-full">
+          <PackagesSection/>
+        </div>
     </div>
   );
 }
