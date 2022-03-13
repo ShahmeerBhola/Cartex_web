@@ -56,21 +56,23 @@ function Header() {
                 {
                   toggler && (<div className= ' p-2 bottom-0 z-50 absolute right-0 font-medium text-lg top-12 w-[150px] flex flex-col bg-white  gap-5'>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/privacy') ;setToggler(!toggler)}}>Privacy</a>
-                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/terms');setToggler(!toggler)}}>Terms</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/terms');setToggler(!toggler)}}>Terms And Condition</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/arrivalbook');setToggler(!toggler)}}>Arrival Details</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/trip');setToggler(!toggler)}}>MyTrip</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/profile');setToggler(!toggler)}}>Profile</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/blog');setToggler(!toggler)}}>Blog</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/contactus');setToggler(!toggler)}}>Contact US</a>
                   </div>)
                 }
                 </>:<>
                 <div className= ' font-medium text-lg  flex flex-row justify-between md:gap-3 lg:gap-6'>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/privacy')}>Privacy</a>
-                  <a className='hover:cursor-pointer' onClick={()=>navigate('/terms')}>Terms</a>
+                  <a className='hover:cursor-pointer' onClick={()=>navigate('/terms')}>Terms And Condition</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/arrivalbook')}>Arrival Book</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/trip')}>MyTrip</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/profile')}>Profile</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/blog')}>Blog</a>
+                  <a className='hover:cursor-pointer' onClick={()=>navigate('/contactus')}>Contact US</a>
 
                   </div>
                 </>

@@ -13,7 +13,8 @@ function Slider({children }) {
         pageDots: false,
         prevNextButtons: true,
         autoPlay: true,
-        wrapAround: false,
+        wrapAround: true,
+        draggable: smallScreen
 
 
     }

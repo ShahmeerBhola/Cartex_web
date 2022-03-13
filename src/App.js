@@ -24,6 +24,7 @@ import OrderAccordianDetail from './component/Accordions/OrderAccordionDetail';
 import PaymentAccordianDetail from './component/Accordions/PaymentAccordionDetail';
 import PickupAccordianDetail from './component/Accordions/PickupAccordionDetail';
 import InsuranceAccordianDetail from './component/Accordions/InsuranceAccordionDetail';
+import AirportTransfer from './pages/AirportTransfer';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path='faq/payment' element={<PaymentAccordianDetail/>} />
         <Route path='faq/pickup' element={<PickupAccordianDetail/>} />
         <Route path='faq/insurance' element={<InsuranceAccordianDetail/>} />
+        <Route path='airport-transfer' element={<AirportTransfer/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
