@@ -62,6 +62,7 @@ function Header() {
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/profile');setToggler(!toggler)}}>Profile</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/blog');setToggler(!toggler)}}>Blog</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/contactus');setToggler(!toggler)}}>Contact US</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/faq');setToggler(!toggler)}}>FAQ</a>
                   </div>)
                 }
                 </>:<>
@@ -73,7 +74,7 @@ function Header() {
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/profile')}>Profile</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/blog')}>Blog</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/contactus')}>Contact US</a>
-
+                  <a className='hover:cursor-pointer' onClick={()=>navigate('/faq')}>FAQ</a>
                   </div>
                 </>
               }
