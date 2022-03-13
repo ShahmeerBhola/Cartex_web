@@ -20,6 +20,7 @@ import Header from './pages/Header';
 import Blog from './pages/Blog';
 import Cancellation from './pages/Cancellation';
 import Contact from './pages/Contact';
+import Faq from './pages/Faq';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path='blog' element={<Blog/>} />
         <Route path='cancellation' element={<Cancellation/>} />
         <Route path='contactus' element={<Contact/>} />
+        <Route path='faq' element={<Faq/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>

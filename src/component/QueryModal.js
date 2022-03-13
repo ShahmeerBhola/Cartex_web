@@ -1,9 +1,14 @@
 import React from 'react'
-import Modal from "./UI/Modal"
+import Modal from "./UI/ModalPopup"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-const QueryModal = () => {
+import closebtn from "../component/UI/modalpics/closebtnn.png"
+
+
+const QueryModal = ({setModal}) => {
   return (
-      <Modal>
+      <div className='mx-auto py-10 bg-white flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  '>
+        
+        <img onClick={()=>setModal(false)}  className='w-[48px] h-[48px] absolute top-0 right-2' src={closebtn} ></img>
           <div className='flex flex-col gap-4'>
       <div className='text-2xl font-bold text-center p-3'>Send your inquiries and we'll try to help you.</div>
         <div className='rounded-lg flex flex-row justify-between items-center border-[#CCCCCC]  border-2  px-2 w-[250px] md:w-[352px]'>
@@ -19,8 +24,8 @@ const QueryModal = () => {
         </div> 
         <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center'>Submit Query</div>
         </div>
-     </Modal>
-  )
+      </div>
+      )
 }
 
 export default QueryModal

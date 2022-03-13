@@ -1,10 +1,15 @@
 import React from 'react'
-import Modal from './UI/Modal'
+import Modal from './UI/ModalPopup'
 import cartex from "./UI/modalpics/Cartex.png"
+import closebtn from "../component/UI/modalpics/closebtnn.png"
 
-const SignupModal = () => {
+const SignupModal = ({setModal}) => {
   return (
-    <Modal titleimage={cartex} heading="Create a new account" >
+    // <Modal titleimage={cartex} heading="Create a new account" >
+        <div className='mx-auto py-10 bg-white flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  '>
+        <img className='h-[24px] w-[150px]' src={cartex}></img>
+        <div className='text-xl py-4 font-bold'>Create a new account</div>
+        <img onClick={()=>setModal(false)}  className='w-[48px] h-[48px] absolute top-0 right-2' src={closebtn} ></img>
       <div className='flex flex-col gap-2 md:gap-4 overflow-hidden'>
 
           <div className='rounded-lg border-[#CCCCCC]  border-2  px-2 w-[250px] md:w-[352px]'>
@@ -43,8 +48,9 @@ const SignupModal = () => {
           <a>Terms & Condition</a>
           <a>Privacy Policy</a>
        </div>
-        </div>
-    </Modal>
+      </div>
+      </div>
+    // </Modal>
   )
 }
 

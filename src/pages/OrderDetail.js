@@ -1,5 +1,5 @@
 import { Divider } from '@mui/material'
-import React from 'react'
+import React,{useState} from 'react'
 import Card from '../component/UI/Card'
 import customerService from "../Images/Profile/customer-service.png"
 import Stepper from '../component/Stepper'
@@ -14,6 +14,8 @@ import lugage6 from "../Images/OrderDetail/lugage6.png"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const OrderDetail = () => {
+  const [btn, setBtn] = useState(true);
+  const [btn1, setBtn1] = useState(true);
     return (<div className='bg-[#EEEEEE] pb-10 '>
       
         <h2 className='p-10 mx-10 w-full font-bold '>Order Details</h2>
@@ -97,8 +99,8 @@ Bengaluru, Karnataka 560010, India</div>
                 </div>
 
               </div>
-              <div className='w-full flex flex-row justify-center items-center bg-[#FDE3D2] text-[#F47521] font-bold h-[48px] rounded-xl' >Baggage Images<KeyboardArrowDownIcon/> </div>
-              <div className='flex flex-wrap gap-4 bg-[#CCCCCC] w-full p-4 justify-center items-center rounded-xl'>
+              <div onClick={()=>setBtn(!btn)} className='w-full flex flex-row justify-center items-center bg-[#FDE3D2] text-[#F47521] font-bold h-[48px] rounded-xl' >Baggage Images<KeyboardArrowDownIcon /> </div>
+              {btn && ( <div className='flex flex-wrap gap-4 bg-[#CCCCCC] w-full p-4 justify-center items-center rounded-xl'>
                 <img className='h-[179px] w-[179px]' src={lugage1} ></img>
                 <img className='h-[179px] w-[179px]' src={lugage2} ></img>
                 <img className='h-[179px] w-[179px]' src={lugage3} ></img>
@@ -106,7 +108,8 @@ Bengaluru, Karnataka 560010, India</div>
                 <img className='h-[179px] w-[179px]' src={lugage5} ></img>
                 <img className='h-[179px] w-[179px]' src={lugage6} ></img>
 
-              </div>
+              </div>)}
+             
 
             </div>
           </div>
@@ -164,8 +167,8 @@ Bengaluru, Karnataka 560010, India</div>
                 </div>
 
               </div>
-              <div className='w-full flex flex-row justify-center items-center bg-[#FDE3D2] text-[#F47521] font-bold h-[48px] rounded-xl' >Baggage Images<KeyboardArrowDownIcon/> </div>
-              <div className='flex flex-wrap gap-4 bg-[#CCCCCC] w-full p-4 justify-center items-center rounded-xl'>
+              <div onClick={() => setBtn1(!btn1)} className='w-full flex flex-row justify-center items-center bg-[#FDE3D2] text-[#F47521] font-bold h-[48px] rounded-xl' >Baggage Images<KeyboardArrowDownIcon /> </div>
+              {btn1 && ( <div className='flex flex-wrap gap-4 bg-[#CCCCCC] w-full p-4 justify-center items-center rounded-xl'>
                 <img className='h-[179px] w-[179px]' src={lugage1} ></img>
                 <img className='h-[179px] w-[179px]' src={lugage2} ></img>
                 <img className='h-[179px] w-[179px]' src={lugage3} ></img>
@@ -173,7 +176,8 @@ Bengaluru, Karnataka 560010, India</div>
                 <img className='h-[179px] w-[179px]' src={lugage5} ></img>
                 <img className='h-[179px] w-[179px]' src={lugage6} ></img>
 
-              </div>
+              </div>)}
+             
 
             </div>
           </div>

@@ -8,8 +8,9 @@ import logo from '../Images/Main/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router-dom';
 import LoginModal from '../component/LoginModal';
+import ModalPopup from '../component/UI/ModalPopup';
 function Header() {
-    const[modal,setModal]=useState(false)
+  const [modal, setModal] = useState(false);
     const navigate=useNavigate();
     const [toggler,setToggler]=useState(false);
   const smallScreen = useMediaQuery("(max-width:786px)");
@@ -78,8 +79,10 @@ function Header() {
         </div>
         
 
-        </div>
-       {/* {modal?<LoginModal/>:''} */}
+      </div>
+      <ModalPopup modal={modal} setModal={setModal}>
+      <LoginModal setModal={setModal}/>
+      </ModalPopup>
     </>
   )
 }
