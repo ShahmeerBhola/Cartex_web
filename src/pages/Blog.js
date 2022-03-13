@@ -38,7 +38,7 @@ function Blog() {
         
         <div className="w-full mt-10 md:mt-20">
           <div className="w-full md:w-11/12 lg:w-10/12 mt-0 md:mt-10 mx-auto">
-            <h2 className="text-2xl md:text-4xl w-11/12  mx-auto  font-bold pb-10">Featured</h2>
+            <h2 className="text-2xl md:text-4xl w-11/12  font-bold pb-10">Featured</h2>
             <div className="flex flex-col-reverse md:flex-row w-full md:gap-5 lg:gap-10 py-2">
               <div className="flex flex-col w-11/12 mx-auto md:w-8/12 ">
                 <div className="bg-white rounded-2xl shadow-xl p-3 mb-2 ">

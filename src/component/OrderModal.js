@@ -13,7 +13,7 @@ const OrderModal = ({setModal}) => {
   return (
     <div className='mx-auto py-10 bg-white flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  '>
         
-        <img onClick={()=>setModal(false)}  className='w-[48px] h-[48px] absolute top-0 right-2' src={closebtn} ></img>
+        <img onClick={()=>setModal(false)}  className='w-[48px] h-[48px] absolute top-0 right-2 cursor-pointer' src={closebtn} ></img>
     <div className='flex flex-col justify-center items-center gap-3'>
       <div className='text-xl md:text-2xl' >Order No:</div>
       <div className='font-bold text-2xl md:text-4xl'>XYZ0022786581</div>
@@ -52,7 +52,7 @@ const OrderModal = ({setModal}) => {
           <textarea className='text:lg md:text-2xl border-[#fff] text-[#707070] w-full h-[140px] md:h-[170px] outline-0' placeholder='Write something'></textarea>
           {/* <p className='text:lg md:text-2xl border-[#fff] text-[#707070] ' contentEditable={true}>Write something</p> */}
       </div> 
-      <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center'>Submit</div>
+      <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer'>Submit</div>
 
         </div>
         </div>

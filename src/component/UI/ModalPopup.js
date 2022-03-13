@@ -11,8 +11,9 @@ const style = {
   height: 'fit-content',
   maxWidth: '90%',
   bgcolor: 'background.paper',
-  boxShadow: 24,
-  borderRadius: '10px'
+  boxShadow: 34,
+  borderRadius: '10px',
+  outline: "none"
 };
 
 export default function ModalPopup({modal, setModal, children}) {

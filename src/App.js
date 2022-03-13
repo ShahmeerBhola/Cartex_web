@@ -21,6 +21,13 @@ import Blog from './pages/Blog';
 import Cancellation from './pages/Cancellation';
 import Contact from './pages/Contact';
 import Faq from './pages/Faq';
+import RegisterAccordianDetail from './component/Accordions/RegisterAccordianDetail';
+import CustomerAccordianDetail from './component/Accordions/CustomerAccordion';
+import AccountAcordianDetail from './component/Accordions/AccountAcordionDetail';
+import OrderAccordianDetail from './component/Accordions/OrderAccordionDetail';
+import PaymentAccordianDetail from './component/Accordions/PaymentAccordionDetail';
+import PickupAccordianDetail from './component/Accordions/PickupAccordionDetail';
+import InsuranceAccordianDetail from './component/Accordions/InsuranceAccordionDetail';
 
 function App() {
   return (
@@ -44,6 +51,13 @@ function App() {
         <Route path='cancellation' element={<Cancellation/>} />
         <Route path='contactus' element={<Contact/>} />
         <Route path='faq' element={<Faq/>} />
+        <Route path='faq/register' element={<RegisterAccordianDetail/>} />
+        <Route path='faq/customer' element={<CustomerAccordianDetail/>} />
+        <Route path='faq/account' element={<AccountAcordianDetail/>} />
+        <Route path='faq/order' element={<OrderAccordianDetail/>} />
+        <Route path='faq/payment' element={<PaymentAccordianDetail/>} />
+        <Route path='faq/pickup' element={<PickupAccordianDetail/>} />
+        <Route path='faq/insurance' element={<InsuranceAccordianDetail/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
