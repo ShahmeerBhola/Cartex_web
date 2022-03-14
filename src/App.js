@@ -52,7 +52,7 @@ function App() {
         <Route path='faq/payment' element={<PaymentAccordianDetail/>} />
         <Route path='faq/pickup' element={<PickupAccordianDetail/>} />
         <Route path='faq/insurance' element={<InsuranceAccordianDetail/>} />
-        <Route path='airport-transfer' element={<AirportTransfer/>} />
+        <Route path='airport' element={<AirportTransfer/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
