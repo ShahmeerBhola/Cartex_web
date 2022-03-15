@@ -2,7 +2,7 @@ import Abouts from './pages/Abouts';
 import './styles/tailwind.css';
 import './styles/custom.css';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes , Outlet } from 'react-router-dom';
 import Terms from './pages/Terms';
 import Profile from './pages/Profile';
 import ArrivalBook from './pages/ArrivalBook';
@@ -25,6 +25,13 @@ import PaymentAccordianDetail from './component/Accordions/PaymentAccordionDetai
 import PickupAccordianDetail from './component/Accordions/PickupAccordionDetail';
 import InsuranceAccordianDetail from './component/Accordions/InsuranceAccordionDetail';
 import AirportTransfer from './pages/AirportTransfer';
+import LocalAirport from './pages/AirportTransfer/LocalAirport';
+import OutstationAirport from './pages/AirportTransfer/OutstationAirport';
+import LocalParcels from './pages/AirportTransfer/LocalParcels';
+import CargoTransfer from './pages/AirportTransfer/CargoTransfer';
+import CityTransfer from './pages/AirportTransfer/CityTransfer';
+import CityTransferOutstation from './pages/AirportTransfer/CityTrasnferOutstation';
+import InterTerminal from './pages/AirportTransfer/InterTerminal';
 
 function App() {
   return (
@@ -52,7 +59,17 @@ function App() {
         <Route path='faq/payment' element={<PaymentAccordianDetail/>} />
         <Route path='faq/pickup' element={<PickupAccordianDetail/>} />
         <Route path='faq/insurance' element={<InsuranceAccordianDetail/>} />
-        <Route path='airport' element={<AirportTransfer/>} />
+        <Route path='airport' element={<AirportTransfer>
+          <Outlet />
+        </AirportTransfer>} >
+          <Route path='local' element={<LocalAirport/>}/> 
+          <Route path='oustation' element={<OutstationAirport/>}/> 
+          <Route path='localparcel' element={<LocalParcels/>}/> 
+          <Route path='cargotransfer' element={<CargoTransfer/>}/> 
+          <Route path='citytransfer/local' element={<CityTransfer/>}/> 
+          <Route path='citytransfer/outstation' element={<CityTransferOutstation/>}/> 
+          <Route path='interterminal' element={<InterTerminal/>}/> 
+        </Route>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -3,16 +3,17 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import FlightLandIcon from "@mui/icons-material/FlightLand";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import Bags from '../Images/Airport/Baggage/Bags.png';
-import Cab from '../Images/Airport/Baggage/Cab.png';
-import Luggage from '../Images/Airport/Baggage/Luggage.png';
-import Plane from '../Images/Airport/Baggage/Plane.png';
+import Bags from '../../Images/Airport/Baggage/Bags.png';
+import Cab from '../../Images/Airport/Baggage/Cab.png';
+import Luggage from '../../Images/Airport/Baggage/Luggage.png';
+import Plane from '../../Images/Airport/Baggage/Plane.png';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import AddSharpIcon from '@mui/icons-material/AddSharp';
-import ControlledCheckbox from "./ControlledChecked";
-import {useNavigate} from 'react-router-dom';
+import ControlledCheckbox from "../../components/ControlledChecked";
+import { useNavigate} from 'react-router-dom';
 function LocalAirport({step,setStep}) {
-  // const navigate=useNavigate();
+  const navigate=useNavigate();
+  const [type,setType]=React.useState(1);
   return (
     <>
     <div className=" flex flex-col w-4/5 ">
@@ -25,7 +26,7 @@ function LocalAirport({step,setStep}) {
                   <button className="w-1/2 text-center rounded-full font-bold text-white text-base bg-[#1A7DC1]">
                     Local
                   </button>
-                  <button className="w-1/2 text-center font-bold text-base" onClick={()=>{setStep(1)
+                  <button className="w-1/2 text-center font-bold text-base" onClick={()=>{navigate('/airport/oustation'); 
                     }}>
                     Outstation
                   </button>
@@ -33,11 +34,11 @@ function LocalAirport({step,setStep}) {
               </div>
               <hr className="w-full my-6" />
               <div className="border-2 w-full rounded-full flex flex-row  h-[40px]   ">
-                <button className="w-1/2 outline-0 text-center rounded-full flex flex-row font-bold text-white justify-center items-center gap-2 text-base bg-[#F47521]">
-                  <FlightTakeoffIcon className="text-white" />
+                <button className={`w-1/2 outline-0 text-center rounded-full flex flex-row font-bold  justify-center items-center gap-2 text-base  ${type===1 && '!text-white !bg-[#F47521] '}`} onClick={()=>{setType(1)}}>
+                  <FlightTakeoffIcon  />
                   <h3>To the Airport</h3>
                 </button>
-                <button className="w-1/2 outline-0 text-center rounded-full flex flex-row font-bold  justify-center items-center gap-2 text-base ">
+                <button className={`w-1/2 outline-0 text-center rounded-full flex flex-row font-bold  justify-center items-center gap-2 text-base ${type===2 && '!text-white !bg-[#F47521] '}`} onClick={()=>{setType(2)}}>
                   <FlightLandIcon />
                   <h3>From the Airport</h3>
                 </button>
@@ -137,9 +138,11 @@ function LocalAirport({step,setStep}) {
                 </div>
                 <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-1/4">
                   <div className="flex flex-row justify-between">
-                    <div className="text-[15px] text-[#F47521] font-bold">
-                      Delivery Airport
-                    </div>
+                     {type===1 ? <div className="text-[15px] text-[#F47521] font-bold">
+                    Delivery Airport
+                    </div> : <div className="text-[15px] text-[#F47521] font-bold">
+                    Arrival Airport
+                    </div>} 
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
                   <h3 className="outline-0 w-full font-bold text:lg md:text-2xl border-[#fff] text-black">
@@ -148,9 +151,14 @@ function LocalAirport({step,setStep}) {
                 </div>
                 <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-1/2">
                   <div className="flex flex-row justify-between">
-                    <div className="text-[15px] text-[#F47521] font-bold">
+                    {
+                      type===1? <div className="text-[15px] text-[#F47521] font-bold">
                       Pickup Address
-                    </div>
+                    </div>:
+                    <div className="text-[15px] text-[#F47521] font-bold">
+                    Delivery Address
+                  </div>
+                    }
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
                   <h3 className="outline-0 w-full font-bold text:lg md:text-2xl border-[#fff] text-black">
