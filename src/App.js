@@ -32,6 +32,7 @@ import CityTransfer from './pages/AirportTransfer/CityTransfer';
 import InterTerminal from './pages/AirportTransfer/InterTerminal';
 import OlaCarter from './pages/AirportTransfer/OlaCarter';
 import AirportTransfer from './pages/AirportTransfer/AirportTransfer';
+import Safety from './component/Safety';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/profile/editprofile" element={<EditProfile/>} />
         <Route path="arrivalbook" element={<ArrivalBook/>} />
         <Route path="trip" element={<MyTrips/>}/>
+        <Route path="safe" element={<Safety/>}/>
         
         <Route path="trip/orderdetail" element={<OrderDetail/>} />
         <Route path='blog' element={<Blog/>} />
