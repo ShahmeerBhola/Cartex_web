@@ -25,7 +25,7 @@ const LoginModal = ({setModal}) => {
                 <option value="+1">+1</option>
               
           </select></label></span>
-          <input className='font-bold text:lg md:text-2xl text-[#707070] w-full outline-0 indent-2' placeholder='Enter Mobile NO.'></input>
+          <input className='font-bold text:lg md:text-2xl  w-full outline-0 indent-2' placeholder='Enter Mobile NO.'></input>
           </div>
                   </div>
                   

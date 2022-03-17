@@ -19,21 +19,33 @@ const EditProfile = () => {
             </div>
             <div className='flex flex-col md:px-12 w-full gap-4'>
             
-                      <div className='rounded-lg border-[#CCCCCC]  border-2 w-full md:w-3/4 px-2'>
-                          <div className='text-[15px] text-[#F47521] font-bold'>Name</div>
-                          <p className='font-bold text-2xl border-[#fff] outline-0' contentEditable={true}>Jane Doe</p>
-                      </div>
-                      <div className='rounded-lg border-[#CCCCCC]  border-2 w-full md:w-3/4 px-2 py-2'>
-                          <div className='text-[15px] text-[#F47521] font-bold'>Mobile No.</div>
-              <p className='font-bold text-2xl outline-0' contentEditable={true}><span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select  id="phonecode">
+            <div className='rounded-lg border-[#CCCCCC]  border-2 w-full md:w-3/4 px-2'>
+            <div className='text-[15px] text-[#F47521] font-bold'>Name</div>
+          <input
+            className='outline-0 font-bold text:lg md:text-2xl border-[#fff] '
+          placeholder='Jhon Doe'
+          ></input>
+            </div>
+            
+         
+
+<div className='rounded-lg border-[#CCCCCC]  border-2 w-[250px] md:w-[352px] px-2 py-2'>
+                          <div className='text-[15px] text-[#F47521] font-bold'>Mobile No. *</div>
+              
+          <div className='flex flex-row'>
+          <span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select  id="phonecode">
                 <option value="+1">+1</option>
               
-              </select></label></span>  234-567-890</p>
-                      </div>
-                      <div className='rounded-lg border-[#CCCCCC]  border-2 w-full md:w-3/4 px-2'>
+          </select></label></span>
+          <input className='font-bold text:lg md:text-2xl  w-full outline-0 indent-2' placeholder='234-567-890'></input>
+              </div>
+              </div>
+
+
+            <div className='rounded-lg border-[#CCCCCC]  border-2  w-[250px] md:w-[352px] px-2'>
                           <div className='text-[15px] text-[#F47521] font-bold'>Email</div>
-                          <p className='font-bold text-2xl outline-0' contentEditable={true}>janedoe@gmail.com</p>
-                      </div>
+                          <input className='font-bold text:lg md:text-2xl  outline-0' placeholder='janedoe@gmail.com'></input>
+        </div>
                       <div className='flex flex-col justify-center items-center gap-2 md:w-3/4'>
                       <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[340px] h-[48px] flex justify-center items-center cursor-pointer'>Save Changes</div>
                 <div className=' rounded-3xl text-center text-[#F47521] w-[170px] px-2 py-3 cursor-pointer'>Discard Changes</div>

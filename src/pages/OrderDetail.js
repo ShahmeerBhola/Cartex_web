@@ -12,11 +12,14 @@ import lugage4 from "../Images/OrderDetail/lugage4.png"
 import lugage5 from "../Images/OrderDetail/lugage5.png"
 import lugage6 from "../Images/OrderDetail/lugage6.png"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useNavigate } from 'react-router-dom'
+
 
 const OrderDetail = () => {
+  const navigate = useNavigate();
   const [btn, setBtn] = useState(true);
   const [btn1, setBtn1] = useState(true);
-    return (<div className='bg-[#EEEEEE] pb-10 '>
+    return (<div className='bg-[#EEEEEE] pb-10 overflow-hidden'>
       
         <h2 className='p-10 mx-10 w-full font-bold '>Order Details</h2>
       <div className='w-10/12 mx-auto flex flex-col lg:flex-row gap-3'>
@@ -30,7 +33,7 @@ const OrderDetail = () => {
             <div className='text-sm md:text-2xl'>Your Order No:</div>
             <div className='text-xl md:text-4xl font-bold'>XYZ0022786581</div>
             </div>
-            <div className='bg-[#F47521] p-2 px-5 rounded-full text-sm  lg:text-lg text-white font-bold'>Rebook</div>
+            <div className='bg-[#F47521] p-2 px-5 rounded-full text-sm  lg:text-lg text-white font-bold cursor-pointer'>Rebook</div>
           </div>
 
 
@@ -229,7 +232,7 @@ Bengaluru, Karnataka 560010, India</div>
                   <div className='font-bold text-lg lg:text-2xl text-[#F47521]'>₹ 1046</div>
                 </div>
               
-              <div className='bg-[#F47521] text-white text-center p-3 font-bold text-xs w-full rounded-full' >Book Now</div>
+              <div className='bg-[#F47521] text-white text-center p-3 font-bold text-xs w-full rounded-full cursor-pointer' >Book Now</div>
 
               </div>
           </div>
@@ -259,9 +262,9 @@ Bengaluru, Karnataka 560010, India</div>
 
               </div>
               
-              <div className='text-xs font-bold text-center'>Standard Insurance <span className='text-[#1A7DC1]'>Terms & Conditions</span></div>
+              <div className='text-xs font-bold text-center'>Standard Insurance <span onClick={()=> navigate("/terms")} className='text-[#1A7DC1] cursor-pointer'>Terms & Conditions</span></div>
               
-              <div className='bg-[#F47521] text-white text-center p-3 font-bold text-xs w-full rounded-full' >Procedure To Claim Insurance</div>
+              <div className='bg-[#F47521] text-white text-center p-3 font-bold text-xs w-full rounded-full cursor-pointer' >Procedure To Claim Insurance</div>
 
             </div>
             </div>

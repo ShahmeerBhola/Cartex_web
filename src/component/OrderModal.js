@@ -49,7 +49,7 @@ const OrderModal = ({setModal}) => {
 
       <div className='rounded-lg border-[#CCCCCC]  border-2  px-2 w-[250px] md:w-[352px] h-[170px] md:h-[200px]'>
           <div className='text-[15px] text-[#F47521] font-bold'>Feedback (optional)</div>
-          <textarea className='text:lg md:text-2xl border-[#fff] text-[#707070] w-full h-[140px] md:h-[170px] outline-0' placeholder='Write something'></textarea>
+          <textarea className='text:lg md:text-2xl border-[#fff]  w-full h-[140px] md:h-[170px] outline-0' placeholder='Write something'></textarea>
           {/* <p className='text:lg md:text-2xl border-[#fff] text-[#707070] ' contentEditable={true}>Write something</p> */}
       </div> 
       <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer'>Submit</div>

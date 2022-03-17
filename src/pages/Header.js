@@ -21,8 +21,8 @@ function Header() {
       {
         smallScreen?Hidden:<>
          <div className='flex flex-row w-10/12 gap-3 justify-between text-xs font-normal mx-auto py-1.5'>
-            <div className='flex flex-row gap-4 justify-between text-sm font-normal'>
-                <div className='flex flex-row text-sm font-normal justify-center items-center'>
+            <div className='flex flex-row gap-4 justify-between text-sm font-normal cursor-pointer'>
+                <div className='flex flex-row text-sm font-normal justify-center items-center '>
                 <LocalPhoneIcon style={{fontSize:"16px"}}/>
                 <p>+91 911 063 5588</p>
                 </div>
