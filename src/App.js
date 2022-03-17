@@ -24,14 +24,14 @@ import OrderAccordianDetail from './component/Accordions/OrderAccordionDetail';
 import PaymentAccordianDetail from './component/Accordions/PaymentAccordionDetail';
 import PickupAccordianDetail from './component/Accordions/PickupAccordionDetail';
 import InsuranceAccordianDetail from './component/Accordions/InsuranceAccordionDetail';
-import AirportTransfer from './pages/AirportTransfer';
+// import AirportTransfer from './pages/AirportTransfer';
 import LocalAirport from './pages/AirportTransfer/LocalAirport';
-import OutstationAirport from './pages/AirportTransfer/OutstationAirport';
 import LocalParcels from './pages/AirportTransfer/LocalParcels';
 import CargoTransfer from './pages/AirportTransfer/CargoTransfer';
 import CityTransfer from './pages/AirportTransfer/CityTransfer';
-import CityTransferOutstation from './pages/AirportTransfer/CityTrasnferOutstation';
 import InterTerminal from './pages/AirportTransfer/InterTerminal';
+import OlaCarter from './pages/AirportTransfer/OlaCarter';
+import AirportTransfer from './pages/AirportTransfer/AirportTransfer';
 
 function App() {
   return (
@@ -59,17 +59,13 @@ function App() {
         <Route path='faq/payment' element={<PaymentAccordianDetail/>} />
         <Route path='faq/pickup' element={<PickupAccordianDetail/>} />
         <Route path='faq/insurance' element={<InsuranceAccordianDetail/>} />
-        <Route path='airport' element={<AirportTransfer>
-          <Outlet />
-        </AirportTransfer>} >
-          <Route path='local' element={<LocalAirport/>}/> 
-          <Route path='oustation' element={<OutstationAirport/>}/> 
-          <Route path='localparcel' element={<LocalParcels/>}/> 
-          <Route path='cargotransfer' element={<CargoTransfer/>}/> 
-          <Route path='citytransfer/local' element={<CityTransfer/>}/> 
-          <Route path='citytransfer/outstation' element={<CityTransferOutstation/>}/> 
-          <Route path='interterminal' element={<InterTerminal/>}/> 
-        </Route>
+        <Route path='airport' element={<AirportTransfer/>} />
+          <Route path='airport/local' element={<LocalAirport/>}/> 
+          <Route path='airport/localparcel' element={<LocalParcels/>}/> 
+          <Route path='airport/cargotransfer' element={<CargoTransfer/>}/> 
+          <Route path='airport/citytransfer' element={<CityTransfer/>}/> 
+          <Route path='airport/interterminal' element={<InterTerminal/>}/> 
+          <Route path='airport/olacarter' element={<OlaCarter/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

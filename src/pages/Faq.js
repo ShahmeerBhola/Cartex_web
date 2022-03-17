@@ -40,12 +40,9 @@ const Faq = () => {
                       <div className='invisible md:visible'>Kindly check the FAQ below if you are not very familiar with the functioning of this website or the application</div>
                   </div>
               </div>
-          
       </div>
       {/* content */}
       <div className='mx-auto w-10/12 flex flex-row py-5' >
-
-
         <div className='w-full md:w-1/4 hidden md:block '>
           <div className=' bg-white flex flex-col md:flex-row md:mx-1 p-2 lg:p-5  rounded-xl shadow-lg '>
             <div className='flex flex-col w-full gap-4'>

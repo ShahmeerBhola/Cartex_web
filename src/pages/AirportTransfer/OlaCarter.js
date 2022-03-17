@@ -1,64 +1,75 @@
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import Packing from "../../Images/Airport/Baggage/Packing.png";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
-function CargoTransfer() {
+import Packing from "../../Images/Airport/Baggage/Packing.png";
+
+function OlaCarter() {
   const navigate = useNavigate();
-  const [type, setType] = React.useState(1);
+  const [type, setType] = React.useState(2);
+  const [types, setTypes] = React.useState(0);
   return (
     <>
       <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2  ">
-        <div className="flex flex-col gap-2 ">
-          <h3 className="font-bold text-lg md:text-xl w-3/5">Cargo Transfers</h3>
-          <ul className="list-disc px-5">
-            <li className=" text-base"> Delivery anywhere in India</li>
-            <li className=" text-base">
-              {" "}
-              Air (4 days), Surface (4-7 days), Express (36-48 hours)
-            </li>
-          </ul>
-        </div>
-        <hr className="w-full my-6" />
-        <div className="mt-3">
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full">
-            <div className="flex flex-col lg:flex-row gap-2 ">
-              <div className="flex flex-col gap-3 bg-[#F47521] w-full lg:w-1/3 text-white p-2 rounded-xl">
-                <h2>Rush Cargo - Air</h2>
-                <ul className="list-disc px-5">
-                  <li className=" text-sm"> 4 Days</li>
-                  <li className=" text-sm"> Delivery anywhere in India</li>
-                </ul>
-              </div>
-              <div className="flex flex-col gap-3 bg-[#F9F9F9]  w-full lg:w-1/3  p-2 rounded-xl">
-                <h2>Rush Cargo - Surface</h2>
-                <ul className="list-disc px-5">
-                  <li className=" text-sm"> 4-7 Days</li>
-                  <li className=" text-sm"> Delivery anywhere in India</li>
-                </ul>
-              </div>
-              <div className="flex flex-col gap-3 bg-[#F9F9F9]  w-full lg:w-1/3  p-2 rounded-xl">
-                <h2>Rush Cargo - Express</h2>
-                <ul className="list-disc px-5">
-                  <li className=" text-sm"> 36- 48 Hours</li>
-                  <li className=" text-sm"> Delivery anywhere in India</li>
-                </ul>
-              </div>
-            </div>
+        <div className="flex flex-row justify-between ">
+          <h3 className="font-bold text-base md:text-lg lg:text-xl w-3/5 md:w-1/2 lg:w-3/5">
+            Book Doorstep Baggage services to and from Ola Drop zone at the
+            airport!
+          </h3>
+          <div className="md:border-2 w-fit md:w-1/2 lg:w-2/5 rounded-full flex flex-col md:flex-row h-[40px]  lg:h-[50px]   ">
+            <button
+              className={`w-full md:w-1/2 px-1 text-center font-bold text-base rounded-full ${
+                types == 0 && "!bg-[#1A7DC1] !text-white"
+              }`}
+              onClick={() => setTypes(0)}
+            >
+              Drop Baggage
+            </button>
+            <button
+              className={`w-full px-1 md:w-1/2 text-center font-bold text-base rounded-full ${
+                types == 1 && "!bg-[#1A7DC1] !text-white"
+              }`}
+              onClick={() => setTypes(1)}
+            >
+              Priority Sweep
+            </button>
           </div>
         </div>
+        <hr className="w-full my-6" />
+        <div className="border-2 w-full rounded-full flex flex-row  h-[40px]   ">
+          <button
+            className={`w-1/2 outline-0 text-center rounded-full flex flex-row font-bold py-5 justify-center items-center gap-2 text-base  ${
+              type === 1 && "!text-white !bg-[#F47521] "
+            }`}
+            onClick={() => {
+              setType(1);
+            }}
+          >
+            <h3>Departure</h3>
+          </button>
+          <button
+            className={`w-1/2 outline-0 text-center rounded-full flex flex-row font-bold py-5 justify-center items-center gap-2 text-base ${
+              type === 2 && "!text-white !bg-[#F47521] "
+            }`}
+            onClick={() => {
+              setType(2);
+            }}
+          >
+            <h3>Arrival</h3>
+          </button>
+        </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
+          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Name</div>
             <input
               className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
               placeholder="Enter Name"
             ></input>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2 w-full lg:w-1/3 px-2 py-2">
+          <div className="rounded-lg border-[#CCCCCC]  border-2 w-full lg:w-1/2 px-2 py-2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Mobile No. *
             </div>
@@ -72,28 +83,41 @@ function CargoTransfer() {
                 </label>
               </span>
               <input
-                className="font-bold text-lg lg:text-2xl  w-full outline-0 indent-2"
+                className="font-bold text-lg lg:text-2xl w-full outline-0 indent-2"
                 placeholder="Enter Mobile NO."
               ></input>
             </div>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
+        </div>
+        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Email</div>
             <input
-              className="outline-0 w-full font-bold text-lg md:text-2xl border-[#fff] "
-              placeholder="Enter Email"
+              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              placeholder="Enter Email Address"
+            ></input>
+          </div>
+          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
+            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+              CRN Number
+            </div>
+            <input
+              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              placeholder="Enter CRN Number"
             ></input>
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC] flex flex-col justify-between py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
-              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Weight</div>
+              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Bags</div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
-              10 kgs
+              {" "}
+              Up to 2 bags
             </h3>
+            <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -122,80 +146,38 @@ function CargoTransfer() {
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                Pickup Address
+                Arrival Terminal
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <input
               className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
-              placeholder="Fill /provide pick-up address"
+              placeholder="Select Arrival Airport"
+              defaultValue="KIAL Bangalore"
             ></input>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                Drop Address
+                Delivery Address
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <input
               className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
-              placeholder="Fill /provide drop address"
+              placeholder="Select Delivery Address"
             ></input>
           </div>
         </div>
-
-        {/* coupon section */}
-        <div className="mt-3 flex flex-col lg:flex-row gap-3 ">
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-              Discount Coupon
-            </div>
-            <div className="flex flex-row justify-between gap-1 pt-1">
-              <div className="flex flex-col gap-1 w-3/5">
-                <input
-                  type="text"
-                  placeholder="Enter Coupon Code"
-                  className="outline-0 text-xl lg:text-2xl font-baseline"
-                />
-                <span className="text-xs">E.g. CXBPL100</span>
-              </div>
-              <button className="text-xs lg:text-base font-bold text-white p-2 bg-[#F47521] rounded-full align-baseline ">
-                Apply Coupon
-              </button>
-            </div>
-          </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-              Add on
-            </div>
-            <div className="flex flex-row w-full gap-1 bg-[#F9F9F9] rounded-xl " >
-                      <img src={Packing}/>
-                      <div className="flex flex-col gap-2">
-                        <div className="flex flex-row justify-between items-center pr-2">
-                          <h4 className='text-base'>Packing</h4>
-                          <div className='flex flex-row items-center text-[#1A7DC1] font-bold '>
-                            <AddSharpIcon fontSize="small"/>
-                            <CurrencyRupeeIcon fontSize='small'/>
-                            <span className="text-base ">80</span>
-                          </div>
-                        </div>
-                        <p className='text-xs'>Mauris neque nisi, faucibus non elementum in, convallis et eros. Donec aliquet dignissim.</p> 
-                      </div>
-                    </div>
-          </div>
-        </div>
         {/* details */}
-          <div className="flex flex-col gap-3 py-4">
-          <h2 className="text-xs lg:text-sm">
-            Fragile Charges will be applied for all electronics and TVs in
-            original packing only.
+        <div className="flex px-2 flex-col gap-3 pt-6 pb-0">
+          <h2 className="text-xs lg:text-sm ">
+            Delivery will be made on the same day if bag is dropped before 3pm
+            else by 2pm next day. Order modification is not permissible. TVs are
+            classified as Fragile and needs to be in original packing for
+            carriage
           </h2>
-          <h2 className="text-xs lg:text-sm">
-            All items need to be fully packed. Cargo forms will have to be
-            filled additionally.
-          </h2>
-          </div>
+        </div>
         {/* agreement section */}
         <div className="mt-3 flex flex-row gap-2 ">
           <div className="rounded-lg bg-[#F9F9F9] py-2 px-2 w-full">
@@ -213,16 +195,12 @@ function CargoTransfer() {
           </div>
         </div>
         {/* Details */}
-        <div className="my-3 flex flex-row gap-2 lg:gap-6">
+        <div className="my-3 flex flex-row gap-6">
           <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
             Departure Booking Information
           </h3>
           <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
             Cancellation And Refund Policy
-          </h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">Packing List</h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
-            Cargo Security Declaration
           </h3>
         </div>
         {/* Proceed */}
@@ -231,9 +209,11 @@ function CargoTransfer() {
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Estimated Time
             </div>
-            <h2 className="font-bold text-lg lg:text-2xl">16 Nov 2021 Before 11:55 PM</h2>
+            <h2 className="font-bold text-lg lg:text-2xl">
+              30 Oct 2021 after 10:00 AM
+            </h2>
           </div>
-          <div className="flex flex-row justify-between gap-2">
+          <div className="flex flex-row justify-between lg:gap-2">
             <div className="flex flex-col  items-center">
               <div className="flex flex-row gap-1 text-2xl lg:text-4xl font-bold items-center text-[#F47521]">
                 <CurrencyRupeeIcon fontSize="large" />
@@ -251,4 +231,4 @@ function CargoTransfer() {
   );
 }
 
-export default CargoTransfer;
+export default OlaCarter;
