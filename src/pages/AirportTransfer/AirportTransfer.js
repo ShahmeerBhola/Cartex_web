@@ -21,7 +21,7 @@ import { useMediaQuery } from "@mui/material";
 
 function AirportTransfer() {
   const [step,setStep]=React.useState(0);
-  const matches = useMediaQuery('(max-width:600px)');
+  const matches = useMediaQuery('(max-width:768px)');
   const navigate=useNavigate();
 
   console.log("steps",step);
