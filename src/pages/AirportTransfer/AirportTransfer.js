@@ -18,6 +18,8 @@ import LocalAirport from "./LocalAirport";
 import OlaCarter from "./OlaCarter";
 import MainAirportTransfer from "../../component/MainAirportTransfer";
 import { useMediaQuery } from "@mui/material";
+import Safety from "../../component/Safety";
+import Footer from "../../component/Footer";
 
 function AirportTransfer() {
   const [step,setStep]=React.useState(0);
@@ -25,10 +27,10 @@ function AirportTransfer() {
   const navigate=useNavigate();
 
   console.log("steps",step);
-  return (
-<div className="w-full bg-[#EEEEEE]">
+  return (<>
+<div className=" w-full bg-[#EEEEEE]">
       <div className="w-full">
-        <img className="relative h-[400px] w-full" src={Header} />
+        <img className=" relative h-[400px] w-full" src={Header} />
       </div>
      <div className=" absolute w-full top-[150px]" >
        {matches && <>
@@ -118,7 +120,6 @@ function AirportTransfer() {
               </div>
             </div>
             <hr className="h-auto w-[1px] bg-[#EEE] " />
-
             {step===0 && <LocalAirport/>}
             {step===6 && <OlaCarter/>}
             {step===2 && <LocalParcels/>}
@@ -132,8 +133,15 @@ function AirportTransfer() {
           </div>
         </div>
       </div>
+     <div>
      </div>
+
     </div>
+     
+    </div>
+    <Safety/>
+     {/* <Footer/> */}
+    </>
   );
 }
 

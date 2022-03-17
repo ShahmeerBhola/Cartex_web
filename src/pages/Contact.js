@@ -202,9 +202,9 @@ function Contact() {
           <h3 className="text-4xl font-bold">Airport Transfer</h3>
         </div>
         
-      {/* <div className="w-full">
+      <div className="w-full">
           <PackagesSection/>
-        </div> */}
+        </div>
         <div className='w-full mb-2'>
           <h2 className='text-[36px] font-bold'>City Transfer</h2>
           <div className="flex flex-row gap-2 flex-wrap justify-center">
