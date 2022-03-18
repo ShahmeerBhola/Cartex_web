@@ -18,6 +18,7 @@ function Footer() {
           <div className='flex flex-col justify-center md:flex-row md:justify-evenly w-full px-4 md:px-0 md:w-11/12  lg:w-10/12 mx-auto pb-4'>
               <div className='flex flex-col w-full md:mx-0 md:w-1/2 justify-between py-2 gap-4 '>
                   <h1 className=' text-2xl font-bold  ' >Informations</h1>
+                  <a className='text-base md:text-xl hover:cursor-pointer' onClick={()=>navigate('/faq')} >FAQ</a>
                   <a className='text-base md:text-xl hover:cursor-pointer' onClick={()=>navigate('/terms')} >Terms And Conditions</a>
                   <div className='text-base md:text-xl hover:cursor-pointer' onClick={()=>navigate('/privacy')} >Privacy Policy</div>
                   <div className='text-base md:text-xl hover:cursor-pointer ' onClick={()=>navigate('/cancellation')} >Cancellation And Refund Policy</div>

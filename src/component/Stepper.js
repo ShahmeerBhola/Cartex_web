@@ -48,8 +48,8 @@ const QontoStepIconRoot = styled('div')(({ theme, ownerState }) => ({
     fontSize: 18,
   },
   '& .QontoStepIcon-circle': {
-    width: 8,
-    height: 8,
+    width: 6,
+    height: 6,
     borderRadius: '50%',
     backgroundColor: 'currentColor',
   },
@@ -173,7 +173,7 @@ const steps = ['Open', 'Picked Up', 'At the Airport','At Gate 1','Deliverd'];
 
 export default function CustomizedSteppers() {
   return (
-    <Stack sx={{ width: '100%' }} spacing={4}  >
+    <Stack sx={{ width: '100%' }}  >
       {/* <Stepper alternativeLabel activeStep={1} connector={<QontoConnector />}>
         {steps.map((label) => (
           <Step key={label}>

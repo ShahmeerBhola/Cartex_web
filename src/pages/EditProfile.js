@@ -14,7 +14,7 @@ const EditProfile = () => {
                         <img className='rounded-full p-0 brightness-50' src={profilepic} alt='profile pic' height="180px" width="180px"  ></img>
                         <div className='h-[180px] w-[180px] absolute  left-20 top-20 md:left-[65px] md:top-[55px]  '> <CameraAltOutlinedIcon className='text-white '/></div>
                       </div>
-                <div className='text-[17px] text-[#1A7DC1] font-bold py-3 pl-3  '>Change Photo</div>
+                <input className='text-[17px] text-[#1A7DC1] font-bold py-3 pl-3  ' type='file'/>
                 <div className='text-[17px] text-[#FF0000] font-bold pb-5 pl-3 '>Remove Photo</div>
             </div>
             <div className='flex flex-col md:px-12 w-full gap-4'>

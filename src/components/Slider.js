@@ -11,7 +11,7 @@ function Slider({children }) {
         freeScroll: true,
         cellAlign: 'left',
         pageDots: false,
-        prevNextButtons: true,
+        prevNextButtons: false,
         autoPlay: true,
         wrapAround: true,
         draggable: smallScreen

@@ -16,11 +16,11 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const OrderDetail = () => {
   const [btn, setBtn] = useState(true);
   const [btn1, setBtn1] = useState(true);
-    return (<div className='bg-[#EEEEEE] pb-10 '>
+    return (<div className='bg-[#EEEEEE] pb-10 overflow-hidden '>
       
-        <h2 className='p-10 mx-10 w-full font-bold '>Order Details</h2>
-      <div className='w-10/12 mx-auto flex flex-col lg:flex-row gap-3'>
-        <div className='flex flex-col w-full lg:w-3/4  gap-3 '>
+        <h2 className='p-10 mx-10 w-full font-bold  '>Order Details</h2>
+      <div className='w-full  md:w-10/12 mx-auto flex flex-col lg:flex-row gap-3'>
+        <div className='flex flex-col px-2 w-full lg:w-3/4  gap-3 '>
 
         <div className='border-t-2 rounded-lg w-full'></div>
 
@@ -34,7 +34,7 @@ const OrderDetail = () => {
           </div>
 
 
-          <div className='bg-white flex flex-col lg:flex-row md:mx-1 p-5 rounded-xl shadow-lg'>
+          <div className='bg-white flex flex-col lg:flex-row md:mx-1 md:p-5 py-2 rounded-xl shadow-lg'>
             
             <Stepper/>
             </div>

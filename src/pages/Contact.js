@@ -205,7 +205,7 @@ function Contact() {
       <div className="w-full">
           <PackagesSection/>
         </div>
-        <div className='w-full mb-2'>
+        <div className='w-full  mt-5 mb-2'>
           <h2 className='text-[36px] font-bold'>City Transfer</h2>
           <div className="flex flex-row gap-2 flex-wrap justify-center">
             <div className='bg-white flex flex-col px-2 py-3 w-[260px] rounded-3xl shadow-xl'>
