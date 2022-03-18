@@ -43,7 +43,7 @@ function Footer() {
                           <div className='text-base md:text-xl'>customercare@carterporter.in</div>
                       </div>
                   </div>
-                  <div className='flex flex-row gap-3 '>
+                  <div className='flex flex-row gap-0 md:gap-3 '>
                       <IconButton>
                           <img src={facebook} alt="facebook" ></img>
                       </IconButton>
