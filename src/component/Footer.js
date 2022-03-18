@@ -25,6 +25,7 @@ function Footer() {
                   <div className='text-base md:text-xl hover:cursor-pointer' onClick={()=>navigate('/privacy')} >Privacy Policy</div>
                   <div className='text-base md:text-xl hover:cursor-pointer ' onClick={()=>navigate('/cancellation')} >Cancellation And Refund Policy</div>
                   <div className='text-base md:text-xl hover:cursor-pointer ' onClick={()=>navigate('/arrivalbook')} >Arrival Details</div>
+                  <div className='text-base md:text-xl hover:cursor-pointer ' onClick={()=>navigate('/profile')} >Profile</div>
                  
           </div>
               <div className='flex flex-col  lg:w-1/4 md:1/2 md:mx-0 justify-between py-2 gap-4 '>

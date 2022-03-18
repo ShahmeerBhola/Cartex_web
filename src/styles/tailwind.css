@@ -542,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 50;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
@@ -788,10 +792,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 650px;
 }
 
-.h-\[1550px\] {
-  height: 1550px;
-}
-
 .min-h-\[348px\] {
   min-height: 348px;
 }
@@ -928,6 +928,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[1px\] {
   width: 1px;
+}
+
+.min-w-\[290px\] {
+  min-width: 290px;
 }
 
 .max-w-\[300px\] {
@@ -1762,48 +1766,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 300px;
   }
 
+  .md\:h-\[2000px\] {
+    height: 2000px;
+  }
+
   .md\:h-\[400px\] {
     height: 400px;
   }
 
   .md\:h-\[40px\] {
     height: 40px;
-  }
-
-  .md\:h-\[\] {
-    height: ;
-  }
-
-  .md\:h-\[2500px\] {
-    height: 2500px;
-  }
-
-  .md\:h-\[2300px\] {
-    height: 2300px;
-  }
-
-  .md\:h-\[2000px\] {
-    height: 2000px;
-  }
-
-  .md\:h-\[100px\] {
-    height: 100px;
-  }
-
-  .md\:h-\[1900px\] {
-    height: 1900px;
-  }
-
-  .md\:h-\[00px\] {
-    height: 00px;
-  }
-
-  .md\:h-\[19500px\] {
-    height: 19500px;
-  }
-
-  .md\:h-\[1950px\] {
-    height: 1950px;
   }
 
   .md\:w-1\/4 {
@@ -1997,6 +1969,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pl-2 {
+    padding-left: 0.5rem;
   }
 
   .md\:text-left {
