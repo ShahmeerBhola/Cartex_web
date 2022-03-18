@@ -4,6 +4,25 @@ import profilepic from "../Images/Profile/profileimg.png"
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 
 const EditProfile = () => {
+  const NewItem={
+    image:profilepic,
+  }
+  const [newItem, setNewItem] = React.useState(NewItem);
+  const hiddenFileInput = React.useRef(null);
+  const handleClick = (event) => {
+    event.preventDefault();
+    hiddenFileInput.current.click();
+  };
+  const handleFileUpload=(event)=>{
+    var file = event.target.files[0];
+    var reader = new FileReader();
+    var url = URL.createObjectURL(file);
+    setNewItem({
+      ...newItem,
+      image: url,
+    });
+    console.log("url",url);
+  }
   return (
     <div className='bg-[#EEEEEE] pb-10 '>
         <h2 className='p-10 mx-10 w-11/12 font-bold  text-4xl'>Edit Profile</h2>
@@ -11,11 +30,18 @@ const EditProfile = () => {
             <Card css=" w-full lg:w-3/4 min-h-[348px]">
                   <div className='flex flex-col pt-4 justify-center items-center md:justify-start md:items-start '>
                       <div className='flex items-center justify-center relative cursor-pointer'>
-                        <img className='rounded-full p-0 brightness-50' src={profilepic} alt='profile pic' height="180px" width="180px"  ></img>
-                        <div className='h-[180px] w-[180px] absolute  left-20 top-20 md:left-[65px] md:top-[55px]  '> <CameraAltOutlinedIcon className='text-white '/></div>
+                        <img className=' p-0 brightness-50 h-[180px] w-[180px]' style={{borderRadius:"50%"}} src={newItem.image} alt='profile pic' height="180px" width="180px"  ></img>
+                        <div className=' absolute  text-center  '> <CameraAltOutlinedIcon className='text-white text-center '/></div>
                       </div>
-                <input className='text-[17px] text-[#1A7DC1] font-bold py-3 pl-3  ' type='file'/>
-                <div className='text-[17px] text-[#FF0000] font-bold pb-5 pl-3 '>Remove Photo</div>
+                <div className='text-[17px] text-[#1A7DC1] font-bold py-3 pl-3 z-30 cursor-pointer  'onClick={handleClick} >Change Photo</div>
+                <div className='text-[17px] text-[#FF0000] font-bold pb-5 pl-3 cursor-pointer ' onClick={()=>setNewItem('')}>Remove Photo</div>
+                <input
+            type="file"
+            ref={hiddenFileInput}
+            onChange={handleFileUpload}
+            className="p-5 hidden"
+            accept="image/*"
+          />
             </div>
             <div className='flex flex-col md:px-12 w-full gap-4'>
             
