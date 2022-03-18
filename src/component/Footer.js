@@ -8,6 +8,8 @@ import phone from "../Images/Footer/phone.png"
 import youtube from "../Images/Footer/youtube.png"
 import twitter from "../Images/Footer/twitter.png"
 import { useNavigate } from 'react-router-dom'
+import { IconButton } from '@mui/material'
+
 
 function Footer() {
     const navigate=useNavigate();
@@ -42,11 +44,23 @@ function Footer() {
                       </div>
                   </div>
                   <div className='flex flex-row gap-3 '>
-                      <img src={facebook} alt="facebook" ></img>
+                      <IconButton>
+                          <img src={facebook} alt="facebook" ></img>
+                      </IconButton>
+                      <IconButton>
                       <img src={twitter} alt="twitter" ></img>
+
+                      </IconButton>
+                      <IconButton>
                       <img src={google} alt="google plus" ></img>
+                      </IconButton>
+                      <IconButton>
                       <img src={youtube} alt="youtube" ></img>
-                      <img src={linkdin} alt="linkdien" height="40px" width="40px" ></img>
+                      </IconButton>
+                      <IconButton>
+                      <img src={linkdin} alt="linkdien" ></img>
+
+                      </IconButton>
                   </div>
               </div>
           </div>

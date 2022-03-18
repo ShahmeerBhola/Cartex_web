@@ -1,16 +1,18 @@
-import React from 'react'
-import Modal from './UI/ModalPopup'
+import React,{useState} from 'react'
+import ModalPopup from './UI/ModalPopup'
+import LoginModal from './LoginModal'
 import cartex from "./UI/modalpics/Cartex.png"
 import closebtn from "../component/UI/modalpics/closebtnn.png"
 import { useNavigate } from 'react-router-dom'
-const SignupModal = ({ setModal }) => {
+const SignupModal = (props) => {
+
+  const [modal, setModal] = useState(false);
   const navigate = useNavigate();
-  return (
-    // <Modal titleimage={cartex} heading="Create a new account" >
+  return (<>
         <div className='mx-auto py-10 bg-white flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  '>
         <img className='h-[24px] w-[150px]' src={cartex}></img>
         <div className='text-xl py-4 font-bold'>Create a new account</div>
-        <img onClick={()=>setModal(false)}  className='w-[48px] h-[48px] absolute top-0 right-2 cursor-pointer' src={closebtn} ></img>
+        <img onClick={()=>props.setModal(false)}  className='w-[48px] h-[48px] absolute top-0 right-2 cursor-pointer' src={closebtn} ></img>
       <div className='flex flex-col gap-2 md:gap-4 overflow-hidden'>
 
           <div className='rounded-lg border-[#CCCCCC]  border-2  px-2 w-[250px] md:w-[352px]'>
@@ -44,7 +46,10 @@ const SignupModal = ({ setModal }) => {
         <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer'>Register</div>
         <div className='justify-start text-xs md:text-sm'>* denotes mandatory field</div>
         <div className='w-[250px] md:w-[352px] text-sm md:text-lg flex justify-center items-center'>Already have an account?</div>
-        <div className='text-[#F47521] text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer'>Login</div>
+        <div className='text-[#F47521] text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer' onClick={() => {
+          setModal(!modal);
+          props.setModal(false)
+        }}>Login</div>
         <div className=' text-[12px]  md:text-sm flex flex-row justify-between text-[#1A7DC1] cursor-pointer'>
           <a  onClick={() => {
             navigate("/terms");
@@ -56,8 +61,12 @@ const SignupModal = ({ setModal }) => {
           }} >Privacy Policy</a>
        </div>
       </div>
-      </div>
-    // </Modal>
+    </div>
+    
+    <ModalPopup modal={modal} setModal={setModal}>
+      <LoginModal setModal={setModal}/>
+      </ModalPopup>
+      </>
   )
 }
 
