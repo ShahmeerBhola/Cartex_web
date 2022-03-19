@@ -10,14 +10,16 @@ import { useNavigate } from 'react-router-dom';
 import LoginModal from '../component/LoginModal';
 import ModalPopup from '../component/UI/ModalPopup';
 import QueryModal from '../component/QueryModal';
-
+import FlightSharpIcon from '@mui/icons-material/FlightSharp';
+import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 function Header() {
+  const[login,setLogin]=useState(false);
   const [modal, setModal] = useState(false);
   const [qmodal, setqModal] = useState(false);
     const navigate=useNavigate();
     const [toggler,setToggler]=useState(false);
   const smallScreen = useMediaQuery("(max-width:786px)");
-
+  localStorage.getItem('login');
   return (
     <>
     <div className='bg-white w-full shadow-lg'>
@@ -25,7 +27,7 @@ function Header() {
         smallScreen?Hidden:<>
          <div className='flex flex-row w-10/12 gap-3 justify-between text-xs font-normal mx-auto py-1.5'>
             <div className='flex flex-row gap-4 justify-between text-sm font-normal'>
-                <div className='flex flex-row text-sm font-normal justify-center items-center'>
+                <div className='flex flex-row text-sm font-normal justify-center items-center cursor-pointer'>
                 <LocalPhoneIcon style={{fontSize:"16px"}}/>
                 <p>+91 911 063 5588</p>
                 </div>
@@ -38,10 +40,33 @@ function Header() {
                 <p>Support</p>
                 </div>
             </div>
-            <div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=>setModal(!modal)}>
-                <PersonOutlineIcon style={{fontSize:"16px"}}/>
-                <p>Login to Track order</p>
+            <div className='flex flex-row gap-4 justify-between text-sm font-normal'>
+          {
+            login  && <>
+              <div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=>setLogin(!login)}>
+              <pre>| </pre>
+                <LogoutSharpIcon style={{fontSize:"16px"}}/>
+                <p>Logout</p>
+            </div><div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=>navigate('/trip')}>
+              <pre>| </pre>
+                <FlightSharpIcon style={{fontSize:"16px"}}/>
+                <p>My Trip</p>
             </div>
+            <div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=>navigate('/profile')}>
+              <pre>| </pre>
+                <PersonOutlineIcon style={{fontSize:"16px"}}/>
+                <p> My Profile</p>
+            </div></>
+          }
+          {
+            !login && <div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=>setModal(!modal)}>
+
+            <PersonOutlineIcon style={{fontSize:"16px"}}/>
+            <p>Login to Track order</p>
+        </div>
+          }
+            </div>
+            
             
         </div>
         <Divider/></>
@@ -79,7 +104,7 @@ function Header() {
 
       </div>
       <ModalPopup modal={modal} setModal={setModal}>
-      <LoginModal setModal={setModal}/>
+      <LoginModal setModal={setModal} setLogin={setLogin} login={login}/>
       </ModalPopup>
       <ModalPopup modal={qmodal} setModal={setqModal}>
       <QueryModal setModal={setqModal}/>

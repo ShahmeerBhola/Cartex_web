@@ -6,10 +6,15 @@ import SignupModal from './SignupModal'
 import ModalPopup from './UI/ModalPopup'
 import { useNavigate } from 'react-router-dom'
 
-const LoginModal = ({setModal}) => {
+const LoginModal = ({setModal,setLogin,login}) => {
   const [modal1, setModal1] = useState(false);
   const navigate = useNavigate();
-
+  const loginHandler=()=>{
+    setLogin(!login);
+    localStorage.setItem('login',true)
+    setModal(false)
+    console.log('hello',login);
+  }
  
   return (
       <div>
@@ -29,7 +34,7 @@ const LoginModal = ({setModal}) => {
           </div>
                   </div>
                   
-                  <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer'>Login</div>
+                  <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer' onClick={loginHandler} >Login</div>
                   <div className='justify-start text-xs md:text-sm'>* denotes mandatory field</div>
         <div className='w-[250px] md:w-[352px] text-sm md:text-lg flex justify-center items-center'>Don't have an account?</div>
           <div onClick={() => { setModal1(!modal1)}} className='text-[#F47521] text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer'>Register</div>
