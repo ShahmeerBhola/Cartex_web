@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Slider from '../Images/Main/Slider.png';
 import Business from "../Images/About/business.png"
 import Baddges from "../Images/About/baddges.png"
@@ -37,6 +37,7 @@ import {useNavigate} from 'react-router-dom';
 function Abouts() {
   const navigate=useNavigate();
   const smallScreen = useMediaQuery("(max-width:768px)");
+  const[active,setActive]=useState(0);
   return (
     <div className='w-full overflow-hidden'>
      
@@ -203,22 +204,25 @@ function Abouts() {
           <div className='flex flex-col justify-center items-center py-4 gap-0.5 md:gap-4 md:px-2 lg:px-5' >
           <div className='font-bold sm:text-2xl md:text-4xl text-white' >See How it Works</div>
           <div className='flex flex-row  sm:gap-1 md:gap-2 lg:gap-4 pt-2'>
-            <div className='bg-white rounded-full mt-2 border-2 border-white'>
-              <div className='text-[#F47521]  sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center '>Air Transfer</div>
+            <div className={`${active==0 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(0)}>
+              <div className={`${active==0 && '!text-[#F47521]' } text-white  sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center`} >Air Transfer</div>
             </div>
-            <div className='bg-[#1A7DC1] rounded-full mt-2 border-2 border-white'>
-              <div className=' text-white sm:p-1 md:p-2 lg:p-3  font-bold sm:text-base  md:text-xl text-center '>Rush Chargo</div>
-            </div><div className='bg-[#1A7DC1] rounded-full mt-2 border-2 border-white'>
-              <div className='text-white sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center  '>Rush Local</div>
+            {/* bg-[#1A7DC1]   */}
+            <div className={`${active==1 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(1)}>
+              <div className={`${active==1 && '!text-[#F47521]' }  text-white  sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center`}>Rush Chargo</div>
+            </div><div className={`${active==2 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(2)}>
+              <div className={`${active==2 && '!text-[#F47521]' } text-white sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center`}>Rush Local</div>
             </div>
           </div>
-          <p className='sm:text-base md:text-xl font-normal text-white gap-2 text-center mx-1 md:mx-5 pt-2'>With CarterPorter's CarterX, your Baggage is efficiently picked up and securely transported from the first mile to the last. Book, Move and Track your Baggage at the tip of your fingers on your smart phone, tablet or PC and stay updated throughout the service. Your Baggage is waiting ahead of you making your travel light, stress free without the weight and chaos.</p>
+          {active==0&&<p className='sm:text-base md:text-xl font-normal text-white gap-2 text-center mx-1 md:mx-5 pt-2'>With CarterPorter's CarterX, your Baggage is efficiently picked up and securely transported from the first mile to the last. Book, Move and Track your Baggage at the tip of your fingers on your smart phone, tablet or PC and stay updated throughout the service. Your Baggage is waiting ahead of you making your travel light, stress free without the weight and chaos.</p>}          
+          {active==1&&<p className=' sm:text-base md:text-xl font-normal text-white gap-2 text-center mx-1 md:mx-5 pt-2'>Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti. Aliquam fringilla orci tincidunt, ullamcorper erat in, malesuada metus.Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti. </p>}          
+          {active==2&&<p className='sm:text-base md:text-xl font-normal text-white gap-2 text-center mx-1 md:mx-5 pt-2'>Suspendisse potenti. Aliquam fringilla orci tincidunt, ullamcorper erat in, malesuada metus.Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti. Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod amet est. Sed ut euismod quam. Suspendisse potenti. </p>}
           <button className='bg-[#F47521] px-5 py-1.5 md:px-10 md:py-2 lg:px-14 lg:py-3 rounded-full font-bold text-lg text-white md:mb-1 lg:mb-5' onClick={()=>navigate("/privacy")}> Call Us </button>
-          <div className='absolute -bottom-6 flex flex-row justify-center items-center bg-white rounded-full 
-          mt-2 px-2 border-2 border-white'>
-            <PlayCircleIcon fontSize='large' className='text-[#F47521]'/>
-              <div className='text-black p-0 md:py-2 lg:py-3 font- normal text-xl text-center '>See Video</div>
-            </div>
+            <div className='absolute -bottom-6 flex flex-row justify-center items-center bg-white rounded-full 
+            mt-2 px-2 border-2 border-white'>
+              <PlayCircleIcon fontSize='large' className='text-[#F47521]'/>
+                <div className='text-black p-0 md:py-2 lg:py-3 font- normal text-xl text-center '>See Video</div>
+              </div>
             
           </div>
         </div>
@@ -236,7 +240,7 @@ function Abouts() {
           <div className='mx-2 font-bold text-xl'>John Doe</div>
           <div className='flex flex-row justify-between mx-2 font-normal text-base'>
             <div className='whitespace-nowrap mb-1 '>Co-Founder & CEO</div>
-            <LinkedInIcon/>
+            <LinkedInIcon />
           </div>
           </div>
           <div className='bg-white flex flex-col w-auto gap-2 p-2 rounded-3xl'>

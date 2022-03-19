@@ -32,12 +32,14 @@ const Faq = () => {
           
           <div className="w-full h-full  ">
       <div className=" w-full ">
-                  <img className="relative h-fit md:h-[350px]" src={Slider} width="100%" alt="" />
-                  <div className='w-1/2 absolute top-[10%] md:top-[20%] text-white text-center '>
+                  <img className="relative h-[200px] md:h-[350px]" src={Slider} width="100%" alt="" />
+                  <div className='w-full absolute top-[120px] md:top-[20%]'>
+                  <div className='md:w-3/4 w-11/12  text-white text-center mx-auto '>
                       <div className='text-xl md:text-5xl mt-2 relative  z-20 '>Frequently Asked Questions</div>
-                        <div className='bg-[#F47521] border-0 mb-5 mx-auto bottom-2 w-8/12  p-1 '></div>
+                        <div className='bg-[#F47521] border-0 mb-5 mx-auto bottom-2 md:w-8/12 w-[200px]  p-1 '></div>
 
                       <div className='invisible md:visible'>Kindly check the FAQ below if you are not very familiar with the functioning of this website or the application</div>
+                  </div>
                   </div>
               </div>
       </div>

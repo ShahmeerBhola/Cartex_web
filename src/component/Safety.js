@@ -8,16 +8,19 @@ import screened from "../Images/Safety/screened.png"
 import shield from "../Images/Safety/shield.png"
 import time from "../Images/Safety/time.png"
 import Card from './UI/Card'
+import Work from '../Images/Airport/airport1.png'
+import Work1 from '../Images/Airport/airport2.png'
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 
 const Safety = () => {
-  return (<div className='w-full mx-auto bg-[#EEE] py-6'>
-      <div className='w-10/12 mx-auto'>
-      <div className='py-8 text-4xl'>Safety First</div>
-      <div>Ease fear of your Exposure, Your bags are protected</div>
+  return (<div className='w-full mx-auto bg-[#EEE] py-6 overflow-hidden'>
+      <div className='w-11/12 md:w-10/12 mx-auto'>
+      <div className='py-3 text-lg md:text-4xl font-bold'>Safety First</div>
+      <div className='text-base md:text-2xl'>Ease fear of your Exposure, Your bags are protected</div>
       </div>
       
-      <div className='flex flex-row w-10/12 mx-auto'>
+      <div className='flex flex-row w-11/12 md:w-10/12 mx-auto'>
           {/*  */}
       <div className='flex flex-col md:flex-row w-full justify-end items-center gap-3 '>
           <div className='p-1 md:p-0 lg:p-3'>
@@ -97,6 +100,23 @@ const Safety = () => {
               </Card>
           </div>
           </div>
+      </div>
+      {/* Work Secrion */}
+      <div className='w-11/12 md:w-10/12 mx-auto'>
+      <div className='flex flex-col gap-1 md:flex-row justify-between items-start md:items-end'>
+     <div>
+     <div className='py-3 text-xl md:text-4xl font-bold'>How it works?</div>
+      <div className='text-base md:text-2xl'>Select process category wise</div>
+     </div>
+      <div className=' hidden md:flex flex-row  items-center px-2 h-[40px] md:h-[50px] bg-[#1A7DC1] rounded-full 
+         '>
+            <PlayCircleIcon fontSize='large' className='text-white'/>
+              <div className='   p-0 font- normal text-sm md:text-xl text-center text-white '>See Video</div>
+            </div>
+      </div>
+      <img className='md:block hidden w-full py-2' src={Work}/>
+      <img className=' md:hidden w-full py-2 h-[800px]' src={Work1}/>
+
       </div>
 
 
