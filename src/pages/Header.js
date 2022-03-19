@@ -9,8 +9,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router-dom';
 import LoginModal from '../component/LoginModal';
 import ModalPopup from '../component/UI/ModalPopup';
+import QueryModal from '../component/QueryModal';
+
 function Header() {
   const [modal, setModal] = useState(false);
+  const [qmodal, setqModal] = useState(false);
     const navigate=useNavigate();
     const [toggler,setToggler]=useState(false);
   const smallScreen = useMediaQuery("(max-width:786px)");
@@ -30,7 +33,7 @@ function Header() {
                 <MailOutlineIcon style={{fontSize:"16px"}}/>
                 <p>customercare@carterporter.in</p>
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex flex-row justify-center items-center cursor-pointer' onClick={()=> setqModal(!qmodal)}>
                 <HelpOutlineIcon style={{fontSize:"16px"}}/>
                 <p>Support</p>
                 </div>
@@ -77,6 +80,9 @@ function Header() {
       </div>
       <ModalPopup modal={modal} setModal={setModal}>
       <LoginModal setModal={setModal}/>
+      </ModalPopup>
+      <ModalPopup modal={qmodal} setModal={setqModal}>
+      <QueryModal setModal={setqModal}/>
       </ModalPopup>
     </>
   )
