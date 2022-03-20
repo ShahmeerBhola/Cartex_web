@@ -32,7 +32,7 @@ function AirportTransfer() {
   return (<>
     <Home/>
     <div className="w-full pt-3 md:pt-0 bg-[#EEE]">
-    <div className="w-11/12 mx-auto bg-[#EEE]">
+    <div className="w-11/12 md:w-10/12 mx-auto bg-[#EEE]">
     <PackagesSection/>
     </div>
     </div>

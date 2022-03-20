@@ -41,6 +41,7 @@ function App() {
       <Header/>
       <Routes>
         <Route index element={<Abouts/>} />
+        <Route path='about' element={<Abouts/>} />
         <Route path="privacy" element={<PrivacyPolicy/>} />
         <Route path="terms" element={<Terms/>} />
         <Route path="profile" element={<Profile/>} />

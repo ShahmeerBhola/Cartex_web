@@ -75,7 +75,7 @@ function Header() {
        
         <div className='flex flex-row w-10/12 gap-3 justify-between text-xs font-normal mx-auto py-3'>
             <div className='flex flex-row gap-4 justify-between text-xs font-normal'>
-              <img className='h-[26px] w-[160px]' src={logo} onClick={()=>navigate('/')} />
+              <img className='h-[26px] cursor-pointer w-[160px]' src={logo} onClick={()=>navigate('/')} />
             </div>
             <div className='flex flex-row justify-center items-center text-base font-normal'>
               {
@@ -84,7 +84,7 @@ function Header() {
                 {
                   toggler && (<div className= ' p-2 bottom-0 z-50 absolute right-0 font-medium text-lg top-12 w-[150px] flex flex-col bg-white  gap-5'>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/airport');setToggler(!toggler)}}>Home</a>
-                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/trip');setToggler(!toggler)}}>MyTrip</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/about');setToggler(!toggler)}}>About Us</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/blog');setToggler(!toggler)}}>Blog</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/contactus');setToggler(!toggler)}}>Contact US</a>
                   </div>)
@@ -92,7 +92,7 @@ function Header() {
                 </>:<>
                 <div className= ' font-medium text-lg  flex flex-row justify-between md:gap-3 lg:gap-6'>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/airport')}>Home </a>
-                  <a className='hover:cursor-pointer' onClick={()=>navigate('/trip')}>MyTrip</a>
+                  <a className='hover:cursor-pointer' onClick={()=>navigate('/about')}>About Us</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/blog')}>Blog</a>
                   <a className='hover:cursor-pointer' onClick={()=>navigate('/contactus')}>Contact US</a>
                   </div>
