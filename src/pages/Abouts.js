@@ -205,13 +205,13 @@ function Abouts() {
           <div className='font-bold sm:text-2xl md:text-4xl text-white' >See How it Works</div>
           <div className='flex flex-row  sm:gap-1 md:gap-2 lg:gap-4 pt-2'>
             <div className={`${active==0 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(0)}>
-              <div className={`${active==0 && '!text-[#F47521]' } text-white  sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center`} >Air Transfer</div>
+              <div className={`${active==0 && '!text-[#F47521]' } text-white  sm:p-1 md:p-2 lg:p-4 font-bold sm:text-base cursor-pointer md:text-2xl text-center`} >Air Transfer</div>
             </div>
             {/* bg-[#1A7DC1]   */}
             <div className={`${active==1 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(1)}>
-              <div className={`${active==1 && '!text-[#F47521]' }  text-white  sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center`}>Rush Chargo</div>
+              <div className={`${active==1 && '!text-[#F47521]' }  text-white  sm:p-1 md:p-2 lg:p-4 font-bold sm:text-base cursor-pointer md:text-2xl text-center`}>Rush Chargo</div>
             </div><div className={`${active==2 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(2)}>
-              <div className={`${active==2 && '!text-[#F47521]' } text-white sm:p-1 md:p-2 lg:p-3 font-bold sm:text-base  md:text-xl text-center`}>Rush Local</div>
+              <div className={`${active==2 && '!text-[#F47521]' } text-white sm:p-1 md:p-2 lg:p-4 font-bold sm:text-base cursor-pointer md:text-2xl text-center`}>Rush Local</div>
             </div>
           </div>
           {active==0&&<p className='sm:text-base md:text-xl font-normal text-white gap-2 text-center mx-1 md:mx-5 pt-2'>With CarterPorter's CarterX, your Baggage is efficiently picked up and securely transported from the first mile to the last. Book, Move and Track your Baggage at the tip of your fingers on your smart phone, tablet or PC and stay updated throughout the service. Your Baggage is waiting ahead of you making your travel light, stress free without the weight and chaos.</p>}          

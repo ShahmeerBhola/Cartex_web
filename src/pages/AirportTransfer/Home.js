@@ -7,6 +7,11 @@ import Ola from "../../Images/Airport/Ola.png";
 import Parcel from "../../Images/Airport/parcel.png";
 import Transfer from "../../Images/Airport/transfer.png";
 import Interterminal from "../../Images/Airport/Interterminal.png";
+import Indigo from "../../Images/Airport/Indigo.png";
+import Vistara from "../../Images/Airport/Vistara.png";
+import Flyposter from "../../Images/Airport/Flyposter.png";
+import Spicejet from "../../Images/Airport/Spicejet.png";
+
 
 import Group from "../../Images/Airport/Group.png";
 import { useNavigate } from "react-router-dom";
@@ -23,6 +28,7 @@ import Footer from "../../component/Footer";
 
 function Home() {
   const [step,setStep]=React.useState(0);
+  const [toggle,setToggle]=React.useState(false);
   const matches = useMediaQuery('(max-width:768px)');
   const navigate=useNavigate();
 
@@ -47,6 +53,7 @@ function Home() {
                   <img src={Partner} />
                   <h3 className="font-bold text-base">Alliance Partners</h3>
                   <img src={Group} />
+                  
                 </div>{" "}
                 <div className={`border-2 rounded-lg flex flex-row gap-2 w-full p-1 items-center ${step==2 && '!border-[#F47521]'}`} onClick={()=>{setStep(2); navigate("localparcel")}}>
                   <img src={Parcel} />
@@ -89,10 +96,23 @@ function Home() {
                     Airport Baggage Assistance
                   </h3>
                 </div>
-                <div className={`border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==1 && '!border-[#F47521]'}`} onClick={()=>setStep(1)}>
+                <div className='relative border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center'  onClick={()=>setToggle(!toggle)}>
                   <img src={Partner} />
                   <h3 className="font-bold text-base">Alliance Partners</h3>
                   <img src={Group} />
+                 {
+                   toggle &&  <div className="absolute -top-1 -left-3 w-[225px] p-1 shadow-xl bg-white">
+                   <div className="flex flex-row gap-1"onClick={()=>setToggle(!toggle)} >
+                     <img src={Indigo} className="cursor-pointer"/>
+                     <img src={Vistara} className="cursor-pointer"/>
+                   </div>
+                   <div className="flex flex-row gap-1"onClick={()=>setToggle(!toggle)} >
+                     <img src={Flyposter} className="cursor-pointer"/>
+                     <img src={Spicejet} className="cursor-pointer"/>
+                   </div>
+                   
+                 </div>
+                 }
                 </div>{" "}
                 <div className={`border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==2 && '!border-[#F47521]'}`} onClick={()=>{setStep(2)}}>
                   <img src={Parcel} />
