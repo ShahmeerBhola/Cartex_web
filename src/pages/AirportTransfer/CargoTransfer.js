@@ -9,11 +9,15 @@ import { useNavigate } from "react-router-dom";
 function CargoTransfer() {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
+  const [active, setActive] = React.useState(false);
+
   return (
     <>
       <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2  ">
         <div className="flex flex-col gap-2 ">
-          <h3 className="font-bold text-lg md:text-xl w-3/5">Cargo Transfers</h3>
+          <h3 className="font-bold text-lg md:text-xl w-3/5">
+            Cargo Transfers
+          </h3>
           <ul className="list-disc px-5">
             <li className=" text-base"> Delivery anywhere in India</li>
             <li className=" text-base">
@@ -51,15 +55,17 @@ function CargoTransfer() {
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Name</div>
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
+            <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
+              Name
+            </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Name"
             ></input>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2 w-full lg:w-1/3 px-2 py-2">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2 w-full lg:w-1/3 px-2 py-2">
+            <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Mobile No. *
             </div>
 
@@ -72,15 +78,17 @@ function CargoTransfer() {
                 </label>
               </span>
               <input
-                className="font-bold text-lg lg:text-2xl  w-full outline-0 indent-2"
-                placeholder="Enter Mobile NO."
+                className="font-bold text-lg lg:text-lg  w-full outline-0 indent-2"
+                placeholder="Enter Mobile No"
               ></input>
             </div>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Email</div>
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
+            <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
+              Email
+            </div>
             <input
-              className="outline-0 w-full font-bold text-lg md:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Email"
             ></input>
           </div>
@@ -88,10 +96,12 @@ function CargoTransfer() {
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
           <div className="rounded-lg border-[#CCCCCC] flex flex-col justify-between py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
-              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Weight</div>
+              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                Weight
+              </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               10 kgs
             </h3>
           </div>
@@ -102,7 +112,7 @@ function CargoTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               Thursday, 28 October, 2021
             </h3>
@@ -127,7 +137,7 @@ function CargoTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Fill /provide pick-up address"
             ></input>
           </div>
@@ -139,7 +149,7 @@ function CargoTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Fill /provide drop address"
             ></input>
           </div>
@@ -147,7 +157,7 @@ function CargoTransfer() {
 
         {/* coupon section */}
         <div className="mt-3 flex flex-col lg:flex-row gap-3 ">
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col justify-between rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Discount Coupon
             </div>
@@ -156,7 +166,7 @@ function CargoTransfer() {
                 <input
                   type="text"
                   placeholder="Enter Coupon Code"
-                  className="outline-0 text-xl lg:text-2xl font-baseline"
+                  className="outline-0 text-xl lg:text-lg font-baseline"
                 />
                 <span className="text-xs">E.g. CXBPL100</span>
               </div>
@@ -169,24 +179,32 @@ function CargoTransfer() {
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Add on
             </div>
-            <div className="flex flex-row w-full gap-1 bg-[#F9F9F9] rounded-xl " >
-                      <img src={Packing}/>
-                      <div className="flex flex-col gap-2">
-                        <div className="flex flex-row justify-between items-center pr-2">
-                          <h4 className='text-base'>Packing</h4>
-                          <div className='flex flex-row items-center text-[#1A7DC1] font-bold '>
-                            <AddSharpIcon fontSize="small"/>
-                            <CurrencyRupeeIcon fontSize='small'/>
-                            <span className="text-base ">80</span>
-                          </div>
-                        </div>
-                        <p className='text-xs'>Mauris neque nisi, faucibus non elementum in, convallis et eros. Donec aliquet dignissim.</p> 
-                      </div>
-                    </div>
+            <div
+              className={`flex flex-row w-full gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
+                active && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
+              }`}
+              onClick={() => setActive(!active)}
+            >
+              <img src={Packing} />
+              <div className="flex flex-col gap-2">
+                <div className="flex flex-row justify-between items-center pr-2">
+                  <h4 className="text-base">Packing</h4>
+                  <div className="flex flex-row items-center text-[#1A7DC1] font-bold ">
+                    <AddSharpIcon fontSize="small" />
+                    <CurrencyRupeeIcon fontSize="small" />
+                    <span className="text-base ">80</span>
+                  </div>
+                </div>
+                <p className="text-xs">
+                  Mauris neque nisi, faucibus non elementum in, convallis et
+                  eros. Donec aliquet dignissim.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         {/* details */}
-          <div className="flex flex-col gap-3 py-4">
+        <div className="flex flex-col gap-3 py-4">
           <h2 className="text-xs lg:text-sm">
             Fragile Charges will be applied for all electronics and TVs in
             original packing only.
@@ -195,32 +213,46 @@ function CargoTransfer() {
             All items need to be fully packed. Cargo forms will have to be
             filled additionally.
           </h2>
-          </div>
+        </div>
         {/* agreement section */}
         <div className="mt-3 flex flex-row gap-2 ">
           <div className="rounded-lg bg-[#F9F9F9] py-2 px-2 w-full">
             <div className="flex flex-row justify-start items-start gap-1 pt-1">
               <ControlledCheckbox />
               <p className="pt-2 pr-2 text-xs lg:text-sm">
-                I agree and understand the Terms And Condition I certify that
-                there are no passport(s), personal documents of importance,
-                cash, illegal items/substance, immediate medicine, alcohol or
-                expensive jewelry and the carriers(s) i.e CarterX and its
-                associate are further released from any liability arising from
-                the contents of my property.
+                I agree and understand the{" "}
+                <span
+                  className="text-[#1A7DC1] font-bold cursor-pointer"
+                  onClick={() => navigate("/terms")}
+                >
+                  Terms And Condition
+                </span>{" "}
+                I certify that there are no passport(s), personal documents of
+                importance, cash, illegal items/substance, immediate medicine,
+                alcohol or expensive jewelry and the carriers(s) i.e CarterX and
+                its associate are further released from any liability arising
+                from the contents of my property.
               </p>
             </div>
           </div>
         </div>
         {/* Details */}
         <div className="my-3 flex flex-row gap-2 lg:gap-6">
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+          <h3
+            className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer"
+            onClick={() => navigate("/arrivalbook")}
+          >
             Departure Booking Information
           </h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+          <h3
+            className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer"
+            onClick={() => navigate("/cancellation")}
+          >
             Cancellation And Refund Policy
           </h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">Packing List</h3>
+          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+            Packing List
+          </h3>
           <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
             Cargo Security Declaration
           </h3>
@@ -231,11 +263,13 @@ function CargoTransfer() {
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Estimated Time
             </div>
-            <h2 className="font-bold text-lg lg:text-2xl">16 Nov 2021 Before 11:55 PM</h2>
+            <h2 className="font-bold text-lg lg:text-lg">
+              16 Nov 2021 Before 11:55 PM
+            </h2>
           </div>
           <div className="flex flex-row justify-between gap-2">
             <div className="flex flex-col  items-center">
-              <div className="flex flex-row gap-1 text-2xl lg:text-4xl font-bold items-center text-[#F47521]">
+              <div className="flex flex-row gap-1 text-lg lg:text-4xl font-bold items-center text-[#F47521]">
                 <CurrencyRupeeIcon fontSize="large" />
                 <p>838</p>
               </div>

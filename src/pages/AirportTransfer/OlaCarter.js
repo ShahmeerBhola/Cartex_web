@@ -62,10 +62,10 @@ function OlaCarter() {
           </button>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Name</div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Name"
             ></input>
           </div>
@@ -75,7 +75,7 @@ function OlaCarter() {
             </div>
 
             <div className="flex flex-row">
-              <span className="border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
+              <span className="flex flex-col justify-between md:py-2  border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
                   <select id="phonecode">
                     <option value="+1">+1</option>
@@ -83,26 +83,26 @@ function OlaCarter() {
                 </label>
               </span>
               <input
-                className="font-bold text-lg lg:text-2xl w-full outline-0 indent-2"
-                placeholder="Enter Mobile NO."
+                className="font-bold text-lg lg:text-lg w-full outline-0 indent-2"
+                placeholder="Enter Mobile No"
               ></input>
             </div>
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col justify-between md:py-2  rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Email</div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Email Address"
             ></input>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
+          <div className=" flex flex-col justify-between md:py-2  rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               CRN Number
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter CRN Number"
             ></input>
           </div>
@@ -113,7 +113,7 @@ function OlaCarter() {
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Bags</div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               Up to 2 bags
             </h3>
@@ -126,7 +126,7 @@ function OlaCarter() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               Thursday, 28 October, 2021
             </h3>
@@ -151,7 +151,7 @@ function OlaCarter() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Select Arrival Airport"
               defaultValue="KIAL Bangalore"
             ></input>
@@ -164,7 +164,7 @@ function OlaCarter() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Select Delivery Address"
             ></input>
           </div>
@@ -184,22 +184,34 @@ function OlaCarter() {
             <div className="flex flex-row justify-start items-start gap-1 pt-1">
               <ControlledCheckbox />
               <p className="pt-2 pr-2 text-xs lg:text-sm">
-                I agree and understand the Terms And Condition I certify that
-                there are no passport(s), personal documents of importance,
-                cash, illegal items/substance, immediate medicine, alcohol or
-                expensive jewelry and the carriers(s) i.e CarterX and its
-                associate are further released from any liability arising from
-                the contents of my property.
+                I agree and understand the{" "}
+                <span
+                  className="text-[#1A7DC1] font-bold cursor-pointer"
+                  onClick={() => navigate("/terms")}
+                >
+                  Terms And Condition
+                </span>{" "}
+                I certify that there are no passport(s), personal documents of
+                importance, cash, illegal items/substance, immediate medicine,
+                alcohol or expensive jewelry and the carriers(s) i.e CarterX and
+                its associate are further released from any liability arising
+                from the contents of my property.
               </p>
             </div>
           </div>
         </div>
         {/* Details */}
-        <div className="my-3 flex flex-row gap-6">
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+        <div className="my-3 flex flex-row gap-2 lg:gap-6">
+          <h3
+            className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer"
+            onClick={() => navigate("/arrivalbook")}
+          >
             Departure Booking Information
           </h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+          <h3
+            className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer"
+            onClick={() => navigate("/cancellation")}
+          >
             Cancellation And Refund Policy
           </h3>
         </div>
@@ -209,13 +221,13 @@ function OlaCarter() {
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Estimated Time
             </div>
-            <h2 className="font-bold text-lg lg:text-2xl">
+            <h2 className="font-bold text-lg lg:text-lg">
               30 Oct 2021 after 10:00 AM
             </h2>
           </div>
           <div className="flex flex-row justify-between lg:gap-2">
             <div className="flex flex-col  items-center">
-              <div className="flex flex-row gap-1 text-2xl lg:text-4xl font-bold items-center text-[#F47521]">
+              <div className="flex flex-row gap-1 text-lg lg:text-4xl font-bold items-center text-[#F47521]">
                 <CurrencyRupeeIcon fontSize="large" />
                 <p>838</p>
               </div>

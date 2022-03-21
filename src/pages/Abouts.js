@@ -28,7 +28,7 @@ import coverage3 from "../Images/About/coverage3.png";
 import coverage4 from "../Images/About/coverage4.png";
 import coverage5 from "../Images/About/coverage5.png";
 import coverage6 from "../Images/About/coverage6.png";
-import { Hidden } from '@mui/material';
+import { Button, Hidden } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {useNavigate} from 'react-router-dom';
 
@@ -220,8 +220,10 @@ function Abouts() {
           <button className='bg-[#F47521] px-5 py-1.5 md:px-10 md:py-2 lg:px-14 lg:py-3 rounded-full font-bold text-lg text-white md:mb-1 lg:mb-5' onClick={()=>navigate("/privacy")}> Call Us </button>
             <div className='absolute -bottom-6 flex flex-row justify-center items-center bg-white rounded-full 
             mt-2 px-2 border-2 border-white'>
+              <Button>
               <PlayCircleIcon fontSize='large' className='text-[#F47521]'/>
-                <div className='text-black p-0 md:py-2 lg:py-3 font- normal text-xl text-center '>See Video</div>
+                <div className='text-black p-0 font- normal text-xl text-center '>See Video</div>
+                </Button>
               </div>
             
           </div>

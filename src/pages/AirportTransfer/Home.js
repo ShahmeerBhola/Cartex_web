@@ -60,17 +60,19 @@ function Home() {
                   <img src={City} />
                   <h3 className="font-bold text-base">City Transfers</h3>
                 </div>{" "}
-                <div className={`border-2 rounded-lg flex flex-row gap-2 w-full p-1 items-center ${step==5 && '!border-[#F47521]'}`} onClick={()=>{setStep(5);navigate("interterminal")}}>
+                <div className={`relative border-2 rounded-lg flex flex-row gap-2 w-full p-1 items-center ${step==5 && '!border-[#F47521]'}`} onClick={()=>{setStep(5);navigate("interterminal")}}>
                   <img src={Interterminal} />
                   <h3 className="font-bold text-base">
                     Interterminal Transfers
                   </h3>
+                  <h3 className="absolute right-3 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] px-1">NEW!</h3>
                 </div>
-                <div className={`border-2 rounded-lg flex flex-row gap-2 w-full p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6);navigate("olacarter")}}>
+                <div className={`relative border-2 rounded-lg flex flex-row gap-2 w-full p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6);navigate("olacarter")}}>
                   <img src={Ola} />
                   <h3 className="font-bold text-base">
                     #olacarter
                   </h3>
+                  <h3 className="absolute right-3 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] px-1">NEW!</h3>
                 </div>
               </div> 
           </div>
@@ -104,17 +106,21 @@ function Home() {
                   <img src={City} />
                   <h3 className="font-bold text-base">City Transfers</h3>
                 </div>{" "}
-                <div className={`border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==5 && '!border-[#F47521]'}`} onClick={()=>{setStep(5)}}>
+                <div className={`relative border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==5 && '!border-[#F47521]'}`} onClick={()=>{setStep(5)}}>
                   <img src={Interterminal} />
                   <h3 className="font-bold text-base">
                     Interterminal Transfers
                   </h3>
+                  <h3 className="absolute right-0 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] px-1">NEW!</h3>
+
                 </div>
-                <div className={`border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6)}}>
+                <div className={`relative border-2 rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6)}}>
                   <img src={Ola} />
                   <h3 className="font-bold text-base">
                     #olacarter
                   </h3>
+                  <h3 className="absolute right-0 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] px-1">NEW!</h3>
+
                 </div>
               </div>
             </div>

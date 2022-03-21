@@ -15,6 +15,10 @@ function LocalAirport({ step, setStep }) {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
   const [types, setTypes] = React.useState(0);
+  const [active, setActive] = React.useState(false);
+  const [active1, setActive1] = React.useState(false);
+  const [active2, setActive2] = React.useState(false);
+  const [active3, setActive3] = React.useState(false);
   return (
     <>
       <div className=" flex flex-col w-full px-2 md:w-4/5 mt-4 md:mt-0 ">
@@ -68,16 +72,16 @@ function LocalAirport({ step, setStep }) {
           </button>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
             <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Name
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Name"
             ></input>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2 w-full lg:w-1/3 px-2 py-2">
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2 w-full lg:w-1/3 px-2 py-2">
             <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Mobile No. *
             </div>
@@ -91,17 +95,17 @@ function LocalAirport({ step, setStep }) {
                 </label>
               </span>
               <input
-                className="font-bold text-lg lg:text-2xl  w-full outline-0 indent-2"
-                placeholder="Enter Mobile NO."
+                className="font-bold text-lg lg:text-lg  w-full outline-0 indent-2"
+                placeholder="Enter Mobile No"
               ></input>
             </div>
           </div>
-          <div className="rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
+          <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
             <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Email
             </div>
             <input
-              className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] "
+              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Email"
             ></input>
           </div>
@@ -114,7 +118,7 @@ function LocalAirport({ step, setStep }) {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               Up to 2 bags
             </h3>
@@ -127,7 +131,7 @@ function LocalAirport({ step, setStep }) {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               Thursday, 28 October, 2021
             </h3>
@@ -158,7 +162,7 @@ function LocalAirport({ step, setStep }) {
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] ">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] ">
               {" "}
               Bangalore
             </h3>
@@ -176,7 +180,7 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] ">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] ">
               KIAL Bangalore
             </h3>
           </div>
@@ -193,7 +197,7 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               Fill /provide pick-up address
             </h3>
@@ -216,7 +220,7 @@ function LocalAirport({ step, setStep }) {
               </button>
             </div>
             {/* <h3
-                    className="outline-0 w-full font-bold text:lg md:text-2xl border-[#fff] text-black"
+                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
                   >KIAL Bangalore</h3> */}
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
@@ -226,7 +230,7 @@ function LocalAirport({ step, setStep }) {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-2xl border-[#fff] text-black">
+            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
               09:00 AM
             </h3>
@@ -238,12 +242,13 @@ function LocalAirport({ step, setStep }) {
               Add ons
             </div>
             <div className="flex flex-col lg:flex-row gap-2 pb-2">
-              <div className="flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl ">
+              <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active&& '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive(!active)}}>
                 <img src={Bags} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Express Service</h4>
-                    <div className="flex flex-row items-center text-[#F47521] font-bold ">
+                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active && '!text-[#1A7DC1]'}`}>
+                    {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -255,12 +260,13 @@ function LocalAirport({ step, setStep }) {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl ">
+              <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active1 && '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive1(!active1)}}>
                 <img src={Cab} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Cab Service</h4>
-                    <div className="flex flex-row items-center text-[#F47521] font-bold ">
+                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active1 && '!text-[#1A7DC1]'}`}>
+                    {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -274,12 +280,13 @@ function LocalAirport({ step, setStep }) {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-2 pb-2">
-              <div className="flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl ">
+            <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active2 && '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive2(!active2)}}>
                 <img src={Plane} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
-                    <h4 className="text-base">Lounge for Airport</h4>
-                    <div className="flex flex-row items-center text-[#F47521] font-bold ">
+                    <h4 className="text-base">Laounge for Airplane</h4>
+                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active2 && '!text-[#1A7DC1]'}`}>
+                    {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -291,12 +298,13 @@ function LocalAirport({ step, setStep }) {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl ">
+              <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active3 && '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive3(!active3)}}>
                 <img src={Luggage} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Insurance</h4>
-                    <div className="flex flex-row items-center text-[#F47521] font-bold ">
+                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active3 && '!text-[#1A7DC1]'}`}>
+                    {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -322,7 +330,7 @@ function LocalAirport({ step, setStep }) {
                 <input
                   type="text"
                   placeholder="Enter Coupon Code"
-                  className="outline-0 text-lg lg:text-2xl font-baseline"
+                  className="outline-0 text-lg lg:text-lg font-baseline"
                 />
                 <span className="text-xs">E.g. CXBPL100</span>
               </div>
@@ -331,7 +339,7 @@ function LocalAirport({ step, setStep }) {
               </button>
             </div>
             {/* <h3
-                    className="outline-0 w-full font-bold text:lg md:text-2xl border-[#fff] text-black"
+                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
                   >KIAL Bangalore</h3> */}
           </div>
         </div>
@@ -341,8 +349,8 @@ function LocalAirport({ step, setStep }) {
             <div className="flex flex-row justify-start items-start gap-1 pt-1">
               <ControlledCheckbox />
               <p className="pt-2 pr-2 text-xs lg:text-sm">
-                I am 18 years and above and agree and understand the Terms And
-                Condition and Privacy Policy. I certify that there are no
+                I am 18 years and above and agree and understand the <span className="text-[#1A7DC1] font-bold cursor-pointer" onClick={()=>navigate('/terms')}>Terms And
+                Condition</span> and <span className="text-[#1A7DC1] font-bold cursor-pointer" onClick={()=>navigate('/privacy')}>Privacy Policy</span>. I certify that there are no
                 passport(s), personal documents of importance, cash, illegal
                 items/substances, immediate medicine, alcohol or expensive
                 jewelry. I Agree and certify that CarterX and its associates do
@@ -351,16 +359,16 @@ function LocalAirport({ step, setStep }) {
               </p>
             </div>
             {/* <h3
-                    className="outline-0 w-full font-bold text:lg md:text-2xl border-[#fff] text-black"
+                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
                   >KIAL Bangalore</h3> */}
           </div>
         </div>
         {/* Details */}
         <div className="my-3 flex flex-row gap-6">
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer" onClick={()=>navigate('/arrivalbook')}>
             Departure Booking Information
           </h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1]">
+          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer" onClick={()=>navigate('/cancellation')}>
             Cancellation And Refund Policy
           </h3>
         </div>
@@ -370,13 +378,13 @@ function LocalAirport({ step, setStep }) {
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Estimated Time
             </div>
-            <h2 className="font-bold text-lg lg:text-2xl">
+            <h2 className="font-bold text-lg lg:text-lg">
               30 Oct 2021 after 10:00 AM
             </h2>
           </div>
           <div className="flex flex-row justify-between lg:gap-2">
             <div className="flex flex-col  items-center">
-              <div className="flex flex-row gap-1 text-2xl lg:text-4xl font-bold items-center text-[#F47521]">
+              <div className="flex flex-row gap-1 text-lg lg:text-4xl font-bold items-center text-[#F47521]">
                 <CurrencyRupeeIcon fontSize="large" />
                 <p>838</p>
               </div>

@@ -9,6 +9,8 @@ import shield from "../Images/Safety/shield.png"
 import time from "../Images/Safety/time.png"
 import Card from './UI/Card'
 import Work from '../Images/Airport/airport1.png'
+import Installer from '../Images/Airport/Installer.png'
+import Player from '../Images/Airport/Player.png'
 import Work1 from '../Images/Airport/airport2.png'
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
@@ -21,11 +23,11 @@ const Safety = () => {
       <div className='w-11/12 md:w-10/12 mx-auto'>
         <div className='flex flex-col lg:flex-row gap-2 '>
           <div className='bg-[#1A7DC1] justify-center items-center rounded-full text-[11px] md:text-base text-white p-2 flex gap-1 md:w-[400px] w-[290px] flex-row'>
-            <DownloadForOfflineIcon />
+          <img src={Installer} className='h-[30px]'/>
             <p>Download Airport Departure Security Declaration</p>
           </div>
-          <div className='bg-[#1A7DC1] justify-center items-center text-white text-[11px] md:text-base rounded-full p-2 flex gap-1 md:w-[400px] w-[290px] flex-row'>
-            <DownloadForOfflineIcon/>
+          <div className='bg-[#1A7DC1] justify-center items-center text-white text-[11px] md:text-base rounded-full p-2  flex gap-1 md:w-[400px] w-[290px] flex-row'>
+            <img src={Installer} className='h-[30px]'/>
             <p>Download Airport Departure Security Declaration</p>
           </div>
         </div>
@@ -121,9 +123,9 @@ const Safety = () => {
      <div className='py-3 text-xl md:text-4xl font-bold'>How it works?</div>
       <div className='text-base md:text-2xl'>Select process category wise</div>
      </div>
-      <div className=' hidden md:flex flex-row  items-center px-2 h-[40px] md:h-[50px] bg-[#1A7DC1] rounded-full 
+      <div className=' hidden md:flex flex-row gap-1 items-center px-2 h-[40px] md:h-[50px] bg-[#1A7DC1] rounded-full 
          '>
-            <PlayCircleIcon fontSize='large' className='text-white'/>
+            <img src={Player} className='h-[30px]'/>
               <div className='   p-0 font- normal text-sm md:text-xl text-center text-white '>See Video</div>
             </div>
       </div>
