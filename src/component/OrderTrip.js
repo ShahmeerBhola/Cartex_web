@@ -4,7 +4,8 @@ import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from "@mui/material";
 import ModalPopup from './UI/ModalPopup';
-import QueryModal from './QueryModal';
+import OrderModal from "./OrderModal";
+
 const OrderTrip = () => {
     const navigate=useNavigate();
     const smallScreen = useMediaQuery("(max-width:768px)");
@@ -74,7 +75,7 @@ const OrderTrip = () => {
           </div>
       </div>
       <ModalPopup modal={modal} setModal={setModal}>
-      <QueryModal setModal={setModal}/>
+      <OrderModal setModal={setModal}/>
       </ModalPopup>
       </>
   )
