@@ -70,10 +70,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
-              {" "}
-              Up to 2 bags
-            </h3>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+                    <option value="+1">Up to 2 Bags</option>
+                    <option value="+1">Up to 4 Bags</option>
+                  </select> 
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
         </div>
@@ -91,11 +91,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Enter Date"
-              defaultValue="Thursday, 28 October, 2021"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+                    <option value="+1">Thursday, 28 October, 2021</option>
+                    <option value="+1">Thursday, 29 October, 2021</option>
+                  </select>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -104,10 +103,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Select Arrival Time"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">09:00 AM</option>
+              <option value="+1">10:00 AM</option>
+            </select>
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
@@ -118,10 +117,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Select Arrival City"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -130,11 +129,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Select Arrival Airport"
-              defaultValue="KIAL Bangalore (Terminal 1)"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
         </div>
         <div className="text-xs lg:text-sm font-bold my-4">
@@ -151,11 +149,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Enter Date"
-              defaultValue="Thursday, 28 October, 2021"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+                    <option value="+1">Thursday, 28 October, 2021</option>
+                    <option value="+1">Thursday, 29 October, 2021</option>
+                  </select>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -164,10 +161,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Select Departure Time"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">09:00 AM</option>
+              <option value="+1">10:00 AM</option>
+            </select>
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
@@ -178,10 +175,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Select Departure City"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -190,11 +187,10 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <input
-              className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
-              placeholder="Select Departure Airport"
-              defaultValue="KIAL Bangalore (Terminal 1)"
-            ></input>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
         </div>
 

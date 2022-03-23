@@ -111,31 +111,32 @@ function LocalAirport({ step, setStep }) {
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2" >
             <div className="flex flex-row justify-between">
               <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
                 Bags
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
               {" "}
-              Up to 2 bags
-            </h3>
+              <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+                    <option value="+1">Up to 2 Bags</option>
+                    <option value="+1">Up to 4 Bags</option>
+                  </select>
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
           <div className="rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row items-center justify-between">
               <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
                 Date & Time Slot For Pickup
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
-              {" "}
-              Thursday, 28 October, 2021
-            </h3>
-            <div className="flex flex-row gap-2">
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">Thursday, 28 October, 2021</option>
+              <option value="+1">Thursday, 29 October, 2021</option>
+            </select>
+            <div className="flex flex-row gap-2 items-center">
               <h2 className="text-xs  text-[#1A7DC1]  ">Select Time Slot</h2>
               <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
             </div>
@@ -162,10 +163,10 @@ function LocalAirport({ step, setStep }) {
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] ">
-              {" "}
-              Bangalore
-            </h3>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
             <div className="flex flex-row justify-between">
@@ -180,9 +181,10 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] ">
-              KIAL Bangalore
-            </h3>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">KIAL Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -197,10 +199,11 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
-              {" "}
-              Fill /provide pick-up address
-            </h3>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+            <option disabled selected value> Fill /provide pick-up address</option>
+              <option value="+1">KIAL Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
@@ -230,10 +233,10 @@ function LocalAirport({ step, setStep }) {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <h3 className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black">
-              {" "}
-              09:00 AM
-            </h3>
+            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <option value="+1">09:00 AM</option>
+              <option value="+1">10:00 AM</option>
+            </select>
           </div>
         </div>
         <div className="mt-3 flex flex-col gap-2 ">

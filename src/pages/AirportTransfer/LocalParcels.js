@@ -75,9 +75,10 @@ function LocalParcels() {
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  <h3 className="outline-0 w-full font-bold text-lg md:text-lg border-[#fff] text-black">
-                     10 kgs
-                  </h3>
+                  <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+                    <option value="+1">Up to 2 Bags</option>
+                    <option value="+1">Up to 4 Bags</option>
+                  </select> 
                 </div>
                 <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
                   <div className="flex flex-row justify-between">
@@ -86,10 +87,10 @@ function LocalParcels() {
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  <h3 className="outline-0 w-full font-bold text-lg md:text-lg border-[#fff] text-black">
-                    {" "}
-                    Thursday, 28 October, 2021
-                  </h3>
+                  <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+                    <option value="+1">Thursday, 28 October, 2021</option>
+                    <option value="+1">Thursday, 29 October, 2021</option>
+                  </select>
                   <div className="flex flex-row gap-2">
                     <h2 className="text-xs  text-[#1A7DC1]  ">
                       Select Time Slot
@@ -112,10 +113,11 @@ function LocalParcels() {
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  <input
-                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] "
-                    placeholder="Fill /provide pick-up address"
-                  ></input>
+                  <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+            <option disabled selected value> Fill /provide pick-up address</option>
+              <option value="+1">KIAL Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
                 </div>
                 <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
                   <div className="flex flex-row justify-between">
@@ -124,10 +126,11 @@ function LocalParcels() {
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  <input
-                    className="outline-0 w-full font-bold text-lg md:text-lg border-[#fff] "
-                    placeholder="Fill /provide drop address"
-                  ></input>
+                  <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+            <option disabled selected value> Fill /provide drop address</option>
+              <option value="+1">KIAL Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select>
                 </div>
               </div>
 

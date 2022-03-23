@@ -534,24 +534,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 40px;
 }
 
-.top-1 {
-  top: 0.25rem;
-}
-
 .right-3 {
   right: 0.75rem;
 }
 
-.top-2 {
-  top: 0.5rem;
-}
-
-.-left-3 {
-  left: -0.75rem;
+.top-1 {
+  top: 0.25rem;
 }
 
 .-top-1 {
   top: -0.25rem;
+}
+
+.-left-3 {
+  left: -0.75rem;
 }
 
 .z-20 {
@@ -734,6 +730,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 150px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[230px\] {
   height: 230px;
 }
@@ -814,22 +814,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[650px\] {
   height: 650px;
-}
-
-.h-\[16px\] {
-  height: 16px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[px\] {
-  height: px;
-}
-
-.h-\[30px\] {
-  height: 30px;
 }
 
 .min-h-\[348px\] {
