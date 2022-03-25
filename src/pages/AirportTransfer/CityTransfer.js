@@ -68,7 +68,7 @@ function CityTransfer() {
             <div className="flex flex-row">
               <span className="border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
-                  <select id="phonecode">
+                  <select className="bg-none" style={{background:"none",backgroundColor:"none"}} id="phonecode">
                     <option value="+1">+1</option>
                   </select>
                 </label>
@@ -97,7 +97,7 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
                     <option value="+1">Up to 2 Bags</option>
                     <option value="+1">Up to 4 Bags</option>
                   </select> 
@@ -110,7 +110,7 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
                     <option value="+1">Thursday, 28 October, 2021</option>
                     <option value="+1">Thursday, 29 October, 2021</option>
                   </select>
@@ -135,7 +135,7 @@ function CityTransfer() {
                 </div>
                 <KeyboardArrowDownIcon className="text-[#F47521]" />
               </div>
-              <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide pick-up address</option>
               <option value="+1">KIAL Bangalore</option>
               <option value="+1">New Dehli</option>
@@ -148,7 +148,7 @@ function CityTransfer() {
                 </div>
                 <KeyboardArrowDownIcon className="text-[#F47521]" />
               </div>
-              <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide drop address</option>
               <option value="+1">KIAL Bangalore</option>
               <option value="+1">New Dehli</option>
@@ -170,7 +170,7 @@ function CityTransfer() {
                 )}
                 <KeyboardArrowDownIcon className="text-[#F47521]" />
               </div>
-              <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
               <option value="+1">Bangalore</option>
               <option value="+1">New Dehli</option>
             </select>
@@ -188,7 +188,7 @@ function CityTransfer() {
                 )}
                 <KeyboardArrowDownIcon className="text-[#F47521]" />
               </div>
-              <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+              <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide drop address</option>
               <option value="+1">KIAL Bangalore</option>
               <option value="+1">New Dehli</option>
@@ -209,7 +209,7 @@ function CityTransfer() {
                 }
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none"}} >
+            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide drop address</option>
               <option value="+1">KIAL Bangalore</option>
               <option value="+1">New Dehli</option>

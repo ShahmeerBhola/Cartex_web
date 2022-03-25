@@ -26,7 +26,7 @@ const LoginModal = ({setModal,setLogin,login}) => {
               <div className='rounded-lg border-[#CCCCCC]  border-2 w-[250px] md:w-[352px] px-2 py-2'>
                           <div className='text-[15px] text-[#F47521] font-bold'>Mobile No. *</div>
                           <div className='flex flex-row'>
-          <span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select  id="phonecode">
+          <span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select style={{background:"none",backgroundColor:"none"}}  id="phonecode">
                 <option value="+1">+1</option>
               
           </select></label></span>

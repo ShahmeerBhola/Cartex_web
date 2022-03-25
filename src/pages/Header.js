@@ -87,6 +87,19 @@ function Header() {
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/about');setToggler(!toggler)}}>About Us</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/blog');setToggler(!toggler)}}>Blog</a>
                   <a className='hover:cursor-pointer' onClick={()=>{navigate('/contactus');setToggler(!toggler)}}>Contact US</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/trip');setToggler(!toggler)}}>My Trip</a>
+                  <a className='hover:cursor-pointer'  onClick={()=> {setqModal(!qmodal);setToggler(!toggler)}}>Support</a>
+                  {
+                    login && <>
+                  <a className='hover:cursor-pointer' onClick={()=>{navigate('/profile');setToggler(!toggler)}}>Profile</a>
+                  <a className='hover:cursor-pointer' onClick={()=>{setLogin(!login);setToggler(!toggler)}}>Logout</a>
+                    </>
+                  }  
+                  {
+                    !login && <>
+                  <a className='hover:cursor-pointer' onClick={()=>{setModal(!modal);setToggler(!toggler)}}>Login</a>
+                    </>
+                  } 
                   </div>)
                 }
                 </>:<>
