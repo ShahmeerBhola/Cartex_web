@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Slider from '../Images/Main/Slider.png';
+import Slider from "../Images/Main/slider1.png";
 import Business from "../Images/About/business.png"
 import Baddges from "../Images/About/baddges.png"
 import Families from "../Images/About/families.png"
@@ -42,7 +42,15 @@ function Abouts() {
     <div className='w-full overflow-hidden'>
      
       <div className='w-full '>
-        <img className='h-[300px]'  src={Slider} width="100%" alt=""/>
+      <img className="relative h-[200px] md:h-[350px]" src={Slider} width="100%" alt="" />
+       <div className="absolute top-[90px] md:top-[150px] w-full">
+       <div className='lg:w-[35%] md:w-[60%] text-center w-11/12  text-white md:text-left md:ml-[100px]  lg:ml-[200px]'>
+                      <div className='text-2xl md:text-7xl mt-2 relative font-bold  z-20 '>CarterX </div>
+                        <div className='bg-[#F47521] border-0 mb-5 bottom-2 md:w-[265px] w-[90px] mx-auto md:mx-0 text-center  p-1 '></div>
+
+                      <div className='text-lg md:text-5xl font-bold'>Your Personalized Baggage Porter</div>
+                  </div>
+       </div>
       </div>
       <div className='bg-[#EEEEEE] w-full '>
         {/* section1 */}
