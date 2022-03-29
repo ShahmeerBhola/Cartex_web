@@ -43,10 +43,10 @@ function Abouts() {
      
       <div className='w-full '>
       <img className="relative h-[200px] md:h-[350px]" src={Slider} width="100%" alt="" />
-       <div className="absolute top-[90px] md:top-[150px] w-full">
-       <div className='lg:w-[35%] md:w-[60%] text-center w-11/12  text-white md:text-left md:ml-[100px]  lg:ml-[200px]'>
-                      <div className='text-2xl md:text-7xl mt-2 relative font-bold  z-20 '>CarterX </div>
-                        <div className='bg-[#F47521] border-0 mb-5 bottom-2 md:w-[265px] w-[90px] mx-auto md:mx-0 text-center  p-1 '></div>
+       <div className="absolute top-[130px] md:top-[210px] w-full">
+       <div className='lg:w-[35%] md:w-[60%] text-center w-full  text-white md:text-left md:ml-[100px]  lg:ml-[200px]'>
+                      <div className=' text-2xl md:text-7xl mt-2 inset-x-0 md:inset-x-none md:ml-[100px]  lg:ml-[200px] absolute md:-top-[63px] -top-[30px] font-bold  z-20 '>CarterX </div>
+                        <div className=' bg-[#F47521] border-0 mb-2 md:mb-5 bottom-2 md:w-[265px] w-[90px] mx-auto md:mx-0 text-center p-0.5 md:p-1 '></div>
 
                       <div className='text-lg md:text-5xl font-bold'>Your Personalized Baggage Porter</div>
                   </div>

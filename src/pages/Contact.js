@@ -11,11 +11,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 function Contact() {
   const smallScreen = useMediaQuery("(max-width:850px)");
   return (
-    <div className="w-full overflow-hidden">
-      <div className="relative h-screen w-full ">
+    <div className="w-full overflow-hidden bg-[#EEE]">
+      <div className="relative h-[650px] md:h-[600px] w-full ">
         <img className=" h-full " src={slider} width="100%" alt="" />
       </div>
-      <div className="absolute top-[150px] md:top-[120px] w-full ">
+      <div className="absolute top-[80px] md:top-[100px] w-full ">
         {smallScreen ? (
           <>
             <div className="w-10/12  flex gap-7 flex-row mx-auto">
@@ -24,7 +24,7 @@ function Contact() {
                   <div className="text-2xl md:text-5xl mt-2 relative  z-20 ">
                     Contact Us
                   </div>
-                  <div className="bg-[#F47521] border-0 mb-5 mx-auto bottom-2 md:w-8/12 w-[200px]  p-1 "></div>
+                  <div className="bg-[#F47521] border-0 mb-2 md:mb-5 mx-auto bottom-2 w-[120px] md:w-[250px] lg:w-[250px]   p-1 "></div>
 
                   <div className="visible">
                     Kindly check the FAQ below if you are not very familiar with
@@ -179,7 +179,7 @@ function Contact() {
           </>
         )}
       </div>
-      <div className=" w-11/12 md:w-10/12 mx-auto">
+      <div className=" w-11/12 md:w-10/12 mx-auto ">
         {smallScreen ? (
           <>
             <div className="w-full my-2">
@@ -220,7 +220,7 @@ function Contact() {
           </>
         ) : (
           <>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center ">
               <div className="flex flex-row gap-2 items-center">
                 <h3 className="text-[36px] font-bold">Position at Airport</h3>
                 <InfoIcon />

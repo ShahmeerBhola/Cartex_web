@@ -17,12 +17,12 @@ function Blog() {
     <div className="w-full h-full bg-[#EEEEEE] ">
       <div className=" w-full ">
         <img className="relative h-[200px] md:h-[350px]" src={Slider} width="100%" alt="" />
-       <div className="absolute top-[90px] md:top-[150px] w-full">
-       <div className='md:w-[60%]  w-11/12  text-white text-center  mx-auto '>
-                      <div className='text-2xl md:text-5xl mt-2 relative font-bold  z-20 '>Welcome to Our Blog </div>
-                        <div className='bg-[#F47521] border-0 mb-5 mx-auto bottom-2 md:w-8/12 w-[200px]  p-1 '></div>
+       <div className="absolute top-[110px] md:top-[200px] w-full">
+       <div className='md:w-[60%] lg:w-[45%]  w-11/12  text-white text-center inset-x-0 mx-auto  '>
+                      <div className='absolute text-2xl md:text-5xl mt-2 inset-x-0 -top-[27px]  md:-top-[45px] font-bold  z-20 '>Welcome to Our Blog </div>
+                        <div className='bg-[#F47521] border-0 mb-5 mx-auto bottom-2 md:w-[450px] w-[220px] text-center p-1 '></div>
 
-                      <div className='text-lg md:text-2xl font-bold'>Stay updated with the latest news, stories and insights shared by the CarterX Team.</div>
+                      <div className='text-lg md:text-3xl font-bold'>Stay updated with the latest news, stories and insights shared by the CarterX Team.</div>
                   </div>
        </div>
         {

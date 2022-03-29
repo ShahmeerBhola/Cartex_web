@@ -22,7 +22,7 @@ const QueryModal = ({setModal}) => {
             <div className='text-[15px] text-[#F47521] font-bold'>Feedback (optional)</div>
           <textarea className='text:lg md:text-2xl border-[#fff] text-[#707070] outline-0 w-full h-[150px] md:h-[190px]' placeholder='Write something' ></textarea>
         </div> 
-        <div className='bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer'>Submit Query</div>
+        <div className='bg-[#F47521] rounded-3xl text-center text-white w-full md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer'>Submit Query</div>
         </div>
       </div>
       )
