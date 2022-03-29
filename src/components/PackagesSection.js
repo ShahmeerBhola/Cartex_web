@@ -64,7 +64,7 @@ function PackagesSection() {
         transfer:"Available"
       }];
   return (
-    <div className=" w-full flex flex-row gap-4">
+    <div className=" w-full  flex flex-row gap-4">
        <Slider>
 
        

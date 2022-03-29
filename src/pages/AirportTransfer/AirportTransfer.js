@@ -31,8 +31,8 @@ function AirportTransfer() {
   console.log("steps",step);
   return (<>
     <Home/>
-    <div className="w-full pt-3 md:pt-0 bg-[#EEE] overflow-hidden ">
-    <div className="w-11/12 md:w-10/12 mx-auto bg-[#EEE]">
+    <div className="w-full pt-3 bg-[#EEE] md:pt-0 overflow-hidden ">
+    <div className="w-11/12 md:w-10/12 mx-auto">
     <PackagesSection/>
     </div>
     </div>

@@ -18,7 +18,7 @@ function SliderCard(props) {
   return (
 
     <>
-          <div className=" pb-2 w-[350px] bg-white shadow-2xl rounded-2xl">
+          <div className=" pb-2 w-[350px] bg-white rounded-2xl">
         <div className='flex flex-col gap-1.5'>
             <img src={image} className=" relative h-[200px]" />
             <img src={tag} className="absolute pl-3 pt-2" />

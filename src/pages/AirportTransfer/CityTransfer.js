@@ -323,13 +323,13 @@ function CityTransfer() {
               16 Oct 2021 Before 11:55 PM
             </h2>
           </div>
-          <div className="flex flex-row justify-between gap-2">
+          <div className="flex flex-row justify-between  lg:gap-20">
             <div className="flex flex-col  items-center">
-              <div className="flex flex-row gap-1 text-lg lg:text-4xl font-bold items-center text-[#F47521]">
+              <div className="flex flex-row  text-lg lg:text-4xl font-bold items-center text-[#F47521]">
                 <CurrencyRupeeIcon fontSize="large" />
                 <p>838</p>
               </div>
-              <span className="text-xs">Inclusive of GST</span>
+              <span className="text-xs lg:pl-1">Inclusive of GST</span>
             </div>
             <button className="px-10 items-center text-sm lg:text-base text-white font-bold rounded-full bg-[#F47521]">
               Proceed
