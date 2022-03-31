@@ -567,6 +567,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -0.75rem;
 }
 
+.right-1 {
+  right: 0.25rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -699,6 +703,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -827,6 +839,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[348px\] {
   height: 348px;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .min-h-\[348px\] {
@@ -981,6 +997,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[1px\] {
   width: 1px;
+}
+
+.w-\[380px\] {
+  width: 380px;
+}
+
+.w-\[240px\] {
+  width: 240px;
 }
 
 .min-w-\[290px\] {
@@ -1517,6 +1541,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1607,6 +1635,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .font-bold {

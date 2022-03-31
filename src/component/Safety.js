@@ -30,7 +30,7 @@ const Safety = () => {
             <p>Download Airport Departure Security Declaration</p>
           </div>
         </div>
-        <div className="py-3 text-lg md:text-4xl font-bold">Safety First</div>
+        <div className="py-3 text-lg md:text-4xl font-bold mt-6">Safety First</div>
         <div className="text-base md:text-2xl">
           Ease fear of your Exposure, Your bags are protected
         </div>
@@ -82,7 +82,8 @@ const Safety = () => {
             </Card>
           </div>
           <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
+            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]"> 
+            {/* 185 */}
               <div className="flex flex-col justify-center items-center pt-7">
                 <img
                   className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
@@ -178,27 +179,28 @@ const Safety = () => {
             </div>
           </div>
         </div>
-        <Slider autoPlay={false}>
-          <div className="py-4 flex flex-row  gap-2 whitespace-nowrap">
-            <div className="py-2 px-3 text-white text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
+        <Slider autoPlay={true}> 
+        {/* false */}
+          <div className="py-4 flex flex-row  gap-4 whitespace-nowrap">
+            <div className="py-3 px-3 text-white shadow-lg text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
               Airport Transfer - Departure
             </div>
-            <div className="py-2 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Airport Transfer - Arrival
             </div>
-            <div className="py-2 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Cargo Transfer
             </div>
-            <div className="py-2 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Vistara Porter - Departure
             </div>
-            <div className="py-2 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Vistara Porter - Arrival
             </div>
-            <div className="py-2 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Air Asia FlyPoster
             </div>
-            <div className="py-2 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               City Transfer
             </div>
           </div>

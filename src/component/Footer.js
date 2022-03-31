@@ -14,7 +14,7 @@ import { IconButton } from '@mui/material'
 function Footer() {
     const navigate=useNavigate();
   return (
-      <div className='bg-white py-5 w-full overflow-hidden'>
+      <div className='bg-white py-5 w-full overflow-hidden shadow-xl'>
           <img className='mx-auto justify-center w-[280px] md:w-[302px] h-[48px]' src={Cartex} alt="Cartex logo"></img>
           <br/>
           <div className='flex flex-col justify-center md:flex-row md:justify-evenly w-full px-4 md:px-0 md:w-11/12  lg:w-10/12 mx-auto pb-4'>

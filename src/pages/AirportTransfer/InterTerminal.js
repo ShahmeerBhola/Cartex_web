@@ -77,13 +77,13 @@ function CityTransfer() {
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-start gap-2  my-2">
+        <div className="flex flex-row items-center justify-start gap-4  my-2">
           <InfoOutlinedIcon className="text-[#FF0000]" />
           <h3 className="text-xs">
             Adding bags / weight at the time of pick is allowed.
           </h3>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -109,7 +109,7 @@ function CityTransfer() {
             </select>
           </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -117,11 +117,14 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
+              
             <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
               <option value="+1">Bangalore</option>
               <option value="+1">New Dehli</option>
             </select>
+            
           </div>
+          
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -135,13 +138,15 @@ function CityTransfer() {
             </select>
           </div>
         </div>
+       
         <div className="text-xs lg:text-sm font-bold my-4">
           Departure and Arrival can be 30 days apart. Additional Fragile charges
           will be applied for all electronic items including TVs. No packing
           provided. Bags will be stored in as given condition.
         </div>
+       
         {/* Departure */}
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-sx lg:text-[15px] text-[#F47521] font-bold">
@@ -167,7 +172,7 @@ function CityTransfer() {
             </select>
           </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-sx lg:text-[15px] text-[#F47521] font-bold">
@@ -193,25 +198,36 @@ function CityTransfer() {
             </select>
           </div>
         </div>
+        <div className="font-bold text-xs lg:text-sm py-3">
+          <p>
+          Arrival time and Departure should be at least 6 Hours apart else refund will be automated.
+          </p>
+          <p>
+All electronics items including TVs are accepted only in original packing.
+</p>
+        <p>
+All bags to be handed over in fully locked condition. All zippers are to be locked before handover of bags.
+          </p>
+        </div>
 
         {/* coupon section */}
         <div className="mt-3 flex flex-row gap-3 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full">
-            <div className="text-[15px] text-[#F47521] font-bold">Add on</div>
-            <div className={`flex flex-row w-full lg:w-1/2 justify-around lg:gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
+            <div className="text-[15px] text-[#F47521] font-bold">Add Ons</div>
+            <div className={`flex flex-row w-8/12 lg:w-1/2 justify-around lg:gap-1 bg-[#F9F9F9] rounded-xl px-1 ml-2 my-4 py-1 cursor-pointer ${
                 active && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
               }`} onClick={() => setActive(!active)}>
-              <img src={Packing} />
+              <img className="" src={Packing} />
               <div className="flex flex-col gap-2">
                 <div className="flex flex-row justify-between items-center pr-2">
-                  <h4 className="text-base">Insurance</h4>
-                  <div className="flex flex-row items-center text-[#1A7DC1] font-bold ">
-                    <AddSharpIcon fontSize="small" />
-                    <CurrencyRupeeIcon fontSize="small" />
-                    <span className="text-base ">80</span>
+                  <h4 className="text-base indent-2"> Insurance</h4>
+                  <div className="flex flex-row items-center text-[#1A7DC1] font-bold  ">
+                    <AddSharpIcon className="" fontSize="xs" />
+                    <CurrencyRupeeIcon fontSize="xs" />
+                    <span className="text-base text-[13px]">80</span>
                   </div>
                 </div>
-                <p className="text-xs">
+                <p className="text-xs pl-2">
                   Mauris neque nisi, faucibus non elementum in, convallis et
                   eros. Donec aliquet dignissim.
                 </p>

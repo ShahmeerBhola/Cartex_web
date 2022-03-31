@@ -8,12 +8,21 @@ function Slider({children,autoPlay}) {
     // console.log("matches=>", smallScreen)
 
     const flickityOptions = {
+      // // freeScroll: true,
+      // cellAlign: 'left',
+      // pageDots: false,
+      // prevNextButtons: false,
+      // autoPlay: autoPlay,
+      // // wrapAround: true,
+      // contain: true,
+      // draggable: true
         freeScroll: true,
         cellAlign: 'left',
         pageDots: false,
         prevNextButtons: false,
         autoPlay: autoPlay,
-        wrapAround: true,
+        //wrapAround: true,
+        contain: false,
         draggable: true
 
 
