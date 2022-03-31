@@ -11,7 +11,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 function Contact() {
   const smallScreen = useMediaQuery("(max-width:850px)");
   return (
-    <div className="w-full overflow-hidden bg-[#EEE]">
+    <div className="w-full overflow-hidden bg-[#EEE] pb-9">
       <div className="relative h-[650px] md:h-[600px] w-full ">
         <img className=" h-full " src={slider} width="100%" alt="" />
       </div>
@@ -80,7 +80,7 @@ function Contact() {
           </>
         ) : (
           <>
-            <div className="w-10/12  flex gap-7 lg:justify-between flex-row mx-auto">
+            <div className="w-11/12  flex gap-7 lg:justify-between flex-row mx-auto">
               <div className="w-3/5 mx-auto flex flex-col gap-3">
             <div className="md:w-2/3 w-11/12  text-white text-center md:!mr-auto ">
                   <div className="text-2xl md:text-5xl mt-2 relative  z-20 ">
@@ -234,28 +234,28 @@ function Contact() {
             <div className="w-full">
               <PackagesSection />
             </div>
-            <div className="w-full  mt-5 mb-2">
-              <h2 className="text-[36px] font-bold">City Transfer</h2>
-              <div className="flex flex-row gap-2 flex-wrap justify-center">
-                <div className="bg-white flex flex-col px-2 py-3 w-[260px] rounded-3xl shadow-xl">
+            <div className="w-full mt-5 mb-2">
+              <h2 className="text-[36px] pt-4 pb-5 font-bold">City Transfer</h2>
+              <div className="flex flex-row gap-3 flex-wrap justify-start">
+                <div className="bg-white flex flex-col px-2 py-3 w-[240px] rounded-3xl shadow-xl">
                   <img src={city1} />
                   <h4 className="font-bold text-2xl text-center pt-2">
                     Banglore
                   </h4>
                 </div>{" "}
-                <div className="bg-white flex flex-col px-2 py-3 w-[260px] rounded-3xl shadow-xl">
+                <div className="bg-white flex flex-col px-2 py-3 w-[240px] rounded-3xl shadow-xl">
                   <img src={city2} />
                   <h4 className="font-bold text-2xl text-center pt-2">
                     Hyderabad
                   </h4>
                 </div>{" "}
-                <div className="bg-white flex flex-col px-2 py-3 w-[260px] rounded-3xl shadow-xl">
+                <div className="bg-white flex flex-col px-2 py-3 w-[240px] rounded-3xl shadow-xl">
                   <img src={city3} />
                   <h4 className="font-bold text-2xl text-center pt-2">
                     Mumbai
                   </h4>
                 </div>{" "}
-                <div className="bg-white flex flex-col px-2 py-3 w-[260px] rounded-3xl shadow-xl">
+                <div className="bg-white flex flex-col px-2 py-3 w-[240px] rounded-3xl shadow-xl">
                   <img src={city4} />
                   <h4 className="font-bold text-2xl text-center pt-2">
                     New Dehli

@@ -7,7 +7,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  // width: widow ? widow : 400,
   height: 'fit-content',
   maxWidth: '90%',
   bgcolor: 'background.paper',
@@ -16,10 +16,9 @@ const style = {
   outline: "none"
 };
 
-export default function ModalPopup({modal, setModal, children}) {
+export default function ModalPopup({modal, setModal, children,  widow}) {
 //   const [open, setOpen] = React.useState(false);
   const handleClose = () => setModal(false);
-
   return (
       <Modal
         open={modal}
@@ -27,9 +26,9 @@ export default function ModalPopup({modal, setModal, children}) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-          <Box sx={style} className="shadow-lg">
+          <Box sx={style} className="shadow-lg w-[380px]">
             {children}
-          </Box>
+          </Box>  
       </Modal>
   );
 }

@@ -52,7 +52,7 @@ const LoginModal = ({setModal,setLogin,login}) => {
       </div>
       
 </div>
-<ModalPopup modal={modal1} setModal={setModal1}>
+<ModalPopup modal={modal1} setModal={setModal1}  wido = {100} widow={true}>
 <SignupModal setModal={setModal1}/>
       </ModalPopup>
     </div>

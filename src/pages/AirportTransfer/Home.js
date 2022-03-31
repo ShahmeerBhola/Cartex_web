@@ -11,8 +11,6 @@ import Indigo from "../../Images/Airport/Indigo.png";
 import Vistara from "../../Images/Airport/Vistara.png";
 import Flyposter from "../../Images/Airport/Flyposter.png";
 import Spicejet from "../../Images/Airport/Spicejet.png";
-
-
 import Group from "../../Images/Airport/Group.png";
 import { useNavigate } from "react-router-dom";
 import CargoTransfer from "./CargoTransfer";
@@ -144,7 +142,7 @@ function Home() {
                   <h3 className="font-bold text-base">
                     Interterminal Transfers
                   </h3>
-                  <h3 className="absolute right-0 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] py-0.5 px-1">NEW!</h3>
+                  <h3 className="absolute right-1 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] py-0.5 px-2">NEW!</h3>
 
                 </div>
                 <div className={`relative border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6)}}>
@@ -152,7 +150,7 @@ function Home() {
                   <h3 className="font-bold text-base">
                     #olacarter
                   </h3>
-                  <h3 className="absolute right-0 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] py-0.5 px-1">NEW!</h3>
+                  <h3 className="absolute right-1 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] py-0.5 px-2">NEW!</h3>
 
                 </div>
               </div>
