@@ -44,8 +44,9 @@ const Faq = () => {
               </div>
       </div>
       {/* content */}
+      <div className='bg-[#eee]'>
       <div className='mx-auto w-10/12 flex flex-row py-5' >
-        <div className='w-full md:w-1/4 hidden md:block '>
+        <div className='w-full md:w-1/4 hidden md:block pt-8'>
           <div className=' bg-white flex flex-col md:flex-row md:mx-1 p-2 lg:p-5  rounded-xl shadow-lg '>
             <div className='flex flex-col w-full gap-4'>
               <div className={` ${register && "text-[#F47521] "} flex flex-row justify-between gap-2 cursor-pointer`}
@@ -234,7 +235,8 @@ const Faq = () => {
             
         </div>
 
-      </div>
+        </div>
+        </div>
 
           
     </>

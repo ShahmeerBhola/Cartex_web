@@ -20,7 +20,7 @@ const Faqmain = () => {
     const [customer, setCustomer] = useState(false)
   return (
       <div>
-          <div className='w-full md:w-1/4 block md:hidden'>
+          <div className='w-full bg-[#eee] md:w-1/4 block md:hidden'>
           <div className=' bg-white flex flex-col md:flex-row md:mx-1 p-2 lg:p-5  rounded-xl shadow-lg '>
             <div className='flex flex-col w-full gap-4'>
               <div className={` ${register && "text-[#F47521] "} flex flex-row justify-between gap-2 cursor-pointer`}

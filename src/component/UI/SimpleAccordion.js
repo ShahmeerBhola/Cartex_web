@@ -2,37 +2,66 @@ import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import { padding } from '@mui/system';
 
 export default function SimpleAccordion(props) {
  
   const style = {
     fontSize: "34px",
+    padding:"0px",
     margin: "10px",
+    borderRadius:"102px",
+    "&.Mui-expanded	": {
+      color: "#F47521",
+      
+    },
     "&.MuiAccordionDetails-root": {
+      backgroundColor: "#EEEEEE",
       color: "#F47521",
       fontWeight: "bold"
-    }
+    },
+    "&.MuiPaper-root": {
+      borderRadius: "12px !important",
+      overflow: "hidden",
+      margin:"8px"
+    },
+    // "&.MuiPaper-root-MuiAccordion-root.Mui-expanded": {
+    //   margin: "0px !important",
+    //   padding:"0px !important"
+    // }
+    // .css-1xzlyf4-MuiPaper-root-MuiAccordion-root.Mui-expanded
+  
   };
+  const styling = {
+    "&.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+      color:"#F47521 ",
+    },  
+  }
+  const styles = {
+    "&.MuiAccordionDetails-root": {
+      background: "#EEEEEE",
+    }
+  }
 
   return (
     <div>
       <Accordion  sx={style}>
         <AccordionSummary
            sx={style}
-          expandIcon={<ExpandMoreIcon className='text-[#F47521]' />}
+          expandIcon={<ExpandMoreIcon  style={styling} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         
         >
-          {/* <Typography className={`${active === i && '!bg-primary text-orange font-bold'}`} >{props.title}</Typography> */}
-          <Typography  >{props.title}</Typography>
-        </AccordionSummary>
+          <div className='font-bold text-[17px]  '>  {props.title}  </div>
+          {/* <Typography className='fw-bold' >{props.title}</Typography> */}
+        </AccordionSummary >
         <hr/>
 
-        <AccordionDetails>
-          <div className='text-[17px]'>
+        <AccordionDetails sx={styles}>
+          <div className='text-[15px]  text-[#707070] bg-[#EEEEEE]'>
             {props.desc}
           </div>
           {/* <Typography  >
@@ -40,30 +69,7 @@ export default function SimpleAccordion(props) {
           </Typography> */}
         </AccordionDetails>
       </Accordion>
-      {/* <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion disabled>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3a-content"
-          id="panel3a-header"
-        >
-          <Typography>Disabled Accordion</Typography>
-        </AccordionSummary>
-      </Accordion> */}
+ 
     </div>
   );
 }
