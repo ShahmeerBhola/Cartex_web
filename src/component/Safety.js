@@ -178,8 +178,8 @@ const Safety = () => {
             </div>
           </div>
         </div>
-        <Slider>
-          <div className="py-4 flex flex-row gap-2 whitespace-nowrap">
+        <Slider autoPlay={false}>
+          <div className="py-4 flex flex-row  gap-2 whitespace-nowrap">
             <div className="py-2 px-3 text-white text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
               Airport Transfer - Departure
             </div>
@@ -198,7 +198,7 @@ const Safety = () => {
             <div className="py-2 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Air Asia FlyPoster
             </div>
-            <div className="py-2 px-3 text-[#F47521] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className="py-2 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               City Transfer
             </div>
           </div>

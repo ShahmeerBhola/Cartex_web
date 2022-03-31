@@ -65,7 +65,7 @@ function PackagesSection() {
       }];
   return (
     <div className=" w-full  flex flex-row gap-4">
-       <Slider>
+       <Slider autoPlay={true}>
 
        
             {packages.map((v,i)=>(

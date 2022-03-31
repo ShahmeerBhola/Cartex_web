@@ -3,7 +3,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Flickity from 'react-flickity-component'
 
 
-function Slider({children }) {
+function Slider({children,autoPlay}) {
     const smallScreen = useMediaQuery('(max-width:1400px)');
     // console.log("matches=>", smallScreen)
 
@@ -12,9 +12,9 @@ function Slider({children }) {
         cellAlign: 'left',
         pageDots: false,
         prevNextButtons: false,
-        autoPlay: true,
+        autoPlay: autoPlay,
         wrapAround: true,
-        draggable: smallScreen
+        draggable: true
 
 
     }

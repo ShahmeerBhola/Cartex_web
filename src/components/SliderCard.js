@@ -16,7 +16,6 @@ function SliderCard(props) {
     transfer,
   } = props.packages;
   return (
-
     <>
           <div className=" pb-2 w-[350px] bg-white rounded-2xl">
         <div className='flex flex-col gap-1.5'>
