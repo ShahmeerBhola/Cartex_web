@@ -22,14 +22,14 @@ function SelectAddress({toggle,toggler,setToggler,data}) {
           </div>
           <div>
               <label className='text-[#F47521] text-sm font-bold'>House/Flat/Door.no</label>
-              <input type='text' className='w-full border-[#F47521] text-[12px] font-bold indent-1.5 border-[1px] rounded-lg p-2' placeholder='Enter House/Flat/Door.no'  />
+              <input type='text' className='w-full border-[#F47521] text-[14px] font-bold indent-1.5 border-[1px] rounded-lg p-2' placeholder='Enter House/Flat/Door.no'  />
           </div>
           <div>
               <label className='text-[#F47521] text-sm font-bold'>Appartment/Road/Area</label>
-              <input type='text' className='w-full border-[#F47521] text-[12px] font-bold indent-1.5 border-[1px] rounded-lg p-2' placeholder='Enter Appartment/Road/Area'  />
+              <input type='text' className='w-full border-[#F47521] text-[14px] font-bold indent-1.5 border-[1px] rounded-lg p-2' placeholder='Enter Appartment/Road/Area'  />
           </div><div>
               <label className='text-[#F47521] text-sm font-bold'>City</label>
-              <input type='text' className='relative w-full border-[#F47521] text-[12px] font-bold indent-1.5 border-[1px] rounded-lg p-2' placeholder='Enter City'  />
+              <input type='text' className='relative w-full border-[#F47521] text-[14px] font-bold indent-1.5 border-[1px] rounded-lg p-2' placeholder='Enter City'  />
           </div>
 
     </div>)

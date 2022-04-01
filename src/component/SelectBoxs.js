@@ -28,7 +28,7 @@ export default function SelectBoxs({toggler,setToggler, toggle,data,topp,extraDa
               <option value="+1">Thursday, 29 October, 2021</option>
             </select> */}
       {
-        toggler && ( <div className={`absolute flex flex-col z-10 inset-x-0 top-[85px] mt-2 w-full overflow-hidden  rounded-2xl text-xl font-normal shadow-2xl border-primary bg-white ${topp && 'top-[62px]'}`}>
+        toggler && ( <div className={`absolute flex flex-col z-10 inset-x-0 top-[80px] mt-2 w-full overflow-hidden  rounded-2xl text-xl font-normal shadow-2xl border-primary bg-white ${topp && 'top-[61px]'}`}>
           {
             toggle.map((item,i)=>(
                 <>

@@ -104,7 +104,7 @@ function OlaCarter() {
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
           <div className="flex flex-col justify-between md:py-2  rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Email</div>
+            <div className="text-xs lg:text-[15px] text-[#F47521] pb-2 font-bold">Email</div>
             <input
               className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Email Address"

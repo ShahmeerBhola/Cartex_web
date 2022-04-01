@@ -31,7 +31,7 @@ function CargoTransfer() {
             Cargo Transfers
           </h3>
           <ul className="list-disc px-5">
-            <li className=" text-base"> Delivery anywhere in India</li>
+            <li className=" text-base "> Delivery anywhere in India</li>
             <li className=" text-base">
               {" "}
               Air (4 days), Surface (4-7 days), Express (36-48 hours)
@@ -43,21 +43,21 @@ function CargoTransfer() {
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full">
             <div className="flex flex-col lg:flex-row gap-2 ">
               <div className="flex flex-col gap-3 bg-[#F47521] w-full lg:w-1/3 text-white p-2 rounded-xl">
-                <h2>Rush Cargo - Air</h2>
+                <h2 className="font-bold">Rush Cargo - Air</h2>
                 <ul className="list-disc px-5">
                   <li className=" text-sm"> 4 Days</li>
                   <li className=" text-sm"> Delivery anywhere in India</li>
                 </ul>
               </div>
               <div className="flex flex-col gap-3 bg-[#F9F9F9]  w-full lg:w-1/3  p-2 rounded-xl">
-                <h2>Rush Cargo - Surface</h2>
+                <h2 className="font-bold">Rush Cargo - Surface</h2>
                 <ul className="list-disc px-5">
                   <li className=" text-sm"> 4-7 Days</li>
                   <li className=" text-sm"> Delivery anywhere in India</li>
                 </ul>
               </div>
               <div className="flex flex-col gap-3 bg-[#F9F9F9]  w-full lg:w-1/3  p-2 rounded-xl">
-                <h2>Rush Cargo - Express</h2>
+                <h2 className="font-bold" >Rush Cargo - Express</h2>
                 <ul className="list-disc px-5">
                   <li className=" text-sm"> 36- 48 Hours</li>
                   <li className=" text-sm"> Delivery anywhere in India</li>
