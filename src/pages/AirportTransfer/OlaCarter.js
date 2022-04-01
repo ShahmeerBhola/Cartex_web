@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
@@ -6,11 +6,23 @@ import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import Packing from "../../Images/Airport/Baggage/Packing.png";
+import SelectBoxs from "../../component/SelectBoxs";
 
 function OlaCarter() {
   const navigate = useNavigate();
   const [type, setType] = React.useState(2);
   const [types, setTypes] = React.useState(0);
+  const [toggler, setToggler] = useState(false)
+  const [toggler1, setToggler1] = useState(false)
+  const [toggler2, setToggler2] = useState(false)
+  const [toggler3, setToggler3] = useState(false)
+  const [toggler4, setToggler4] = useState(false)
+  const toggle= ['10 bags','12 bags', '15 bags','20 bags'];
+  const city= ['Banglore', 'New Dehli'];
+  const airports= ['KIAL Banglore', 'New Dehli'];
+  const time= ['9:00 pm', '10:00 pm'];
+  const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
+
   return (
     <>
       <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2  ">
@@ -108,28 +120,31 @@ function OlaCarter() {
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Bags</div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
+            <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={ 'Select Bags'}/>
+            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
                     <option value="+1">Up to 2 Bags</option>
                     <option value="+1">Up to 4 Bags</option>
-                  </select>
+                  </select> */}
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Date & Time Slot For Pickup
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
+            <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={'Select Date'} />
+            
+            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
                     <option value="+1">Thursday, 28 October, 2021</option>
                     <option value="+1">Thursday, 29 October, 2021</option>
-                  </select>
+                  </select> */}
             <div className="flex flex-row gap-2">
               <h2 className="text-xs  text-[#1A7DC1]  ">Select Time Slot</h2>
               <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
@@ -143,30 +158,33 @@ function OlaCarter() {
           </h3>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Arrival Terminal
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
+            <SelectBoxs setToggler={setToggler2} toggler={toggler2} toggle={airports} data={'Arrival Terminal'} topp={true} />
+            
+            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
               <option value="+1">KIAL Bangalore</option>
               <option value="+1">New Dehli</option>
-            </select>
+            </select> */}
           </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Delivery Address
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
+            <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={'Select Delivery Address'} topp={true} />
+            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide drop address</option>
               <option value="+1">KIAL Bangalore</option>
               <option value="+1">New Dehli</option>
-            </select>
+            </select> */}
           </div>
         </div>
         {/* details */}
