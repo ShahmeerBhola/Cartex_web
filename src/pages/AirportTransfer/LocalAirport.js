@@ -12,6 +12,7 @@ import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
+import SelectAddress from "../../component/SelectAddress";
 function LocalAirport({ step, setStep }) {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
@@ -25,12 +26,13 @@ function LocalAirport({ step, setStep }) {
   const [toggler2, setToggler2] = useState(false)
   const [toggler3, setToggler3] = useState(false)
   const [toggler4, setToggler4] = useState(false)
+  const [toggler5,setToggler5]=useState(false)
   const toggle= ['10 bags','12 bags', '15 bags','20 bags'];
   const city= ['Banglore', 'New Dehli'];
   const airports= ['KIAL Banglore', 'New Dehli'];
   const time= ['9:00 pm', '10:00 pm'];
   const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
-
+  const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
 
   return (
     <>
@@ -205,7 +207,7 @@ function LocalAirport({ step, setStep }) {
             </div>
             <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={'Select City'} topp={true }/>
           </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               {type === 1 ? (
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -218,11 +220,7 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option disabled selected value> Fill /provide pick-up address</option>
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select>
+            <SelectAddress toggle={address} toggler={toggler5} setToggler={setToggler5} data={'Select Address'} />
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
