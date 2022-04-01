@@ -36,8 +36,8 @@ function Blog() {
               <div>Category 04</div>
               <div>Category 05</div>
               <div>Category 06</div>
-              <div>Category 05</div>
-              <div>Category 06</div>
+              <div>Category 07</div>
+              <div>Category 08</div>
             </div>
           </div>
         </div>
