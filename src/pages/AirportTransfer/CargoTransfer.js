@@ -157,20 +157,31 @@ function CargoTransfer() {
               <option value="+1">New Dehli</option>
             </select> */}
           </div>
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col gap-2 w-full lg:w-1/2">
+         <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Drop Address
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler4} toggler={toggler4} toggle={airports} data={''} extraData={'Fill /provide drop address'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option disabled selected value> Fill /provide drop address</option>
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
+            <SelectBoxs
+              setToggler={setToggler4}
+              toggler={toggler4}
+              toggle={airports}
+              data={""}
+              extraData={"Fill /provide drop address"}
+              topp={true}
+            />
           </div>
+          <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+            Please enter the vaid code
+
+            </h3>
+          </div>
+         </div>
         </div>
 
         {/* coupon section */}

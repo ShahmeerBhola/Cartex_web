@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import cancel from "../Images/Safety/cancel.png";
 import contact from "../Images/Safety/contactless.png";
 import hours from "../Images/Safety/hours.png";
@@ -15,8 +15,12 @@ import Work1 from "../Images/Airport/airport2.png";
 import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import Slider from "../components/Slider";
+import useDraggableScroll from "use-draggable-scroll";
 
 const Safety = () => {
+  const ref = useRef  (null);
+
+  const { onMouseDown } = useDraggableScroll(ref);
   return (
     <div className="w-full mx-auto bg-[#EEE] py-6 overflow-hidden">
       <div className="w-11/12 md:w-10/12 mx-auto">
@@ -179,9 +183,9 @@ const Safety = () => {
             </div>
           </div>
         </div>
-        <Slider autoPlay={true}> 
+     
         {/* false */}
-          <div className="py-4 flex flex-row  gap-4 whitespace-nowrap">
+          <div className="py-4 flex flex-row  gap-4 whitespace-nowrap overflow-auto touch-pan-x cursor-pointer" ref={ref} onMouseDown={onMouseDown}>
             <div className="py-3 px-3 text-white shadow-lg text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
               Airport Transfer - Departure
             </div>
@@ -204,7 +208,7 @@ const Safety = () => {
               City Transfer
             </div>
           </div>
-        </Slider>
+        
         <img className="md:block hidden w-full py-2" src={Work} />
         <img className=" md:hidden w-full py-2 h-[800px]" src={Work1} />
       </div>
