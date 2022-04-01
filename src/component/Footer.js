@@ -14,11 +14,11 @@ import { IconButton } from '@mui/material'
 function Footer() {
     const navigate=useNavigate();
   return (
-      <div className='bg-white py-5 w-full overflow-hidden shadow-xl'>
+      <div className='bg-white py-5 w-full overflow-hidden drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] '>
           <img className='mx-auto justify-center w-[280px] md:w-[302px] h-[48px]' src={Cartex} alt="Cartex logo"></img>
           <br/>
           <div className='flex flex-col justify-center md:flex-row md:justify-evenly w-full px-4 md:px-0 md:w-11/12  lg:w-10/12 mx-auto pb-4'>
-              <div className='flex flex-col w-full md:mx-0 md:w-1/2 justify-between py-2 gap-4 '>
+              <div className='flex flex-col w-full md:mx-0 md:w-1/2 justify-between py-2 gap-4'>
                   <h1 className=' text-2xl font-bold  ' >Informations</h1>
                   <a className='text-base md:text-xl hover:cursor-pointer' onClick={()=>navigate('/faq')} >FAQ</a>
                   <a className='text-base md:text-xl hover:cursor-pointer' onClick={()=>navigate('/terms')} >Terms And Conditions</a>
@@ -28,7 +28,7 @@ function Footer() {
                   <div className='text-base md:text-xl hover:cursor-pointer ' onClick={()=>navigate('/profile')} >Profile</div>
                  
           </div>
-              <div className='flex flex-col  lg:w-1/4 md:1/2 md:mx-0 justify-between py-2 gap-4 '>
+              <div className='flex flex-col  lg:w-1/4 md:1/2 md:mx-0 justify-between py-2 gap-4  '>
                   <h1 className='text-2xl font-bold '>Need help?</h1>
                   <div className='flex flex-row items-center gap-2'>
                       <img className='w-[32px] h-[32px]' src={phone} alt="phone img" ></img>
