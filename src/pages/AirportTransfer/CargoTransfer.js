@@ -93,7 +93,7 @@ function CargoTransfer() {
             ></input>
           </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="rounded-lg border-[#CCCCCC] flex flex-col justify-between py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -129,7 +129,7 @@ function CargoTransfer() {
             Adding bags / weight at the time of pick is allowed.
           </h3>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -159,7 +159,7 @@ function CargoTransfer() {
         </div>
 
         {/* coupon section */}
-        <div className="mt-3 flex flex-col lg:flex-row gap-3 ">
+        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="flex flex-col justify-between rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Discount Coupon
