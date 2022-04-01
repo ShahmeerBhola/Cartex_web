@@ -134,17 +134,19 @@ function LocalAirport({ step, setStep }) {
             <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={ 'Select Bags'}/>
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2 flex flex-col justify-between">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2 flex flex-col justify-between">
                   <div className="flex flex-row justify-between ">
                     <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                       Date & Time Slot For Pickup
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none",paddingBottom:"5px"}} >
+                  {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none",paddingBottom:"5px"}} >
                     <option value="+1">Thursday, 28 October, 2021</option>
                     <option value="+1">Thursday, 29 October, 2021</option>
-                  </select>
+                  </select> */}
+            <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={'Select Date'} />
+            
                   <div className="flex flex-row gap-2">
                     <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
                       Select Time Slot
