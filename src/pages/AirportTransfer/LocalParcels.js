@@ -67,7 +67,7 @@ function LocalParcels() {
             ></input>
           </div>
         </div>
-              <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+              <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
                 <div className="rounded-lg border-[#CCCCCC] flex flex-col justify-between py-2 border-2  px-2   w-full lg:w-1/2">
                   <div className="flex flex-row justify-between">
                     <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -80,19 +80,19 @@ function LocalParcels() {
                     <option value="+1">Up to 4 Bags</option>
                   </select> 
                 </div>
-                <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-                  <div className="flex flex-row justify-between">
+                <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2 flex flex-col justify-between">
+                  <div className="flex flex-row justify-between ">
                     <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                       Date & Time Slot For Pickup
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
+                  <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none",paddingBottom:"5px"}} >
                     <option value="+1">Thursday, 28 October, 2021</option>
                     <option value="+1">Thursday, 29 October, 2021</option>
                   </select>
                   <div className="flex flex-row gap-2">
-                    <h2 className="text-xs  text-[#1A7DC1]  ">
+                    <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
                       Select Time Slot
                     </h2>
                     <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
@@ -105,7 +105,7 @@ function LocalParcels() {
                   Adding bags / weight at the time of pick is allowed.
                 </h3>
               </div>
-              <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+              <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
               <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
                   <div className="flex flex-row justify-between">
                        <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -136,7 +136,7 @@ function LocalParcels() {
 
               
               {/* coupon section */}
-              <div className="mt-3 flex flex-col gap-3 ">
+              <div className="mt-3 flex flex-col gap-4 mr-3 ">
                 <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
                     <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                       Discount Coupon
