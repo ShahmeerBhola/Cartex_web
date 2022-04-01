@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import FlightLandIcon from "@mui/icons-material/FlightLand";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -11,6 +11,7 @@ import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
+import SelectBoxs from "../../component/SelectBoxs";
 function LocalAirport({ step, setStep }) {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
@@ -19,6 +20,18 @@ function LocalAirport({ step, setStep }) {
   const [active1, setActive1] = React.useState(false);
   const [active2, setActive2] = React.useState(false);
   const [active3, setActive3] = React.useState(false);
+  const [toggler, setToggler] = useState(false)
+  const [toggler1, setToggler1] = useState(false)
+  const [toggler2, setToggler2] = useState(false)
+  const [toggler3, setToggler3] = useState(false)
+  const [toggler4, setToggler4] = useState(false)
+  const toggle= ['10 bags','12 bags', '15 bags','20 bags'];
+  const city= ['Banglore', 'New Dehli'];
+  const airports= ['KIAL Banglore', 'New Dehli'];
+  const time= ['9:00 pm', '10:00 pm'];
+  const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
+
+
   return (
     <>
       <div className=" flex flex-col w-full px-2 md:w-4/5 mt-4 md:mt-0 ">
@@ -111,31 +124,24 @@ function LocalAirport({ step, setStep }) {
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2" >
+          <div className="relative rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2" >
             <div className="flex flex-row justify-between">
               <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
                 Bags
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-              {" "}
-              <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Up to 2 Bags</option>
-                    <option value="+1">Up to 4 Bags</option>
-                  </select>
+            <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={ 'Select Bags'}/>
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
-          <div className="rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row items-center justify-between">
               <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
                 Date & Time Slot For Pickup
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">Thursday, 28 October, 2021</option>
-              <option value="+1">Thursday, 29 October, 2021</option>
-            </select>
+            <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={ 'Select Time'}/>
             <div className="flex flex-row gap-2 items-center">
               <h2 className="text-xs  text-[#1A7DC1]  ">Select Time Slot</h2>
               <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
@@ -149,7 +155,7 @@ function LocalAirport({ step, setStep }) {
           </h3>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
             <div className="flex flex-row justify-between">
               {types === 1 ? (
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -163,12 +169,9 @@ function LocalAirport({ step, setStep }) {
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select>
+            <SelectBoxs setToggler={setToggler2} toggler={toggler2} toggle={city} data={'Select City'} topp={true }/>
           </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
             <div className="flex flex-row justify-between">
               {type === 1 ? (
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -181,10 +184,7 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select>
+            <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={'Select City'} topp={true }/>
           </div>
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -226,17 +226,15 @@ function LocalAirport({ step, setStep }) {
                     className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
                   >KIAL Bangalore</h3> */}
           </div>
-          <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Select Time to meet CarterX at Airport
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">09:00 AM</option>
-              <option value="+1">10:00 AM</option>
-            </select>
+            <SelectBoxs setToggler={setToggler4} toggler={toggler4} toggle={time} data={'Select Time'} topp={true}/>
+
           </div>
         </div>
         <div className="mt-3 flex flex-col gap-2 ">

@@ -571,6 +571,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.25rem;
 }
 
+.left-1 {
+  left: 0.25rem;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[85px\] {
+  top: 85px;
+}
+
+.top-\[50px\] {
+  top: 50px;
+}
+
+.top-\[60px\] {
+  top: 60px;
+}
+
+.top-\[62px\] {
+  top: 62px;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1030,6 +1054,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .list-disc {
@@ -1795,6 +1823,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-\[\#F3F3F3\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#fdeadf\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 234 223 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#F47521\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(244 117 33 / var(--tw-text-opacity));
 }
 
 .focus\:border-transparent:focus {
