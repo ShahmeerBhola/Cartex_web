@@ -7,6 +7,7 @@ import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import Packing from "../../Images/Airport/Baggage/Packing.png";
 import SelectBoxs from "../../component/SelectBoxs";
+import SelectAddress from "../../component/SelectAddress";
 
 function OlaCarter() {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ function OlaCarter() {
   const airports= ['KIAL Banglore', 'New Dehli'];
   const time= ['9:00 pm', '10:00 pm'];
   const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
-
+  const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
   return (
     <>
       <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2  ">
@@ -103,7 +104,7 @@ function OlaCarter() {
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
           <div className="flex flex-col justify-between md:py-2  rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/2">
-            <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">Email</div>
+            <div className="text-xs lg:text-[15px] text-[#F47521] pb-2 font-bold">Email</div>
             <input
               className="outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] "
               placeholder="Enter Email Address"
@@ -179,7 +180,7 @@ function OlaCarter() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={'Select Delivery Address'} topp={true} />
+            <SelectAddress toggle={address} toggler={toggler3} setToggler={setToggler3} data={'Select Address'} />
             {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide drop address</option>
               <option value="+1">KIAL Bangalore</option>

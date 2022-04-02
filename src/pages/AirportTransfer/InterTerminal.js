@@ -20,6 +20,7 @@ function CityTransfer() {
   const [toggler5, setToggler5] = useState(false)
   const [toggler6, setToggler6] = useState(false)
   const [toggler7, setToggler7] = useState(false)
+  const [toggler8, setToggler8] = useState(false)
   const toggle= ['10 bags','12 bags', '15 bags','20 bags'];
   const city= ['Banglore', 'New Dehli'];
   const airports= ['KIAL Banglore', 'New Dehli'];
@@ -85,7 +86,7 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={ 'Select Bags'}/>
+            <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={'Select Bags'}/>
             {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
                     <option value="+1">Up to 2 Bags</option>
                     <option value="+1">Up to 4 Bags</option>
@@ -150,7 +151,7 @@ function CityTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={city} extraData={'Select Arrival airport'} topp={true} />
+            <SelectBoxs setToggler={setToggler8} toggler={toggler8} toggle={city} extraData={'Select Arrival airport'} topp={true} />
             {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
               <option value="+1">Bangalore</option>
               <option value="+1">New Dehli</option>

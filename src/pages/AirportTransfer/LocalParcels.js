@@ -12,24 +12,37 @@ import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
+import SelectAddress from '../../component/SelectAddress';
 function LocalParcels() {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
-  const [toggler, setToggler] = useState(false);
-  const [toggler1, setToggler1] = useState(false);
-  const [toggler2, setToggler2] = useState(false);
-  const [toggler3, setToggler3] = useState(false);
-  const [toggler4, setToggler4] = useState(false);
-  const toggle = ["<8 kgs ", "<5 kgs"];
-  const city = ["Banglore", "New Dehli"];
-  const airports = ["KIAL Banglore", "New Dehli"];
-  const time = ["9:00 pm", "10:00 pm"];
-  const date = [
-    "Thursday, 28 October, 2021",
-    "Friday, 29 October, 2021",
-    "Saturday, 30 October, 2021",
-    "Sunday, 31 October, 2021",
-  ];
+  // const [toggler, setToggler] = useState(false);
+  // const [toggler1, setToggler1] = useState(false);
+  // const [toggler2, setToggler2] = useState(false);
+  // const [toggler3, setToggler3] = useState(false);
+  // const [toggler4, setToggler4] = useState(false);
+  // const toggle = ["<8 kgs ", "<5 kgs"];
+  // const city = ["Banglore", "New Dehli"];
+  // const airports = ["KIAL Banglore", "New Dehli"];
+  // const time = ["9:00 pm", "10:00 pm"];
+  // const date = [
+  //   "Thursday, 28 October, 2021",
+  //   "Friday, 29 October, 2021",
+  //   "Saturday, 30 October, 2021",
+  //   "Sunday, 31 October, 2021",
+  // ];
+  const [toggler, setToggler] = useState(false)
+  const [toggler1, setToggler1] = useState(false)
+  const [toggler2, setToggler2] = useState(false)
+  const [toggler3, setToggler3] = useState(false)
+  const [toggler4, setToggler4] = useState(false)
+  const toggle= ['<8 kgs ','<5 kgs' ];
+  const city= ['Banglore', 'New Dehli'];
+  const airports= ['KIAL Banglore', 'New Dehli'];
+  const time= ['9:00 pm', '10:00 pm'];
+  const date = ['Thursday, 28 October, 2021', 'Friday, 29 October, 2021', 'Saturday, 30 October, 2021', 'Sunday, 31 October, 2021'];
+  const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
+
 
   return (
     <>
@@ -141,22 +154,14 @@ function LocalParcels() {
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="flex flex-col w-full gap-2 lg:w-1/2">
-            <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
-              <div className="flex flex-row justify-between">
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Pickup Address
-                </div>
-                <KeyboardArrowDownIcon className="text-[#F47521]" />
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
+            <div className="flex flex-row justify-between">
+              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                Pickup Address
               </div>
-
-              <SelectBoxs
-                setToggler={setToggler3}
-                toggler={toggler3}
-                toggle={airports}
-                data={""}
-                extraData={"Fill /provide pick-up address"}
-                topp={true}
-              />
+              <KeyboardArrowDownIcon className="text-[#F47521]" />
+                 </div>
+                 <SelectAddress toggle={address} toggler={toggler3} setToggler={setToggler3} data={'Select Address'} />
             </div>
             <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
               <InfoOutlinedIcon className="text-[#FF0000]" />
@@ -172,14 +177,7 @@ function LocalParcels() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs
-              setToggler={setToggler4}
-              toggler={toggler4}
-              toggle={airports}
-              data={""}
-              extraData={"Fill /provide drop address"}
-              topp={true}
-            />
+            <SelectAddress toggle={address} toggler={toggler4} setToggler={setToggler4} data={'Select Address'} />
           </div>
           <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
             <InfoOutlinedIcon className="text-[#FF0000]" />

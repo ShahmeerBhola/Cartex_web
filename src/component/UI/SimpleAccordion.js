@@ -18,7 +18,6 @@ export default function SimpleAccordion(props) {
       
     },
     "&.MuiAccordionDetails-root": {
-      backgroundColor: "#EEEEEE",
       color: "#F47521",
       fontWeight: "bold"
     },

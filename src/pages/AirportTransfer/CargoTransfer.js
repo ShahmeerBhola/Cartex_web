@@ -7,6 +7,7 @@ import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
+import SelectAddress from "../../component/SelectAddress";
 function CargoTransfer() {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
@@ -21,7 +22,7 @@ function CargoTransfer() {
   const airports= ['KIAL Banglore', 'New Dehli'];
   const time= ['9:00 pm', '10:00 pm'];
   const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
-
+  const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
   return (
     <>
       <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2  ">
@@ -30,7 +31,7 @@ function CargoTransfer() {
             Cargo Transfers
           </h3>
           <ul className="list-disc px-5">
-            <li className=" text-base"> Delivery anywhere in India</li>
+            <li className=" text-base "> Delivery anywhere in India</li>
             <li className=" text-base">
               {" "}
               Air (4 days), Surface (4-7 days), Express (36-48 hours)
@@ -42,21 +43,21 @@ function CargoTransfer() {
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full">
             <div className="flex flex-col lg:flex-row gap-2 ">
               <div className="flex flex-col gap-3 bg-[#F47521] w-full lg:w-1/3 text-white p-2 rounded-xl">
-                <h2>Rush Cargo - Air</h2>
+                <h2 className="font-bold">Rush Cargo - Air</h2>
                 <ul className="list-disc px-5">
                   <li className=" text-sm"> 4 Days</li>
                   <li className=" text-sm"> Delivery anywhere in India</li>
                 </ul>
               </div>
               <div className="flex flex-col gap-3 bg-[#F9F9F9]  w-full lg:w-1/3  p-2 rounded-xl">
-                <h2>Rush Cargo - Surface</h2>
+                <h2 className="font-bold">Rush Cargo - Surface</h2>
                 <ul className="list-disc px-5">
                   <li className=" text-sm"> 4-7 Days</li>
                   <li className=" text-sm"> Delivery anywhere in India</li>
                 </ul>
               </div>
               <div className="flex flex-col gap-3 bg-[#F9F9F9]  w-full lg:w-1/3  p-2 rounded-xl">
-                <h2>Rush Cargo - Express</h2>
+                <h2 className="font-bold" >Rush Cargo - Express</h2>
                 <ul className="list-disc px-5">
                   <li className=" text-sm"> 36- 48 Hours</li>
                   <li className=" text-sm"> Delivery anywhere in India</li>
@@ -150,7 +151,7 @@ function CargoTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={''} extraData={'Fill /provide pick-up address'} topp={true} />
+            <SelectAddress toggle={address} toggler={toggler3} setToggler={setToggler3} data={'Select Address'} />
             {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
             <option disabled selected value> Fill /provide pick-up address</option>
               <option value="+1">KIAL Bangalore</option>
@@ -165,14 +166,12 @@ function CargoTransfer() {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs
-              setToggler={setToggler4}
-              toggler={toggler4}
-              toggle={airports}
-              data={""}
-              extraData={"Fill /provide drop address"}
-              topp={true}
-            />
+            <SelectAddress toggle={address} toggler={toggler4} setToggler={setToggler4} data={'Select Address'} />
+            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
+            <option disabled selected value> Fill /provide drop address</option>
+              <option value="+1">KIAL Bangalore</option>
+              <option value="+1">New Dehli</option>
+            </select> */}
           </div>
           <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
             <InfoOutlinedIcon className="text-[#FF0000]" />
