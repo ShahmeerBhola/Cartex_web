@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../component/Footer";
 
 function ArrivalBook() {
 
@@ -62,6 +63,8 @@ function ArrivalBook() {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </div>
   );
 }

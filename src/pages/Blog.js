@@ -10,6 +10,7 @@ import Post2 from "../../src/Images/Blog/post2.png";
 import Post3 from "../../src/Images/Blog/post3.png";
 import SearchIcon from "@mui/icons-material/Search";
 import { Hidden, useMediaQuery } from "@mui/material";
+import Footer from "../component/Footer";
 function Blog() {
 
   const smallScreen = useMediaQuery("(max-width:786px)");
@@ -198,6 +199,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

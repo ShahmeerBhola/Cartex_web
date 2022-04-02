@@ -87,10 +87,6 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={'Select Bags'}/>
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Up to 2 Bags</option>
-                    <option value="+1">Up to 4 Bags</option>
-                  </select>  */}
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
         </div>
@@ -101,7 +97,7 @@ function CityTransfer() {
           </h3>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg h-[72px] border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Arrival Date
@@ -114,7 +110,8 @@ function CityTransfer() {
                     <option value="+1">Thursday, 29 October, 2021</option>
                   </select> */}
           </div>
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col gap-2 w-full lg:w-1/2 ">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Arrival Time
@@ -122,10 +119,14 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler2} toggler={toggler2} toggle={time} data={'Select Date'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">09:00 AM</option>
-              <option value="+1">10:00 AM</option>
-            </select> */}
+          </div>
+          <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+            Time can be filled after booking
+
+            </h3>
+          </div>
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
@@ -137,13 +138,7 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={city} extraData={'Select Arrival city'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
-            
           </div>
-          
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -167,7 +162,7 @@ function CityTransfer() {
        
         {/* Departure */}
         <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="relative rounded-lg h-[72px] border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-sx lg:text-[15px] text-[#F47521] font-bold">
                 Departure Date
@@ -180,7 +175,8 @@ function CityTransfer() {
                     <option value="+1">Thursday, 29 October, 2021</option>
                   </select> */}
           </div>
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+         <div className="flex flex-col gap-2 w-full lg:w-1/2">
+         <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Departure Time
@@ -188,11 +184,14 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler5} toggler={toggler5} toggle={city} extraData={'Select Departure time'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">09:00 AM</option>
-              <option value="+1">10:00 AM</option>
-            </select> */}
           </div>
+          <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+            Time can be filled after booking
+            </h3>
+          </div>
+         </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">

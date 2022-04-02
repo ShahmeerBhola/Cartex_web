@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../component/Footer";
 // import Divider from "@mui/material/Divider";
 // import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 // import { useNavigate } from 'react-router-dom'
@@ -21,6 +22,7 @@ function MyTrips() {
         <OrderTrip/>
    
       </div>
+      <Footer/>
     </div>
   );
 }

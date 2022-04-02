@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../component/Footer";
 
 function PrivacyPolicy() {
   return (
@@ -86,6 +87,7 @@ function PrivacyPolicy() {
           <p className="md:text-xl text-base">1.9 “Usage Information” shall mean the information we receive about the customer or you.</p>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

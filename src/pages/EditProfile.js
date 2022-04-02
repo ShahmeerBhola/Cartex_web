@@ -3,6 +3,7 @@ import Card from "../component/UI/Card"
 import profilepic from "../Images/Profile/profileimg.png"
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import { Navigate, useNavigate } from 'react-router-dom';
+import Footer from '../component/Footer';
 
 const EditProfile = () => {
   const navigate=useNavigate();
@@ -30,7 +31,8 @@ const EditProfile = () => {
     navigate('/profile')
   }
   return (
-    <div className='bg-[#EEEEEE] pb-10 '>
+    <>
+        <div className='bg-[#EEEEEE] pb-10 '>
         <h2 className='p-10 mx-10 w-11/12 font-bold  text-4xl'>Edit Profile</h2>
         <div className='flex flex-col  md:flex-row mx-auto w-10/12 md:w-11/12 gap-2 md:gap-2'>
             <Card css=" w-full lg:w-3/4 min-h-[348px]">
@@ -74,7 +76,9 @@ const EditProfile = () => {
          
               </Card>
           </div>
+
           </div>
+          <Footer/></>
   )
 }
 

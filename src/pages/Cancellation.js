@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../component/Footer";
 
 function Cancellation() {
   return (
@@ -84,7 +85,7 @@ function Cancellation() {
         </div>
        
       </div>
-      
+      <Footer/>
     </div>
   );
 }

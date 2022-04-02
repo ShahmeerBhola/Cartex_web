@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from '../component/Footer'
 
 function Terms() {
     return (
+      <>
       <div className='bg-[#EEEEEE] overflow-hidden pb-10 '>
       <div className='bg-[#EEEEEE] '>
         <div className='mx-auto w-10/12 py-5'>
@@ -64,6 +66,8 @@ function Terms() {
                     </div>
             </div>
             </div>
+            <Footer/>
+</>
   )
 }
 

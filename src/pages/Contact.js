@@ -7,10 +7,12 @@ import city3 from "../../src/Images/Contact/city3.png";
 import city4 from "../../src/Images/Contact/city4.png";
 import PackagesSection from "../components/PackagesSection";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Footer from "../component/Footer";
 
 function Contact() {
   const smallScreen = useMediaQuery("(max-width:850px)");
   return (
+    <>
     <div className="w-full overflow-hidden bg-[#EEE] pb-9">
       <div className="relative h-[650px] md:h-[600px] w-full ">
         <img className=" h-full " src={slider} width="100%" alt="" />
@@ -236,7 +238,7 @@ function Contact() {
             </div>
             <div className="w-full mt-5 mb-2">
               <h2 className="text-[36px] pt-4 pb-5 font-bold">City Transfer</h2>
-              <div className="flex flex-row gap-3 flex-wrap justify-start">
+              <div className="flex flex-row gap-2  flex-wrap  justify-around">
                 <div className="bg-white flex flex-col px-2 py-3 w-[240px] rounded-3xl shadow-xl">
                   <img src={city1} />
                   <h4 className="font-bold text-2xl text-center pt-2">
@@ -267,6 +269,8 @@ function Contact() {
         )}
       </div>
     </div>
+      <Footer/>
+    </>
   );
 }
 

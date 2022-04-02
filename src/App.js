@@ -70,7 +70,7 @@ function App() {
           <Route path='airport/interterminal' element={<InterTerminal/>}/> 
           <Route path='airport/olacarter' element={<OlaCarter/>}/>
       </Routes>
-      <Footer/>
+      
       </BrowserRouter>
     </div>
   );

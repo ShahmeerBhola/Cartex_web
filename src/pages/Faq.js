@@ -17,6 +17,7 @@ import InsuranceAccordianDetail from '../component/Accordions/InsuranceAccordion
 import CustomerAccordianDetail from '../component/Accordions/CustomerAccordion';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import Faqmain from '../component/Faqmain';
+import Footer from '../component/Footer';
 
 const Faq = () => {
   const[register,setRegister]=useState(true)
@@ -237,6 +238,7 @@ const Faq = () => {
 
         </div>
         </div>
+        <Footer/>
 
           
     </>

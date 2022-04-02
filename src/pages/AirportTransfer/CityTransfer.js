@@ -161,35 +161,39 @@ function CityTransfer() {
         </div>
         {types === 0 ? (
           <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-            <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-              <div className="flex flex-row justify-between">
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Pickup Address
-                </div>
-                <KeyboardArrowDownIcon className="text-[#F47521]" />
+            <div className="flex flex-col w-full gap-2 lg:w-1/2">
+          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
+            <div className="flex flex-row justify-between">
+              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                Pickup Address
               </div>
-              <SelectAddress toggle={address} toggler={toggler3} setToggler={setToggler3} data={'Select Address'} />
-              {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option disabled selected value> Fill /provide pick-up address</option>
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
+              <KeyboardArrowDownIcon className="text-[#F47521]" />
+                 </div>
+                 <SelectAddress toggle={address} toggler={toggler3} setToggler={setToggler3} data={'Select Address'} />
             </div>
-            <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-              <div className="flex flex-row justify-between">
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Drop Address
-                </div>
-                <KeyboardArrowDownIcon className="text-[#F47521]" />
+            <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+              <InfoOutlinedIcon className="text-[#FF0000]" />
+              <h3 className="text-xs">All pins are serviceable</h3>
+            </div>
+          </div>  
+          <div className="flex flex-col gap-2 w-full lg:w-1/2">
+         <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
+            <div className="flex flex-row justify-between">
+              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                Drop Address
               </div>
-              <SelectAddress toggle={address} toggler={toggler4} setToggler={setToggler4} data={'Select Address'} />
-          
-              {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option disabled selected value> Fill /provide drop address</option>
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
+              <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
+            <SelectAddress toggle={address} toggler={toggler4} setToggler={setToggler4} data={'Select Address'} />
+          </div>
+          <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+            Please enter the vaid code
+
+            </h3>
+          </div>
+         </div>
           </div>
         ) : (
           <div className="mt-3 flex flex-col lg:flex-row gap-2 ">

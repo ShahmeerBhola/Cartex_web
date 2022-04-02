@@ -23,6 +23,7 @@ import MainAirportTransfer from "../../component/MainAirportTransfer";
 import { useMediaQuery } from "@mui/material";
 import Safety from "../../component/Safety";
 import Footer from "../../component/Footer";
+import PackagesSection from "../../components/PackagesSection";
 
 function Home() {
   const [step,setStep]=React.useState(0);
@@ -32,10 +33,10 @@ function Home() {
 
   console.log("steps",step);
   return (<>
-<div className=" w-full bg-[#EEEEEE]">
-      <div className="relative w-full md:h-[2000px] lg:h-[1550px] xxl:h-[1350px] xl:h-[1300px]">
+<div className=" w-full !bg-[#EEEEEE] ">
+      <div className="relative w-full  ">
         <img className="  md:h-[400px] h-[650px] w-full" src={Header} />
-     <div className=" absolute w-full md:top-[150px] top-[40px]" >
+     <div className="  absolute w-full top-[40px] "  >
        {matches && <>
         <div className=" w-10/12  mx-auto">
         <div className="bg-none rounded-2xl px-3 py-2 lg:px-3 lg:py-3 shadow-xl">
@@ -95,9 +96,11 @@ function Home() {
               </div> 
           </div>
         </div>
-      </div></>}
-     <div className=" md:w-11/12 lg:w-10/12  mx-auto">
-        <div className="bg-white rounded-2xl px-1 py-2 lg:px-3 lg:py-3 md:flex hidden shadow-xl">
+      </div>
+      </>}
+     <div className=" w-full bg-none">
+       <div className=" md:w-11/12  lg:w-10/12  mx-auto">
+        <div className="bg-white  rounded-2xl px-1 py-2 lg:px-3 lg:py-3 md:flex hidden shadow-xl">
           <div className="md:flex hidden flex-row gap-2">
             <div className="w-[230px] lg:w-[240px] flex">
               <div className="flex flex-col gap-2">
@@ -168,7 +171,16 @@ function Home() {
            
           </div>
         </div>
-      </div>
+      </div></div>
+        <div className="  w-full py-3 mt-[20px] bg-[#eee]  md:pt-0 overflow-hidden ">
+    <div className="w-11/12 md:w-10/12 mx-auto">
+    <PackagesSection/>
+    </div>
+    </div>
+    <Safety/>
+    <Footer/>
+
+     
      <div>
      </div>
 

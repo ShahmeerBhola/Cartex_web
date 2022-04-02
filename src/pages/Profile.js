@@ -3,11 +3,14 @@ import profilepic from "../Images/Profile/profileimg.png"
 import customerService from "../Images/Profile/customer-service.png"
 import Card from '../component/UI/Card'
 import { useNavigate } from 'react-router-dom'
+import Footer from '../component/Footer'
 
 // class="flex flex-col md:flex-row mx-auto w-10/12 md:w-11/12 gap-2 md:gap-2"
 function Profile() {
     const navigate=useNavigate()
-    return (<div className='bg-[#EEEEEE] pb-10 '>
+    return (
+        <>
+        <div className='bg-[#EEEEEE] pb-10 '>
         <h2 className='p-10 mx-10 w-11/12 text-4xl font-bold'>Edit Profile</h2>
         <div className='flex flex-col md:flex-row mx-auto w-10/12 md:w-11/12 gap-2 md:gap-2'>
             <Card css=" w-full md:w-3/4 min-h-[348px]">
@@ -45,6 +48,7 @@ function Profile() {
 
 
         </div>
+        <Footer/></>
     )
 }
 

@@ -31,6 +31,7 @@ import coverage6 from "../Images/About/coverage6.png";
 import { Button, Hidden } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {useNavigate} from 'react-router-dom';
+import Footer from '../component/Footer';
 
 
 
@@ -315,7 +316,8 @@ function Abouts() {
             
           </div>
           </div>
-     
+         
+          <Footer/>
     </div>
   )
 }
