@@ -23,7 +23,7 @@ const Safety = () => {
   const { onMouseDown } = useDraggableScroll(ref);
   return (
     <div className="w-full mx-auto bg-[#EEE] py-6 overflow-hidden">
-      <div className="w-11/12 md:w-10/12 mx-auto">
+      <div className="w-11/12 pb-3 md:w-10/12 mx-auto">
         <div className="flex flex-col lg:flex-row gap-2 ">
           <div className="bg-[#1A7DC1] justify-center items-center rounded-full text-[11px] md:text-base text-white p-2 flex gap-1 md:w-[400px] w-[290px] flex-row">
             <img src={Installer} className="h-[30px]" />
@@ -35,19 +35,19 @@ const Safety = () => {
           </div>
         </div>
         <div className="py-3 text-lg md:text-4xl font-bold mt-6">Safety First</div>
-        <div className="text-base md:text-2xl">
+        <div className="pb-3 text-base md:text-2xl">
           Ease fear of your Exposure, Your bags are protected
         </div>
       </div>
 
-      <div className="flex flex-row w-11/12 gap-3 md:w-10/12 mx-auto">
+      <div className=" pt-3 flex flex-row w-11/12 gap-1 md:w-10/12 mx-auto">
         {/*  */}
-        <div className="flex flex-col md:flex-row w-full justify-end items-center gap-3 ">
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+        <div className="flex flex-col md:flex-row w-full justify-end items-center  gap-1 ">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={contact}
                 ></img>
                 <div className="pt-6 font-bold text-sm md:text-xl text-center">
@@ -56,11 +56,11 @@ const Safety = () => {
               </div>
             </Card>
           </div>
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={safe}
                 ></img>
                 <div className="pt-6 font-bold text-sm md:text-xl text-center">
@@ -71,12 +71,12 @@ const Safety = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row w-full justify-start items-center gap-3 ">
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+        <div className="flex flex-col md:flex-row w-full justify-start items-center gap-1  ">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={shield}
                 ></img>
                 <div className="pt-6 font-bold text-sm md:text-xl text-center">
@@ -85,12 +85,12 @@ const Safety = () => {
               </div>
             </Card>
           </div>
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]"> 
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full "> 
             {/* 185 */}
-              <div className="flex flex-col justify-center items-center pt-7">
+              <div className="flex flex-col justify-around w-full h-full items-center ">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={screened}
                 ></img>
                 <div className="pt-6 font-bold text-sm md:text-xl text-center">
@@ -102,14 +102,14 @@ const Safety = () => {
         </div>
       </div>
       {/*  */}
-      <div className="flex flex-row w-11/12 md:w-10/12 gap-3 mx-auto pt-4">
+      <div className="flex flex-row w-11/12 md:w-10/12 gap-0.5  mx-auto pt-4">
         {/*  */}
-        <div className="flex flex-col md:flex-row w-full justify-end items-center gap-3 ">
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+        <div className="flex flex-col md:flex-row w-full justify-end items-center gap-1  ">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={time}
                 ></img>
                 <div className="pt-6 font-bold text-sm md:text-xl text-center">
@@ -118,11 +118,11 @@ const Safety = () => {
               </div>
             </Card>
           </div>
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={sanitize}
                 ></img>
                 <div className="pt-6 font-bold text-sm md:text-xl text-center">
@@ -133,12 +133,12 @@ const Safety = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row w-full justify-start items-center gap-3 ">
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+        <div className="flex flex-col md:flex-row gap-1 w-full justify-start items-center  ">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5 w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={cancel}
                 ></img>
                 <div className="pt-3 pb-2 font-bold text-sm md:text-xl text-center">
@@ -147,11 +147,11 @@ const Safety = () => {
               </div>
             </Card>
           </div>
-          <div className="p-1 md:p-0 lg:p-3">
-            <Card css="h-[230px] md:h-[260px] w-[120px] sm:w-[130px] md:w-[150px] lg:w-[185px]">
-              <div className="flex flex-col justify-center items-center pt-7">
+          <div className="sm:p-1 md:py-0.5 md:pr-0.5  w-full ">
+            <Card css="h-[230px] md:h-[270px]  w-full ">
+              <div className="flex flex-col justify-around w-full h-full items-center">
                 <img
-                  className="h-[90px] md:h-[108px] w-[90px] md:w-[108px] "
+                  className=" h-[108px] w-[90px] md:w-[108px] "
                   src={hours}
                 ></img>
                 <div className="pt-3 pb-2 font-bold text-sm md:text-xl text-center">
@@ -163,7 +163,7 @@ const Safety = () => {
         </div>
       </div>
       {/* Work Secrion */}
-      <div className="w-11/12 md:w-10/12 mx-auto">
+      <div className="w-11/12 py-5 md:w-10/12 mx-auto">
         <div className="flex flex-col gap-1 md:flex-row justify-between items-start md:items-end">
           <div>
             <div className="py-3 text-xl md:text-4xl font-bold">
