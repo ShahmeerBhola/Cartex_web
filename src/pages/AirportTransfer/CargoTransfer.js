@@ -158,7 +158,8 @@ function CargoTransfer() {
               <option value="+1">New Dehli</option>
             </select> */}
           </div>
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col gap-2 w-full lg:w-1/2">
+         <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
                 Drop Address
@@ -172,6 +173,14 @@ function CargoTransfer() {
               <option value="+1">New Dehli</option>
             </select> */}
           </div>
+          <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+            Please enter the vaid code
+
+            </h3>
+          </div>
+         </div>
         </div>
 
         {/* coupon section */}

@@ -143,10 +143,6 @@ function LocalAirport({ step, setStep }) {
                     </div>
                     <KeyboardArrowDownIcon className="text-[#F47521]" />
                   </div>
-                  {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none",paddingBottom:"5px"}} >
-                    <option value="+1">Thursday, 28 October, 2021</option>
-                    <option value="+1">Thursday, 29 October, 2021</option>
-                  </select> */}
             <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={'Select Date'} />
             
                   <div className="flex flex-row gap-2">
@@ -156,29 +152,35 @@ function LocalAirport({ step, setStep }) {
                     <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
                   </div>
                 </div>
-
-          {/* <div className="rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
-            <div className="flex flex-row items-center justify-between">
-              <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
-                Date & Time Slot For Pickup
-              </div>
-              <KeyboardArrowDownIcon className="text-[#F47521]" />
-            </div>
-            <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={ 'Select Time'}/>
-            <div className="flex flex-row gap-2 items-center">
-              <h2 className="text-xs  text-[#1A7DC1]  ">Select Time Slot</h2>
-              <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
-            </div>
-          </div> */}
         </div>
-        <div className="flex flex-row items-center justify-start gap-2  my-2">
+        {
+          types==1?(<div className="flex flex-row gap-2 w-full "><div className="invisible flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
           <InfoOutlinedIcon className="text-[#FF0000]" />
           <h3 className="text-xs">
             Adding bags / weight at the time of pick is allowed.
           </h3>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
+        <div className="flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
+          <InfoOutlinedIcon className="text-[#FF0000]" />
+          <h3 className="text-xs">
+            Booking must be atleast 3days prior.
+          </h3>
+        </div></div>):(<div className="flex flex-row gap-2 w-full "><div className="flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
+          <InfoOutlinedIcon className="text-[#FF0000]" />
+          <h3 className="text-xs">
+            Adding bags / weight at the time of pick is allowed.
+          </h3>
+        </div>
+        <div className="invisible flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
+          <InfoOutlinedIcon className="text-[#FF0000]" />
+          <h3 className="text-xs">
+            Adding bags / weight at the time of pick is allowed.
+          </h3>
+        </div></div>)
+        }
+        <div className="my-3 flex flex-col lg:flex-row gap-2 ">
+         <div className="flex flex-col gap-2 lg:w-1/4  w-full">
+         <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2 ">
             <div className="flex flex-row justify-between">
               {types === 1 ? (
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -192,9 +194,19 @@ function LocalAirport({ step, setStep }) {
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler2} toggler={toggler2} toggle={city} data={'Select City'} topp={true }/>
+            <SelectBoxs  setToggler={setToggler2} toggler={toggler2} toggle={city} data={'Select City'} topp={true }/>
           </div>
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
+          {
+            types===1 && (<div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+              All Delivery must be 3 days
+            </h3>
+          </div>)
+          }
+         </div>
+          
+          <div className="relative lg:h-[72px] rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
             <div className="flex flex-row justify-between">
               {type === 1 ? (
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -209,7 +221,8 @@ function LocalAirport({ step, setStep }) {
             </div>
             <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={'Select City'} topp={true }/>
           </div>
-          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
+          <div className="flex flex-col gap-2  w-full lg:w-1/2">
+          <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2">
             <div className="flex flex-row justify-between">
               {type === 1 ? (
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -224,8 +237,25 @@ function LocalAirport({ step, setStep }) {
             </div>
             <SelectAddress toggle={address} toggler={toggler5} setToggler={setToggler5} data={'Select Address'} />
           </div>
+          {
+            types===1 ? (<div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+            We Deliver Anywhere in India
+
+            </h3>
+          </div>):(<div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+            <InfoOutlinedIcon className="text-[#FF0000]" />
+            <h3 className="text-xs">
+              All pincodes are servicable
+
+            </h3>
+          </div>)
+          }
+          
+          </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mb-3 flex flex-col lg:flex-row gap-2 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">

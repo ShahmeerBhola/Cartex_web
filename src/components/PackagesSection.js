@@ -5,6 +5,7 @@ import tag1 from "../../src/Images/Contact/tag1.png";
 import SliderCard from './SliderCard';
 import PackageCard from './PackageCard';
 
+
 function PackagesSection() {
     const packages=[{
         id:'1',
@@ -76,6 +77,8 @@ function PackagesSection() {
                 </div>
             ))}
           </Slider>
+          
+         
     </div>
   )
 }
