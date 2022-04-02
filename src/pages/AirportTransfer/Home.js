@@ -39,9 +39,9 @@ function Home() {
      <div className="  absolute w-full top-[40px] "  >
        {matches && <>
         <div className=" w-10/12  mx-auto">
-        <div className="bg-none rounded-2xl px-3 py-2 lg:px-3 lg:py-3 shadow-xl">
+        <div className=" rounded-2xl px-3 py-2 lg:px-3 lg:py-3 shadow-xl">
             <div className="w-full ">
-              <div className="flex flex-col gap-2">
+              <div className=" flex flex-col gap-2">
                 <div className={`border-2 rounded-lg   bg-white flex flex-row gap-2 w-full p-1 items-center ${step==0 && '!border-[#F47521]'}`} onClick={()=>{setStep(0); navigate("local")}}>
                   <img src={Baggage} />
                   <h3 className="font-bold text-xs">

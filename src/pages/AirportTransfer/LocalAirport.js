@@ -36,7 +36,7 @@ function LocalAirport({ step, setStep }) {
 
   return (
     <>
-      <div className=" flex flex-col w-full px-2 md:w-4/5 mt-4 md:mt-0 ">
+      <div className="bg-white flex flex-col w-full px-2 md:w-4/5 mt-2 py-2 md:mt-0 ">
         <div className="flex flex-row justify-between">
           <h3 className="font-bold text-base md:text-lg lg:text-xl w-3/5">
             Book doorstep baggage services to and from the airport with complete

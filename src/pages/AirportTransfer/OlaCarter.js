@@ -26,7 +26,7 @@ function OlaCarter() {
   const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
   return (
     <>
-      <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2  ">
+      <div className="bg-white flex flex-col md:w-4/5 w-full mt-2 py-2 px-2  ">
         <div className="flex flex-row justify-between ">
           <h3 className="font-bold text-base md:text-lg lg:text-xl w-3/5 md:w-1/2 lg:w-3/5">
             Book Doorstep Baggage services to and from Ola Drop zone at the

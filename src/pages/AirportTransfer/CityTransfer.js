@@ -27,7 +27,7 @@ function CityTransfer() {
   const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
   return (
     <>
-      <div className=" flex flex-col w-full md:w-4/5 mt-4 px-2 ">
+      <div className="bg-white flex flex-col w-full md:w-4/5 mt-2 py-2 px-2 ">
         <div className="flex flex-row  ">
           <h3 className="font-bold text-lg md:text-xl w-3/4 md:w-3/5">
             Book local personalized doorstep pickup and delivery

@@ -46,7 +46,7 @@ function LocalParcels() {
 
   return (
     <>
-      <div className=" flex flex-col md:w-4/5 w-full mt-4 px-2 ">
+      <div className="bg-white flex flex-col md:w-4/5 w-full mt-2 py-2 px-2 ">
         <div className="flex flex-col gap-2 ">
           <h3 className="font-bold text-lg md:text-xl w-3/5">
             Local Parcel Service

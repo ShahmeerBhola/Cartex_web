@@ -30,7 +30,7 @@ function CityTransfer() {
 
   return (
     <>
-      <div className=" flex flex-col w-full md:w-4/5 mt-4 px-2 ">
+      <div className="bg-white flex flex-col w-full md:w-4/5 mt-2 py-2 px-2 ">
         <div className="flex flex-row  ">
           <h3 className="font-bold text-lg md:text-xl w-full">
             Domestic / International Baggage Transfer & Inter / Intra Terminal
