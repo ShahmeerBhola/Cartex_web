@@ -30,7 +30,7 @@ function Blog() {
           smallScreen?Hidden:<>
           <div className="absolute top-[405px] w-full ">
           <div className="md:w-11/12 lg:w-10/12 px-2 md:px-4 py-4 bg-white rounded-xl shadow-2xl mx-auto">
-            <div className=" flex flex-row mx-auto justify-between gap-1 px-0 md:px-2 font-normal md:text-base">
+            <div className=" flex flex-row mx-auto justify-between gap-1 px-0 md:px-2 font-normal md:text-base py-2">
               <div>Travelling</div>
               <div>Tourism</div>
               <div>Flights</div>
