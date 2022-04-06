@@ -33,6 +33,7 @@ import InterTerminal from './pages/AirportTransfer/InterTerminal';
 import OlaCarter from './pages/AirportTransfer/OlaCarter';
 import AirportTransfer from './pages/AirportTransfer/AirportTransfer';
 import Safety from './component/Safety';
+import Home from './pages/AirportTransfer/Home';
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Routes>
-        <Route index element={<Abouts/>} />
+        <Route index element={<Home/>} />
         <Route path='about' element={<Abouts/>} />
         <Route path="privacy" element={<PrivacyPolicy/>} />
         <Route path="terms" element={<Terms/>} />

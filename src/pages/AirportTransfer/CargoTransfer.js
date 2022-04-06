@@ -131,7 +131,7 @@ function CargoTransfer() {
                     <option value="+1">Thursday, 28 October, 2021</option>
                     <option value="+1">Thursday, 29 October, 2021</option>
                   </select> */}
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row items-center gap-2">
               <h2 className="text-xs  text-[#1A7DC1]  ">Select Time Slot</h2>
               <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
             </div>

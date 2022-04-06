@@ -9,7 +9,7 @@ const SignupModal = (props) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="mx-auto py-3 h-[90vh] bg-white  flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  ">
+      <div className="mx-auto py-3  bg-white  flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  ">
         <img className="h-[24px] w-[150px]" src={cartex}></img>
         <div className="text-xl py-4 font-bold">Create a new account</div>
         <img
@@ -54,7 +54,7 @@ const SignupModal = (props) => {
             ></input>
           </div>
 
-          <div className="bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[48px] flex justify-center items-center cursor-pointer">
+          <div className="bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[12px] flex justify-center items-center cursor-pointer">
             Register
           </div>
           <div className="justify-start text-xs md:text-sm">
@@ -72,7 +72,7 @@ const SignupModal = (props) => {
           >
             Login
           </div>
-          <div className=" text-[12px]  md:text-sm flex flex-row justify-between text-[#1A7DC1] cursor-pointer">
+          {/* <div className=" text-[12px]  md:text-sm flex flex-row justify-between text-[#1A7DC1] cursor-pointer">
             <a
               onClick={() => {
                 navigate("/terms");
@@ -89,7 +89,7 @@ const SignupModal = (props) => {
             >
               Privacy Policy
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -21,18 +21,31 @@ function LocalAirport({ step, setStep }) {
   const [active1, setActive1] = React.useState(false);
   const [active2, setActive2] = React.useState(false);
   const [active3, setActive3] = React.useState(false);
-  const [toggler, setToggler] = useState(false)
-  const [toggler1, setToggler1] = useState(false)
-  const [toggler2, setToggler2] = useState(false)
-  const [toggler3, setToggler3] = useState(false)
-  const [toggler4, setToggler4] = useState(false)
-  const [toggler5,setToggler5]=useState(false)
-  const toggle= ['10 bags','12 bags', '15 bags','20 bags'];
-  const city= ['Banglore', 'New Dehli'];
-  const airports= ['KIAL Banglore', 'New Dehli'];
-  const time= ['9:00 pm', '10:00 pm'];
-  const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
-  const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
+  const [toggler, setToggler] = useState(false);
+  const [toggler1, setToggler1] = useState(false);
+  const [toggler2, setToggler2] = useState(false);
+  const [toggler3, setToggler3] = useState(false);
+  const [toggler4, setToggler4] = useState(false);
+  const [toggler5, setToggler5] = useState(false);
+  const toggle = ["10 bags", "12 bags", "15 bags", "20 bags"];
+  const city = ["Banglore", "New Dehli"];
+  const airports = ["KIAL Banglore", "New Dehli"];
+  const time = ["9:00 pm", "10:00 pm"];
+  const date = [
+    "Thursday, 28 October, 2021",
+    "Friday, 29 October, 2021",
+    "Saturday, 30 October, 2021",
+    "Sunday, 31 October, 2021",
+  ];
+  const address = [
+    "Banglore, kanataka,India",
+    "Banglore cantonmet Railway Station",
+    "Banglore cantonmet Railway Station",
+    "Banglore cantonmet Railway Station",
+    "Banglore cantonmet Railway Station",
+    "Banglore cantonmet Railway Station",
+    "Banglore cantonmet Railway Station",
+  ];
 
   return (
     <>
@@ -104,7 +117,11 @@ function LocalAirport({ step, setStep }) {
             <div className="flex flex-row">
               <span className="border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
-                  <select className="bg-transparent" style={{background:"none",backgroundColor:"none"}} id="phonecode">
+                  <select
+                    className="bg-transparent"
+                    style={{ background: "none", backgroundColor: "none" }}
+                    id="phonecode"
+                  >
                     <option value="+1">+1</option>
                   </select>
                 </label>
@@ -126,86 +143,125 @@ function LocalAirport({ step, setStep }) {
           </div>
         </div>
         <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="relative rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2" >
+          <div className="relative rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
                 Bags
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={ 'Select Bags'}/>
+            <SelectBoxs
+              setToggler={setToggler}
+              toggler={toggler}
+              toggle={toggle}
+              data={"Select Bags"}
+            />
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2 flex flex-col justify-between">
-                  <div className="flex flex-row justify-between ">
-                    <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                      Date & Time Slot For Pickup
-                    </div>
-                    <KeyboardArrowDownIcon className="text-[#F47521]" />
-                  </div>
-            <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={'Select Date'} />
-            
-                  <div className="flex flex-row gap-2">
-                    <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
-                      Select Time Slot
-                    </h2>
-                    <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
-                  </div>
-                </div>
-        </div>
-        {
-          types==1?(<div className="flex flex-row gap-2 w-full "><div className="invisible flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
-          <InfoOutlinedIcon className="text-[#FF0000]" />
-          <h3 className="text-xs">
-            Adding bags / weight at the time of pick is allowed.
-          </h3>
-        </div>
-        <div className="flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
-          <InfoOutlinedIcon className="text-[#FF0000]" />
-          <h3 className="text-xs">
-            Booking must be atleast 3days prior.
-          </h3>
-        </div></div>):(<div className="flex flex-row gap-2 w-full "><div className="flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
-          <InfoOutlinedIcon className="text-[#FF0000]" />
-          <h3 className="text-xs">
-            Adding bags / weight at the time of pick is allowed.
-          </h3>
-        </div>
-        <div className="invisible flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
-          <InfoOutlinedIcon className="text-[#FF0000]" />
-          <h3 className="text-xs">
-            Adding bags / weight at the time of pick is allowed.
-          </h3>
-        </div></div>)
-        }
-        <div className="my-3 flex flex-col lg:flex-row gap-2 ">
-         <div className="flex flex-col gap-2 lg:w-1/4  w-full">
-         <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2 ">
-            <div className="flex flex-row justify-between">
-              {types === 1 ? (
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Delivery City
-                </div>
-              ) : (
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Select City of Service
-                </div>
-              )}
-              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
+            <div className="flex flex-row justify-between ">
+              <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                Date & Time Slot For Pickup
+              </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs  setToggler={setToggler2} toggler={toggler2} toggle={city} data={'Select City'} topp={true }/>
+            <SelectBoxs
+              setToggler={setToggler1}
+              toggler={toggler1}
+              toggle={date}
+              data={"Select Date"}
+            />
+
+            <div className="flex flex-row gap-2">
+              <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
+                Select Time Slot
+              </h2>
+              <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
+            </div>
           </div>
-          {
-            types===1 && (<div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
-            <InfoOutlinedIcon className="text-[#FF0000]" />
-            <h3 className="text-xs">
-              All Delivery must be 3 days
-            </h3>
-          </div>)
-          }
-         </div>
-          
+        </div>
+        {types == 1 ? (
+          <div className="flex flex-row gap-2 w-full ">
+            <div className="invisible flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
+              <InfoOutlinedIcon className="text-[#FF0000]" />
+              <h3 className="text-xs">
+                Adding bags / weight at the time of pick is allowed.
+              </h3>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
+              <InfoOutlinedIcon className="text-[#FF0000]" />
+              <h3 className="text-xs">Booking must be atleast 3days prior.</h3>
+            </div>
+          </div>
+        ) : (
+          <div className="flex flex-row gap-2 w-full ">
+            <div className="flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
+              <InfoOutlinedIcon className="text-[#FF0000]" />
+              <h3 className="text-xs">
+                Adding bags / weight at the time of pick is allowed.
+              </h3>
+            </div>
+            <div className="invisible flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
+              <InfoOutlinedIcon className="text-[#FF0000]" />
+              <h3 className="text-xs">
+                Adding bags / weight at the time of pick is allowed.
+              </h3>
+            </div>
+          </div>
+        )}
+        <div className="my-3 flex flex-col lg:flex-row gap-2 ">
+          <div className="flex flex-col gap-2 lg:w-1/4  w-full">
+            <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2 ">
+              <div className="flex flex-row justify-between">
+                {types === 1 ?  <div>
+                  {
+                  type ===1?(<div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                  Delivery City
+                </div>):(<div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                    Arrival City
+                  </div>)
+                }</div>
+                  
+                 : (
+                  <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                    Select City of Service
+                  </div>
+                )}
+                {/* {type===2&&( <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                  Arrival City
+                </div>)} */}
+                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
+                <KeyboardArrowDownIcon className="text-[#F47521]" />
+              </div>
+              <SelectBoxs
+                setToggler={setToggler2}
+                toggler={toggler2}
+                toggle={city}
+                data={"Select City"}
+                topp={true}
+              />
+            </div>
+            {types===1&&  
+            <div>
+              {
+                type === 1 ? (
+                  <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+                    <InfoOutlinedIcon className="text-[#FF0000]" />
+                    <h3 className="text-xs">Delivery may take 4 days minimum</h3>
+                  </div>
+                ) : (
+                  <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+                    <InfoOutlinedIcon className="text-[#FF0000]" />
+                    <div className="flex flex-col">
+                    <h3 className="text-xs">Delivery may take minimum 4 days.</h3>
+                    <h3 className="text-xs">Delivery to NE & JK will take longer</h3>
+                    </div>
+                  </div>
+                )
+              }
+            </div>}
+          </div>
+
           <div className="relative lg:h-[72px] rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/4">
             <div className="flex flex-row justify-between">
               {type === 1 ? (
@@ -219,40 +275,46 @@ function LocalAirport({ step, setStep }) {
               )}
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler3} toggler={toggler3} toggle={airports} data={'Select City'} topp={true }/>
+            <SelectBoxs
+              setToggler={setToggler3}
+              toggler={toggler3}
+              toggle={airports}
+              data={"Select City"}
+              topp={true}
+            />
           </div>
           <div className="flex flex-col gap-2  w-full lg:w-1/2">
-          <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2">
-            <div className="flex flex-row justify-between">
-              {type === 1 ? (
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Pickup Address
-                </div>
-              ) : (
-                <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Delivery Address
-                </div>
-              )}
-              <KeyboardArrowDownIcon className="text-[#F47521]" />
+            <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2">
+              <div className="flex flex-row justify-between">
+                {type === 1 ? (
+                  <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                    Pickup Address
+                  </div>
+                ) : (
+                  <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
+                    Delivery Address
+                  </div>
+                )}
+                <KeyboardArrowDownIcon className="text-[#F47521]" />
+              </div>
+              <SelectAddress
+                toggle={address}
+                toggler={toggler5}
+                setToggler={setToggler5}
+                data={"Select Address"}
+              />
             </div>
-            <SelectAddress toggle={address} toggler={toggler5} setToggler={setToggler5} data={'Select Address'} />
-          </div>
-          {
-            types===1 ? (<div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
-            <InfoOutlinedIcon className="text-[#FF0000]" />
-            <h3 className="text-xs">
-            We Deliver Anywhere in India
-
-            </h3>
-          </div>):(<div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
-            <InfoOutlinedIcon className="text-[#FF0000]" />
-            <h3 className="text-xs">
-              All pincodes are servicable
-
-            </h3>
-          </div>)
-          }
-          
+            {type=== 2 ? (
+              <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+                <InfoOutlinedIcon className="text-[#FF0000]" />
+                <h3 className="text-xs">We Deliver Anywhere in India</h3>
+              </div>
+            ) : (
+              <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+                <InfoOutlinedIcon className="text-[#FF0000]" />
+                <h3 className="text-xs">All pincodes are servicable</h3>
+              </div>
+            )}
           </div>
         </div>
         <div className="mb-3 flex flex-col lg:flex-row gap-2 ">
@@ -282,8 +344,13 @@ function LocalAirport({ step, setStep }) {
               </div>
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
-            <SelectBoxs setToggler={setToggler4} toggler={toggler4} toggle={time} data={'Select Time'} topp={true}/>
-
+            <SelectBoxs
+              setToggler={setToggler4}
+              toggler={toggler4}
+              toggle={time}
+              data={"Select Time"}
+              topp={true}
+            />
           </div>
         </div>
         <div className="mt-3 flex flex-col gap-2 ">
@@ -292,13 +359,24 @@ function LocalAirport({ step, setStep }) {
               Add ons
             </div>
             <div className="flex flex-col lg:flex-row gap-2 pb-2">
-              <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active&& '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive(!active)}}>
+              <div
+                className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
+                  active && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
+                }`}
+                onClick={() => {
+                  setActive(!active);
+                }}
+              >
                 <img src={Bags} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Express Service</h4>
-                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active && '!text-[#1A7DC1]'}`}>
-                    {/* bg-[#1A7DC1] */}
+                    <div
+                      className={`flex flex-row items-center text-[#1A7DC1] font-bold ${
+                        active && "!text-[#1A7DC1]"
+                      }`}
+                    >
+                      {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -310,13 +388,24 @@ function LocalAirport({ step, setStep }) {
                   </p>
                 </div>
               </div>
-              <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active1 && '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive1(!active1)}}>
+              <div
+                className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
+                  active1 && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
+                }`}
+                onClick={() => {
+                  setActive1(!active1);
+                }}
+              >
                 <img src={Cab} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Cab Service</h4>
-                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active1 && '!text-[#1A7DC1]'}`}>
-                    {/* bg-[#1A7DC1] */}
+                    <div
+                      className={`flex flex-row items-center text-[#1A7DC1] font-bold ${
+                        active1 && "!text-[#1A7DC1]"
+                      }`}
+                    >
+                      {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -330,13 +419,24 @@ function LocalAirport({ step, setStep }) {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-2 pb-2">
-            <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active2 && '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive2(!active2)}}>
+              <div
+                className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
+                  active2 && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
+                }`}
+                onClick={() => {
+                  setActive2(!active2);
+                }}
+              >
                 <img src={Plane} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Laounge for Airplane</h4>
-                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active2 && '!text-[#1A7DC1]'}`}>
-                    {/* bg-[#1A7DC1] */}
+                    <div
+                      className={`flex flex-row items-center text-[#1A7DC1] font-bold ${
+                        active2 && "!text-[#1A7DC1]"
+                      }`}
+                    >
+                      {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -348,13 +448,24 @@ function LocalAirport({ step, setStep }) {
                   </p>
                 </div>
               </div>
-              <div className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${active3 && '!border-2 !border-[#F47521] !bg-[#fdeadf]'}`} onClick={()=>{setActive3(!active3)}}>
+              <div
+                className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
+                  active3 && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
+                }`}
+                onClick={() => {
+                  setActive3(!active3);
+                }}
+              >
                 <img src={Luggage} />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Insurance</h4>
-                    <div className={`flex flex-row items-center text-[#1A7DC1] font-bold ${active3 && '!text-[#1A7DC1]'}`}>
-                    {/* bg-[#1A7DC1] */}
+                    <div
+                      className={`flex flex-row items-center text-[#1A7DC1] font-bold ${
+                        active3 && "!text-[#1A7DC1]"
+                      }`}
+                    >
+                      {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -399,13 +510,26 @@ function LocalAirport({ step, setStep }) {
             <div className="flex flex-row justify-start items-start gap-1 pt-1">
               <ControlledCheckbox />
               <p className="pt-2 pr-2 text-xs lg:text-sm">
-                I am 18 years and above and agree and understand the <span className="text-[#1A7DC1] font-bold cursor-pointer" onClick={()=>navigate('/terms')}>Terms And
-                Condition</span> and <span className="text-[#1A7DC1] font-bold cursor-pointer" onClick={()=>navigate('/privacy')}>Privacy Policy</span>. I certify that there are no
-                passport(s), personal documents of importance, cash, illegal
-                items/substances, immediate medicine, alcohol or expensive
-                jewelry. I Agree and certify that CarterX and its associates do
-                not know the contents of the bag and are further released from
-                any liability arising from the contents of my baggage(s).
+                I am 18 years and above and agree and understand the{" "}
+                <span
+                  className="text-[#1A7DC1] font-bold cursor-pointer"
+                  onClick={() => navigate("/terms")}
+                >
+                  Terms And Condition
+                </span>{" "}
+                and{" "}
+                <span
+                  className="text-[#1A7DC1] font-bold cursor-pointer"
+                  onClick={() => navigate("/privacy")}
+                >
+                  Privacy Policy
+                </span>
+                . I certify that there are no passport(s), personal documents of
+                importance, cash, illegal items/substances, immediate medicine,
+                alcohol or expensive jewelry. I Agree and certify that CarterX
+                and its associates do not know the contents of the bag and are
+                further released from any liability arising from the contents of
+                my baggage(s).
               </p>
             </div>
             {/* <h3
@@ -415,10 +539,16 @@ function LocalAirport({ step, setStep }) {
         </div>
         {/* Details */}
         <div className="my-3 flex flex-row gap-6">
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer" onClick={()=>navigate('/arrivalbook')}>
+          <h3
+            className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer"
+            onClick={() => navigate("/arrivalbook")}
+          >
             Departure Booking Information
           </h3>
-          <h3 className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer" onClick={()=>navigate('/cancellation')}>
+          <h3
+            className="text-xs lg:text-sm font-bold text-[#1A7DC1] cursor-pointer"
+            onClick={() => navigate("/cancellation")}
+          >
             Cancellation And Refund Policy
           </h3>
         </div>
