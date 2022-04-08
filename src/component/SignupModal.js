@@ -9,7 +9,7 @@ const SignupModal = (props) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="mx-auto py-3  bg-white  flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  ">
+      <div className="mx-auto py-5  bg-white  flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  ">
         <img className="h-[24px] w-[150px]" src={cartex}></img>
         <div className="text-xl py-4 font-bold">Create a new account</div>
         <img
@@ -54,17 +54,17 @@ const SignupModal = (props) => {
             ></input>
           </div>
 
-          <div className="bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[12px] flex justify-center items-center cursor-pointer py-3">
+          <div className="bg-[#F47521] rounded-3xl font-bold text-center text-white w-[250px] md:w-[352px] h-[20px] flex justify-center items-center cursor-pointer py-3">
             Register
           </div>
-          <div className="justify-start text-xs md:text-sm">
+          <div className="justify-start mb-7 text-xs md:text-sm">
             * denotes mandatory field
           </div>
           <div className="w-[250px] md:w-[352px] text-sm md:text-lg flex justify-center items-center">
             Already have an account?
           </div>
           <div
-            className="text-[#F47521] text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer"
+            className="text-[#F47521] mb-7 text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer"
             onClick={() => {
               setModal(!modal);
               props.setModal(false);
@@ -72,7 +72,7 @@ const SignupModal = (props) => {
           >
             Login
           </div>
-          {/* <div className=" text-[12px]  md:text-sm flex flex-row justify-between text-[#1A7DC1] cursor-pointer">
+          <div className=" text-[12px]  md:text-sm flex flex-row justify-between text-[#1A7DC1] cursor-pointer">
             <a
               onClick={() => {
                 navigate("/terms");
@@ -89,7 +89,7 @@ const SignupModal = (props) => {
             >
               Privacy Policy
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
 

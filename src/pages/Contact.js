@@ -84,13 +84,15 @@ function Contact() {
           <>
             <div className="w-11/12  flex gap-7 lg:justify-between flex-row mx-auto">
               <div className="w-3/5 mx-auto flex flex-col gap-3">
-            <div className="md:w-2/3 w-11/12  text-white text-center md:!mr-auto ">
-                  <div className="text-2xl md:text-5xl mt-2 relative  z-20 ">
+            <div className="md:w-[520px] w-11/12  text-white  ">
+                <div className=" relative flex flex-col w-1/2  ">
+                <div className="text-2xl md:text-5xl mt-2 md:w-[500px] text-center relative  z-20 ">
                     Contact Us
                   </div>
-                  <div className="bg-[#F47521] border-0 mb-5 mx-auto bottom-2 md:w-8/12 w-[200px]  p-1 "></div>
+                  <div className="absolute text-center top-[42px] md:left-[50%] bg-[#F47521] border-0 mb-5 mx-auto bottom-2 md:w-[235px] w-[200px]  p-1 "></div>
 
-                  <div className="visible">
+                </div>
+                  <div className="visible w-[520px]">
                     Kindly check the FAQ below if you are not very familiar with
                     the functioning of this website or the application
                   </div>

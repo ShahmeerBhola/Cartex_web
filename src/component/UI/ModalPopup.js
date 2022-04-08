@@ -26,7 +26,7 @@ export default function ModalPopup({modal, setModal, children,  widow}) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-          <Box sx={style} className="shadow-lg w-[380px]">
+          <Box sx={style} className="shadow-lg w-[300px]  md:w-[380px]">
             {children}
           </Box>  
       </Modal>
