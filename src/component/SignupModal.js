@@ -54,7 +54,7 @@ const SignupModal = (props) => {
             ></input>
           </div>
 
-          <div className="bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[12px] flex justify-center items-center cursor-pointer">
+          <div className="bg-[#F47521] rounded-3xl text-center text-white w-[250px] md:w-[352px] h-[12px] flex justify-center items-center cursor-pointer py-3">
             Register
           </div>
           <div className="justify-start text-xs md:text-sm">
