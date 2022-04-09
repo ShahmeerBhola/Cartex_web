@@ -163,7 +163,7 @@ const Safety = () => {
         </div>
       </div>
       {/* Work Secrion */}
-      <div className="w-11/12 py-5 md:w-10/12 mx-auto">
+        <div className="w-11/12 py-5 md:w-10/12 mx-auto">
         <div className="flex flex-col gap-1 md:flex-row justify-between items-start md:items-end">
           <div>
             <div className="py-3 text-xl md:text-4xl font-bold">
@@ -175,7 +175,7 @@ const Safety = () => {
           </div>
           <div
             className=" hidden md:flex flex-row gap-1 items-center px-2 h-[40px] md:h-[50px] bg-[#1A7DC1] rounded-full 
-         "
+            "
           >
             <img src={Player} className="h-[30px]" />
             <div className="   p-0 font- normal text-sm md:text-xl text-center text-white ">
@@ -183,9 +183,11 @@ const Safety = () => {
             </div>
           </div>
         </div>
+        </div>
      
         {/* false */}
-          <div className="py-4 flex flex-row  gap-4 whitespace-nowrap overflow-auto touch-pan-x cursor-pointer" ref={ref} onMouseDown={onMouseDown}>
+         <div className="relative">
+         <div className="pl-[100px] py-4 flex flex-row  gap-4 whitespace-nowrap overflow-auto touch-pan-x cursor-pointer" ref={ref} onMouseDown={onMouseDown}>
             <div className="py-3 px-3 text-white shadow-lg text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
               Airport Transfer - Departure
             </div>
@@ -204,11 +206,15 @@ const Safety = () => {
             <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Air Asia FlyPoster
             </div>
-            <div className="py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className= " mr-[100px] py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               City Transfer
             </div>
           </div>
+          <div className="absolute brightness-2 blur-sm left"></div>
+          <div className="absolute brightness-2 blur-sm right"></div>
+         </div>
         
+        <div className="w-11/12 py-5 md:w-10/12 mx-auto">
         <img className="md:block hidden w-full py-2" src={Work} />
         <img className=" md:hidden w-full py-2 h-[800px]" src={Work1} />
       </div>

@@ -16,3 +16,20 @@ body{
   width: 0px;
    background: transparent;
 }
+.left {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right , #eeeeee , #eeeeee , #eeeeee, #eeeeee 70%, #eeeeee54);;
+  opacity: 0.9;
+}
+.right{
+  right: 0;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right , #eeeeee54 0% , #eeeeee 50% , #eeeeee, #eeeeee 100% , #eeeeee 120%);;
+  opacity: 0.9;
+}

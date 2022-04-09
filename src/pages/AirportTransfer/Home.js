@@ -35,7 +35,7 @@ function Home() {
   return (<>
 <div className=" w-full !bg-[#EEEEEE] ">
       <div className="relative w-full  ">
-        <img className="  md:h-[400px] h-[650px] w-full" src={Header} />
+        <img className="  md:h-[430px] h-[650px] w-full" src={Header} />
      <div className="  absolute w-full top-[40px] "  >
        {matches && <>
         <div className=" w-10/12  mx-auto">
@@ -104,13 +104,13 @@ function Home() {
           <div className="md:flex hidden flex-row gap-2">
             <div className="w-[230px] lg:w-[240px] flex">
               <div className="flex flex-col gap-2">
-                <div className={`border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==0 && '!border-[#F47521]'}`} onClick={()=>{setStep(0)}}>
+                <div className={`border-2 pl-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==0 && '!border-[#F47521]'}`} onClick={()=>{setStep(0)}}>
                   <img src={Baggage} />
                   <h3 className="font-bold text-[14px]">
                     Airport Baggage Assistance
                   </h3>
                 </div>
-                <div className='relative border-2 cursor-pointer rounded-lg flex flex-row   w-[225px] px-1  py-1 items-center'  onClick={()=>setToggle(!toggle)}>
+                <div className='relative border-2 pl-2 cursor-pointer rounded-lg flex flex-row   w-[225px] px-1  py-1 items-center'  onClick={()=>setToggle(!toggle)}>
                   <img src={Partner} />
                   <h3 className="font-bold text-[14px] text-center">Alliance Partners</h3>
                   <img src={Group} className='w-[85px]' />
@@ -128,19 +128,19 @@ function Home() {
                  </div>
                  }
                 </div>{" "}
-                <div className={`border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==2 && '!border-[#F47521]'}`} onClick={()=>{setStep(2)}}>
+                <div className={`border-2 pl-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==2 && '!border-[#F47521]'}`} onClick={()=>{setStep(2)}}>
                   <img src={Parcel} />
                   <h3 className="font-bold text-[14px]">Local Parcels</h3>
                 </div>{" "}
-                <div className={`border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==3 && '!border-[#F47521]'}`} onClick={()=>{setStep(3)}}>
+                <div className={`border-2 pl-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==3 && '!border-[#F47521]'}`} onClick={()=>{setStep(3)}}>
                   <img src={Transfer} />
                   <h3 className="font-bold text-[14px]">Cargo Transfers</h3>
                 </div>{" "}
-                <div className={`border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==4 && '!border-[#F47521]'}`} onClick={()=>{setStep(4)}}>
+                <div className={`border-2 pl-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==4 && '!border-[#F47521]'}`} onClick={()=>{setStep(4)}}>
                   <img src={City} />
                   <h3 className="font-bold text-[14px]">City Transfers</h3>
                 </div>{" "}
-                <div className={`relative border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==5 && '!border-[#F47521]'}`} onClick={()=>{setStep(5)}}>
+                <div className={`relative border-2 pl-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==5 && '!border-[#F47521]'}`} onClick={()=>{setStep(5)}}>
                   <img src={Interterminal} />
                   <h3 className="font-bold text-[14px]">
                     Interterminal Transfers
@@ -148,7 +148,7 @@ function Home() {
                   <h3 className="absolute right-1 top-1 rounded-full text-xs font-bold text-white bg-[#F47521] py-0.5 px-2">NEW!</h3>
 
                 </div>
-                <div className={`relative border-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6)}}>
+                <div className={`relative border-2 pl-2 cursor-pointer rounded-lg flex flex-row gap-2 w-[225px] p-1 items-center ${step==6 && '!border-[#F47521]'}`} onClick={()=>{setStep(6)}}>
                   <img src={Ola} />
                   <h3 className="font-bold text-[14px]">
                     #olacarter

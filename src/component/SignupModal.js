@@ -9,7 +9,7 @@ const SignupModal = (props) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="mx-auto py-5  bg-white  flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  ">
+      <div className="mx-auto py-5   bg-white  flex flex-col relative p-5 rounded-xl shadow-lg justify-center items-center  ">
         <img className="h-[24px] w-[150px]" src={cartex}></img>
         <div className="text-xl py-4 font-bold">Create a new account</div>
         <img
@@ -54,7 +54,7 @@ const SignupModal = (props) => {
             ></input>
           </div>
 
-          <div className="bg-[#F47521] rounded-3xl font-bold text-center text-white w-[250px] md:w-[352px] h-[20px] flex justify-center items-center cursor-pointer py-3">
+          <div className="bg-[#F47521] rounded-3xl font-bold text-center text-white w-[250px] md:w-[352px] h-[25    px] flex justify-center items-center cursor-pointer py-3">
             Register
           </div>
           <div className="justify-start mb-7 text-xs md:text-sm">
