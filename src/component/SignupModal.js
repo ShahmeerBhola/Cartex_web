@@ -17,22 +17,22 @@ const SignupModal = (props) => {
           className="w-[48px] h-[48px] absolute top-0 right-2 cursor-pointer"
           src={closebtn}
         ></img>
-        <div className="flex flex-col gap-2 md:gap-4 overflow-hidden">
-          <div className="rounded-lg border-[#CCCCCC]  border-2  p-2 w-[250px] md:w-[352px]">
+        <div className="flex flex-col gap-2 md:gap-2.5 overflow-hidden">
+          <div className="rounded-lg border-[#CCCCCC]  border-2 py-1 px-2 w-[250px] md:w-[352px]">
             <div className="text-[15px] text-[#F47521] font-bold">Name</div>
             <input
-              className="outline-0 font-bold text:lg md:text-lg border-[#fff]"
+              className="outline-0 h-[15px] font-bold text:lg md:text-lg border-[#fff]"
               placeholder="Enter Name"
             ></input>
           </div>
 
-          <div className="rounded-lg border-[#CCCCCC]  border-2 w-[250px] md:w-[352px] px-2 py-2">
+          <div className="rounded-lg border-[#CCCCCC]  border-2 w-[250px] md:w-[352px] px-2 py-1">
             <div className="text-[15px] text-[#F47521] font-bold">
               Mobile No. *
             </div>
 
             <div className="flex flex-row">
-              <span className="border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
+              <span className="border-[1px]    rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
                   <select id="phonecode">
                     <option value="+1">+1</option>
@@ -40,31 +40,31 @@ const SignupModal = (props) => {
                 </label>
               </span>
               <input
-                className="font-bold text:lg md:text-lg w-full outline-0 indent-2"
+                className="font-bold text:lg md:text-lg w-full  outline-0 indent-2"
                 placeholder="Enter Mobile NO."
               ></input>
             </div>
           </div>
 
-          <div className="rounded-lg border-[#CCCCCC]  border-2  w-[250px] md:w-[352px] p-2">
+          <div className="rounded-lg border-[#CCCCCC]  border-2  w-[250px] md:w-[352px] py-1 px-2">
             <div className="text-[15px] text-[#F47521] font-bold">Email</div>
             <input
-              className="font-bold text:lg md:text-lg outline-0"
+              className="font-bold text:lg md:text-lg h-[15px] outline-0"
               placeholder="Enter Email"
             ></input>
           </div>
 
-          <div className="bg-[#F47521] rounded-3xl font-bold text-center text-white w-[250px] md:w-[352px] h-[25    px] flex justify-center items-center cursor-pointer py-3">
+          <div className="bg-[#F47521] rounded-3xl font-bold text-center text-white w-[250px] md:w-[352px] h-[25px] flex justify-center items-center cursor-pointer py-3">
             Register
           </div>
-          <div className="justify-start mb-7 text-xs md:text-sm">
+          <div className="justify-start mb-3 text-xs md:text-sm">
             * denotes mandatory field
           </div>
           <div className="w-[250px] md:w-[352px] text-sm md:text-lg flex justify-center items-center">
             Already have an account?
           </div>
           <div
-            className="text-[#F47521] mb-7 text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer"
+            className="text-[#F47521] mb-3 text-sm md:text-lg w-[250px] md:w-[352px] flex justify-center items-center font-bold cursor-pointer"
             onClick={() => {
               setModal(!modal);
               props.setModal(false);

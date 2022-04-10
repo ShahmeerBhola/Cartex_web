@@ -18,10 +18,11 @@ body{
 }
 .left {
   position: absolute;
-  width: 100px;
+  width: 150px;
   top: 0;
+  left: -37px;
   bottom: 0;
-  background: linear-gradient(to right , #eeeeee , #eeeeee , #eeeeee, #eeeeee 70%, #eeeeee54);;
+  background: linear-gradient(to right , #eee 20% , #eeeeee 30%, #eeeeee, #eeeeee 70%, #eeeeee54);;
   opacity: 0.9;
 }
 .right{
@@ -31,5 +32,22 @@ body{
   top: 0;
   bottom: 0;
   background: linear-gradient(to right , #eeeeee54 0% , #eeeeee 50% , #eeeeee, #eeeeee 100% , #eeeeee 120%);;
+  opacity: 0.9;
+}
+.left1 {
+  position: absolute;
+  width: 30px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right , #eeeeee -3% , #eeeeee , #eeeeee, #eeeeee 70%, #eeeeee54);;
+  opacity: 0.9;
+}
+.right1{
+  right: 0;
+  position: absolute;
+  width: 30px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right , #eeeeee54 0% , #eeeeee 50% , #eeeeee, #eeeeee 100% );;
   opacity: 0.9;
 }

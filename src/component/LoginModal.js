@@ -2,9 +2,9 @@ import React,{useState} from 'react'
 import Modal from "./UI/ModalPopup"
 import cartex from "./UI/modalpics/Cartex.png"
 import closebtn from "../component/UI/modalpics/closebtnn.png"
-import SignupModal from './SignupModal'
 import ModalPopup from './UI/ModalPopup'
 import { useNavigate } from 'react-router-dom'
+import SignupModal from './SignupModal'
 
 const LoginModal = ({setModal,setLogin,login}) => {
   const [modal1, setModal1] = useState(false);

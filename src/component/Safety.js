@@ -16,9 +16,11 @@ import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import Slider from "../components/Slider";
 import useDraggableScroll from "use-draggable-scroll";
+import { useMediaQuery } from "@material-ui/core";
 
 const Safety = () => {
   const ref = useRef  (null);
+  const smallScreen=useMediaQuery('(max-width:786px)')
 
   const { onMouseDown } = useDraggableScroll(ref);
   return (
@@ -187,7 +189,10 @@ const Safety = () => {
      
         {/* false */}
          <div className="relative">
-         <div className="pl-[100px] py-4 flex flex-row  gap-4 whitespace-nowrap overflow-auto touch-pan-x cursor-pointer" ref={ref} onMouseDown={onMouseDown}>
+           {
+             smallScreen ?
+             <>
+             <div className="pl-[20px] py-4 flex flex-row  gap-4 whitespace-nowrap overflow-auto touch-pan-x cursor-pointer" ref={ref} onMouseDown={onMouseDown}>
             <div className="py-3 px-3 text-white shadow-lg text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
               Airport Transfer - Departure
             </div>
@@ -206,12 +211,44 @@ const Safety = () => {
             <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Air Asia FlyPoster
             </div>
-            <div className= " mr-[100px] py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className= " mr-[25px] py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               City Transfer
             </div>
           </div>
-          <div className="absolute brightness-2 blur-sm left"></div>
-          <div className="absolute brightness-2 blur-sm right"></div>
+          <div className="absolute brightness-2 blur-sm left1 "></div>
+          <div className="absolute brightness-2 blur-sm right1 "></div>
+         
+             </>:
+             <>
+              <div className="pl-[125px]  mx-auto py-4 flex flex-row  gap-4 whitespace-nowrap overflow-auto touch-pan-x cursor-pointer" ref={ref} onMouseDown={onMouseDown}>
+            <div className="py-3 px-3 text-white shadow-lg text-sm md:text-xl rounded-full bg-[#F47521] border-2 border-[#F47521]">
+              Airport Transfer - Departure
+            </div>
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+              Airport Transfer - Arrival
+            </div>
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+              Cargo Transfer
+            </div>
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+              Vistara Porter - Departure
+            </div>
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+              Vistara Porter - Arrival
+            </div>
+            <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+              Air Asia FlyPoster
+            </div>
+            <div className= " mr-[120px] py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+              City Transfer
+            </div>
+          </div>
+          <div className="absolute brightness-100 blur-sm left"></div>
+          <div className="absolute brightness-100 blur-sm right"></div>
+             
+             </>
+           }
+        
          </div>
         
         <div className="w-11/12 py-5 md:w-10/12 mx-auto">
