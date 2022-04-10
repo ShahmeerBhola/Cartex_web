@@ -21,7 +21,7 @@ function Slider({children,autoPlay}) {
         pageDots: false,
         prevNextButtons: false,
         autoPlay: autoPlay,
-        //wrapAround: true,
+        // wrapAround: true,
         contain: false,
         draggable: true
 

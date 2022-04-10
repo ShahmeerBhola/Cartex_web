@@ -184,9 +184,10 @@ function Contact() {
             </>
           )}
         </div>
-        <div className=" w-11/12 md:w-10/12 mx-auto ">
+        <div className=" w-full mx-auto ">
           {smallScreen ? (
             <>
+              <div className="w-11/12 md:w-10/12 mx-auto">
               <div className="w-full my-2">
                 <div className="w-full md:w-8/12 mx-auto flex flex-col gap-4 rounded-2xl shadow-2xl bg-white p-4  ">
                   <h3 className="font-bold text-[32px] text-center ">
@@ -224,10 +225,12 @@ function Contact() {
                   </div>
                 </div>
               </div>
+              </div>
             </>
           ) : (
             <>
-              <div className="flex flex-col justify-center items-center ">
+            <div className="w-11/12 md:w-10/12 mx-auto">
+            <div className="flex flex-col justify-center items-center ">
                 <div className="flex flex-row gap-2 items-center">
                   <h3 className="text-[36px] font-bold">Position at Airport</h3>
                   <InfoIcon />
@@ -237,10 +240,14 @@ function Contact() {
               <div className="flex flex-col gap-3">
                 <h3 className="text-4xl font-bold">Airport Transfer</h3>
               </div>
+            </div>
 
-              <div className="w-full">
+              <div className=" relative w-full">
                 <PackagesSection />
+                <div className="absolute leftcard blur-lg"></div>
+    <div className="absolute rightcard blur-lg"></div>
               </div>
+              <div className="w-11/12 md:w-10/12 mx-auto">
               <div className="w-full mt-5 mb-2">
                 <h2 className="text-[36px] pt-4 pb-5 font-bold">
                   City Transfer
@@ -271,6 +278,7 @@ function Contact() {
                     </h4>
                   </div>
                 </div>
+              </div>
               </div>
             </>
           )}

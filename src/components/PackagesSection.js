@@ -65,12 +65,12 @@ function PackagesSection() {
         transfer:"Available"
       }];
   return (
-    <div className=" w-full  flex flex-row gap-4">
+    <div className=" w-full flex flex-row gap-4">
        <Slider autoPlay={true}>
 
        
             {packages.map((v,i)=>(
-                <div className="mx-2">
+                <div className=" mx-2">
                     <SliderCard
                         packages = {v}
                     />

@@ -173,13 +173,14 @@ function Home() {
         </div>
       </div></div>
         <div className="  w-full py-3 mt-[20px] bg-[#eee]  md:pt-0 overflow-hidden ">
-    <div className="w-11/12 md:w-10/12 mx-auto">
-    <PackagesSection/>
+    <div className=" relative  w-11/12 md:w-full mx-auto">
+    <PackagesSection  />
+    <div className="absolute leftcard blur-lg"></div>
+    <div className="absolute rightcard blur-lg"></div>
     </div>
     </div>
     <Safety/>
     <Footer/>
-
      
      <div>
      </div>

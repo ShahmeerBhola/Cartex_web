@@ -239,12 +239,12 @@ const Safety = () => {
             <div className="py-3 px-3 text-[#F47521] bg-[#FFF] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               Air Asia FlyPoster
             </div>
-            <div className= " mr-[120px] py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
+            <div className= " mr-[200px] py-3 px-3 text-[#F47521] bg-[#fff] text-sm md:text-xl rounded-full  border-2 border-[#F47521]">
               City Transfer
             </div>
           </div>
-          <div className="absolute brightness-100 blur-sm left"></div>
-          <div className="absolute brightness-100 blur-sm right"></div>
+          <div className="absolute blur-lg left"></div>
+          <div className="absolute blur-lg right"></div>
              
              </>
            }
