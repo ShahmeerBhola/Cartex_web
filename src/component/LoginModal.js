@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom'
 import SignupModal from './SignupModal'
 
 const LoginModal = ({setModal,setLogin,login}) => {
+  let number=[]
+  number=[...Array(99).keys()]
   const [modal1, setModal1] = useState(false);
   const navigate = useNavigate();
   const loginHandler=()=>{
@@ -27,7 +29,12 @@ const LoginModal = ({setModal,setLogin,login}) => {
                           <div className='text-[15px] text-[#F47521] font-bold'>Mobile No. *</div>
                           <div className='flex flex-row'>
           <span className='border-[1px] rounded-lg border-[#F47521] text-sm p-1 ' ><label className='text-[#F47521]' for="phonecode"><select style={{background:"none",backgroundColor:"none"}}  id="phonecode">
-                <option value="+1">+1</option>
+          {number.length>0 &&
+                      number.map((item,index)=>(
+                        
+                        <option value={index}>+{index+1}</option>
+                      ))
+                    }
               
           </select></label></span>
           <input className='font-bold text:lg md:text-2xl text-[#707070] w-full outline-0 indent-2' placeholder='Enter Mobile NO.'></input>

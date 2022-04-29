@@ -14,7 +14,11 @@ import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
 import SelectAddress from "../../component/SelectAddress";
 import SelectBox from "../../component/SelectBox";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 function  LocalAirport({ step, setStep }) {
+  let number=[]
+  number=[ ...Array(99).keys()]
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
   const [types, setTypes] = React.useState(0);
@@ -125,7 +129,13 @@ function  LocalAirport({ step, setStep }) {
                     style={{ background: "none", backgroundColor: "none" }}
                     id="phonecode"
                   >
-                    <option value="+1">+1</option>
+                     {number.length>0 &&
+                      number.map((item,index)=>(
+                        
+                        <option value={index}>+{index+1}</option>
+                      ))
+                    }
+                    {/* <option value="+1">+1</option> */}
                   </select>
                 </label>
               </span>

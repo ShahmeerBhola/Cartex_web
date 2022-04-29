@@ -9,6 +9,8 @@ import Packing from "../../Images/Airport/Baggage/Packing.png";
 import SelectBoxs from "../../component/SelectBoxs";
 
 function CityTransfer() {
+  let number=[]
+  number=[...Array(99).keys()]
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
   const [active, setActive] = React.useState(0);
@@ -57,7 +59,12 @@ function CityTransfer() {
               <span className="border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
                   <select className="bg-none" style={{background:"none",backgroundColor:"none"}} id="phonecode">
-                    <option value="+1">+1</option>
+                  {number.length>0 &&
+                      number.map((item,index)=>(
+                        
+                        <option value={index}>+{index+1}</option>
+                      ))
+                    }
                   </select>
                 </label>
               </span>

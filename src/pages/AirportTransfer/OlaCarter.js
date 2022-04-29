@@ -11,6 +11,8 @@ import SelectAddress from "../../component/SelectAddress";
 import SelectBox from "../../component/SelectBox";
 
 function OlaCarter() {
+  let number=[]
+  number=[...Array(99).keys()]
   const navigate = useNavigate();
   const [type, setType] = React.useState(2);
   const [types, setTypes] = React.useState(0);
@@ -94,7 +96,12 @@ function OlaCarter() {
               <span className="flex flex-col justify-between md:py-2  border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
                   <select className="bg-none" style={{background:"none",backgroundColor:"none"}} id="phonecode">
-                    <option value="+1">+1</option>
+                  {number.length>0 &&
+                      number.map((item,index)=>(
+                        
+                        <option value={index}>+{index+1}</option>
+                      ))
+                    }
                   </select>
                 </label>
               </span>

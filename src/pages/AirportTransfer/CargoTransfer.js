@@ -26,6 +26,8 @@ function CargoTransfer() {
   const time= ['9:00 pm', '10:00 pm'];
   const date= ['Thursday, 28 October, 2021','Friday, 29 October, 2021', 'Saturday, 30 October, 2021','Sunday, 31 October, 2021'];
   const address=['Banglore, kanataka,India',"Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station","Banglore cantonmet Railway Station"];
+  let number=[];
+  number=[...Array(99).keys()]
   return (
     <>
       <div className="bg-white flex flex-col md:w-4/5 w-full mt-2 py-2 px-2  ">
@@ -88,7 +90,12 @@ function CargoTransfer() {
               <span className="border-[1px] rounded-lg border-[#F47521] text-sm p-1 ">
                 <label className="text-[#F47521]" for="phonecode">
                   <select className="bg-none" style={{background:"none",backgroundColor:"none"}} id="phonecode">
-                    <option value="+1">+1</option>
+                  {number.length>0 &&
+                      number.map((item,index)=>(
+                        
+                        <option value={index}>+{index+1}</option>
+                      ))
+                    }
                   </select>
                 </label>
               </span>

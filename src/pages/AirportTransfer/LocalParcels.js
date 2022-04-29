@@ -15,6 +15,8 @@ import SelectBoxs from "../../component/SelectBoxs";
 import SelectAddress from '../../component/SelectAddress';
 import SelectBox from "../../component/SelectBox";
 function LocalParcels() {
+  let number=[]
+  number=[...Array(99).keys()]
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
   // const [toggler, setToggler] = useState(false);
@@ -84,7 +86,12 @@ function LocalParcels() {
                     style={{ background: "none", backgroundColor: "none" }}
                     id="phonecode"
                   >
-                    <option value="+1">+1</option>
+                    {number.length>0 &&
+                      number.map((item,index)=>(
+                        
+                        <option value={index}>+{index+1}</option>
+                      ))
+                    }
                   </select>
                 </label>
               </span>
