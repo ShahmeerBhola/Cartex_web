@@ -38,7 +38,7 @@ function CityTransfer() {
           </h3>
         </div>
         <hr className="w-full my-6" />
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-7 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
           <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
             <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Name

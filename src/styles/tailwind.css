@@ -591,12 +591,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.25rem;
 }
 
-.left-\[\] {
-  left: ;
+.right-\[12px\] {
+  right: 12px;
 }
 
-.left-\[100px\] {
-  left: 100px;
+.left-\[12px\] {
+  left: 12px;
+}
+
+.left-\[32px\] {
+  left: 32px;
+}
+
+.left-\[82px\] {
+  left: 82px;
+}
+
+.left-\[92px\] {
+  left: 92px;
+}
+
+.-top-0 {
+  top: -0px;
+}
+
+.-top-\[2px\] {
+  top: -2px;
+}
+
+.-top-\[5px\] {
+  top: -5px;
+}
+
+.-top-\[4px\] {
+  top: -4px;
+}
+
+.top-\[px\] {
+  top: px;
+}
+
+.top-\[30px\] {
+  top: 30px;
+}
+
+.top-\[20px\] {
+  top: 20px;
 }
 
 .z-10 {
@@ -675,8 +715,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 25px;
 }
 
-.mr-\[120px\] {
-  margin-right: 120px;
+.mr-\[200px\] {
+  margin-right: 200px;
 }
 
 .mt-2 {
@@ -757,26 +797,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mr-\[10px\] {
-  margin-right: 10px;
-}
-
-.mr-\[150px\] {
-  margin-right: 150px;
-}
-
-.mr-\[180px\] {
-  margin-right: 180px;
-}
-
-.mr-\[200px\] {
-  margin-right: 200px;
-}
-
-.ml-\[100px\] {
-  margin-left: 100px;
 }
 
 .block {
@@ -1069,14 +1089,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[1px\] {
   width: 1px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .min-w-\[290px\] {
@@ -1633,14 +1645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
-.pl-\[100px\] {
-  padding-left: 100px;
-}
-
-.pl-\[\] {
-  padding-left: ;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1882,18 +1886,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur-xl {
-  --tw-blur: blur(24px);
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-100 {
-  --tw-brightness: brightness(1);
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .brightness-50 {
   --tw-brightness: brightness(.5);
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1904,12 +1896,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-drop-shadow: drop-shadow(0 35px 35px rgba(0,0,0,0.5));
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .selection\:text-\[\#F47521\] *::selection {
@@ -2050,10 +2036,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-\[120px\] {
-    margin-left: 120px;
   }
 
   .md\:block {
@@ -2379,10 +2361,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 0.5rem;
   }
 
-  .md\:pl-\[100px\] {
-    padding-left: 100px;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -2540,6 +2518,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 1007px) {
+    .lg\:lg\:gap-20 {
+      gap: 5rem;
+    }
+  }
+
+  @media (min-width: 1007px) {
+    .lg\:lg\:gap-2 {
+      gap: 0.5rem;
+    }
   }
 
   .lg\:p-5 {

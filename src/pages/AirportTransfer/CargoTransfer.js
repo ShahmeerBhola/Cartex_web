@@ -8,6 +8,7 @@ import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
 import SelectAddress from "../../component/SelectAddress";
+import SelectBox from "../../component/SelectBox";
 function CargoTransfer() {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
@@ -17,6 +18,8 @@ function CargoTransfer() {
   const [toggler2, setToggler2] = useState(false)
   const [toggler3, setToggler3] = useState(false)
   const [toggler4, setToggler4] = useState(false)
+  const [toggler6, setToggler6] = useState(false);
+  const time1 = ["7 Am - 11 AM", "11 AM - 3 PM","3 Pm - 7 PM", "7 PM - 12 AM","4 AM - 7 AM"];
   const toggle= ['<8 kgs ','<5 kgs' ];
   const city= ['Banglore', 'New Dehli'];
   const airports= ['KIAL Banglore', 'New Dehli'];
@@ -66,7 +69,7 @@ function CargoTransfer() {
             </div>
           </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-7 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
           <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
             <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Name
@@ -105,7 +108,7 @@ function CargoTransfer() {
             ></input>
           </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-4 ">
+        <div className="mt-7 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
           <div className="relative rounded-lg border-[#CCCCCC] flex flex-col justify-between py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -131,9 +134,18 @@ function CargoTransfer() {
                     <option value="+1">Thursday, 28 October, 2021</option>
                     <option value="+1">Thursday, 29 October, 2021</option>
                   </select> */}
-            <div className="flex flex-row items-center gap-2">
-              <h2 className="text-xs  text-[#1A7DC1]  ">Select Time Slot</h2>
-              <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
+           <div className="flex flex-row gap-2 relative">
+              {/* <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
+                Select Time Slot
+              </h2> */}
+              <SelectBox
+              setToggler={setToggler6}
+              toggler={toggler6}
+              toggle={time1}
+              data={"Select Time Slot"}
+              topp={true}
+            />
+              <KeyboardArrowDownIcon className="text-[#1A7DC1] absolute left-[92px] -top-[4px]" />
             </div>
           </div>
         </div>

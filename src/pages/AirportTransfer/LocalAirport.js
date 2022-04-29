@@ -13,7 +13,8 @@ import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
 import SelectAddress from "../../component/SelectAddress";
-function LocalAirport({ step, setStep }) {
+import SelectBox from "../../component/SelectBox";
+function  LocalAirport({ step, setStep }) {
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
   const [types, setTypes] = React.useState(0);
@@ -27,6 +28,8 @@ function LocalAirport({ step, setStep }) {
   const [toggler3, setToggler3] = useState(false);
   const [toggler4, setToggler4] = useState(false);
   const [toggler5, setToggler5] = useState(false);
+  const [toggler6, setToggler6] = useState(false);
+  const time1 = ["7 Am - 11 AM", "11 AM - 3 PM","3 Pm - 7 PM", "7 PM - 12 AM","4 AM - 7 AM"];
   const toggle = ["10 bags", "12 bags", "15 bags", "20 bags"];
   const city = ["Banglore", "New Dehli"];
   const airports = ["KIAL Banglore", "New Dehli"];
@@ -99,7 +102,7 @@ function LocalAirport({ step, setStep }) {
             <h3>From the Airport</h3>
           </button>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-7 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
           <div className="flex flex-col justify-between md:py-2 rounded-lg border-[#CCCCCC]  border-2  px-2 w-full lg:w-1/3">
             <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
               Name
@@ -142,7 +145,7 @@ function LocalAirport({ step, setStep }) {
             ></input>
           </div>
         </div>
-        <div className="mt-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mt-7 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
           <div className="relative rounded-lg flex flex-col justify-between border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-sm lg:text-[15px] text-[#F47521] font-bold">
@@ -172,36 +175,43 @@ function LocalAirport({ step, setStep }) {
               data={"Select Date"}
             />
 
-            <div className="flex flex-row gap-2">
-              <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
+            <div className="flex flex-row lg:gap-2 gap-7 relative">
+              {/* <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
                 Select Time Slot
-              </h2>
-              <KeyboardArrowDownIcon className="text-[#1A7DC1]" />
+              </h2> */}
+              <SelectBox
+              setToggler={setToggler6}
+              toggler={toggler6}
+              toggle={time1}
+              data={"Select Time Slot"}
+              topp={true}
+            />
+              <KeyboardArrowDownIcon className="text-[#1A7DC1] absolute left-[92px] -top-[4px]" />
             </div>
           </div>
         </div>
         {types == 1 ? (
-          <div className="flex flex-row gap-2 w-full ">
-            <div className="invisible flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
+          <div className="flex flex-row lg:gap-2 gap-7 w-full ">
+            <div className="invisible flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-1/2 my-2">
               <InfoOutlinedIcon className="text-[#FF0000]" />
               <h3 className="text-xs">
                 Adding bags / weight at the time of pick is allowed.
               </h3>
             </div>
-            <div className="flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
+            <div className="flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-[50%] my-2">
               <InfoOutlinedIcon className="text-[#FF0000]" />
               <h3 className="text-xs">Booking must be atleast 3days prior.</h3>
             </div>
           </div>
         ) : (
-          <div className="flex flex-row gap-2 w-full ">
-            <div className="flex flex-row items-center justify-start gap-2 lg:w-1/2 my-2">
+          <div className="flex flex-row lg:gap-2 gap-7 w-full ">
+            <div className="flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-1/2 my-2">
               <InfoOutlinedIcon className="text-[#FF0000]" />
               <h3 className="text-xs">
                 Adding bags / weight at the time of pick is allowed.
               </h3>
             </div>
-            <div className="invisible flex flex-row items-center justify-start gap-2 lg:w-[50%] my-2">
+            <div className="invisible flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-[50%] my-2">
               <InfoOutlinedIcon className="text-[#FF0000]" />
               <h3 className="text-xs">
                 Adding bags / weight at the time of pick is allowed.
@@ -209,8 +219,8 @@ function LocalAirport({ step, setStep }) {
             </div>
           </div>
         )}
-        <div className="my-3 flex flex-col lg:flex-row gap-2 ">
-          <div className="flex flex-col gap-2 lg:w-1/4  w-full">
+        <div className="my-3 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
+          <div className="flex flex-col lg:gap-2 gap-7 lg:w-1/4  w-full">
             <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2 ">
               <div className="flex flex-row justify-between">
                 {types === 1 ?  <div>
@@ -245,12 +255,12 @@ function LocalAirport({ step, setStep }) {
             <div>
               {
                 type === 1 ? (
-                  <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+                  <div className=" flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-full my-2 whitespace-nowrap">
                     <InfoOutlinedIcon className="text-[#FF0000]" />
                     <h3 className="text-xs">Delivery may take 4 days minimum</h3>
                   </div>
                 ) : (
-                  <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+                  <div className=" flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-full my-2 whitespace-nowrap">
                     <InfoOutlinedIcon className="text-[#FF0000]" />
                     <div className="flex flex-col">
                     <h3 className="text-xs">Delivery may take minimum 4 days.</h3>
@@ -283,7 +293,7 @@ function LocalAirport({ step, setStep }) {
               topp={true}
             />
           </div>
-          <div className="flex flex-col gap-2  w-full lg:w-1/2">
+          <div className="flex flex-col lg:gap-2 gap-7  w-full lg:w-1/2">
             <div className="relative rounded-lg lg:h-[72px] border-[#CCCCCC] py-2 border-2  px-2">
               <div className="flex flex-row justify-between">
                 {type === 1 ? (
@@ -305,19 +315,19 @@ function LocalAirport({ step, setStep }) {
               />
             </div>
             {type=== 2 ? (
-              <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+              <div className=" flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-full my-2 whitespace-nowrap">
                 <InfoOutlinedIcon className="text-[#FF0000]" />
                 <h3 className="text-xs">We Deliver Anywhere in India</h3>
               </div>
             ) : (
-              <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
+              <div className=" flex flex-row items-center justify-start lg:gap-2 gap-7 lg:w-full my-2 whitespace-nowrap">
                 <InfoOutlinedIcon className="text-[#FF0000]" />
                 <h3 className="text-xs">All pincodes are servicable</h3>
               </div>
             )}
           </div>
         </div>
-        <div className="mb-3 flex flex-col lg:flex-row gap-2 ">
+        <div className="mb-3 flex flex-col lg:flex-row lg:gap-2 gap-7 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
               <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
@@ -353,12 +363,12 @@ function LocalAirport({ step, setStep }) {
             />
           </div>
         </div>
-        <div className="mt-3 flex flex-col gap-2 ">
+        <div className="mt-7 flex flex-col lg:gap-2 gap-7 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold pb-2">
               Add ons
             </div>
-            <div className="flex flex-col lg:flex-row gap-2 pb-2">
+            <div className="flex flex-col lg:flex-row lg:gap-2 gap-7 pb-2">
               <div
                 className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
                   active && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
@@ -368,7 +378,7 @@ function LocalAirport({ step, setStep }) {
                 }}
               >
                 <img src={Bags} />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col lg:gap-2 gap-7">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Express Service</h4>
                     <div
@@ -397,7 +407,7 @@ function LocalAirport({ step, setStep }) {
                 }}
               >
                 <img src={Cab} />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col lg:gap-2 gap-7">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Cab Service</h4>
                     <div
@@ -418,7 +428,7 @@ function LocalAirport({ step, setStep }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row gap-2 pb-2">
+            <div className="flex flex-col lg:flex-row lg:gap-2 gap-7 pb-2">
               <div
                 className={`flex flex-row w-full lg:w-1/2 gap-1 bg-[#F9F9F9] rounded-xl cursor-pointer ${
                   active2 && "!border-2 !border-[#F47521] !bg-[#fdeadf]"
@@ -428,7 +438,7 @@ function LocalAirport({ step, setStep }) {
                 }}
               >
                 <img src={Plane} />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col lg:gap-2 gap-7">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Laounge for Airplane</h4>
                     <div
@@ -457,7 +467,7 @@ function LocalAirport({ step, setStep }) {
                 }}
               >
                 <img src={Luggage} />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col lg:gap-2 gap-7">
                   <div className="flex flex-row justify-between items-center pr-2">
                     <h4 className="text-base">Insurance</h4>
                     <div
@@ -481,7 +491,7 @@ function LocalAirport({ step, setStep }) {
           </div>
         </div>
         {/* coupon section */}
-        <div className="mt-3 flex flex-col gap-2 ">
+        <div className="mt-7 flex flex-col lg:gap-2 gap-7 ">
           <div className="rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
               Discount Coupon
@@ -505,7 +515,7 @@ function LocalAirport({ step, setStep }) {
           </div>
         </div>
         {/* agreement section */}
-        <div className="mt-3 flex flex-row gap-2 ">
+        <div className="mt-7 flex flex-row lg:gap-2 gap-7 ">
           <div className="rounded-lg bg-[#F9F9F9] py-2 px-2 w-full">
             <div className="flex flex-row justify-start items-start gap-1 pt-1">
               <ControlledCheckbox />
