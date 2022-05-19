@@ -1,10 +1,8 @@
 import React from "react";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Rating from "@mui/material/Rating";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import { Grid } from "@material-ui/core";
-// import PackageImage from "../../../assets/images/vendors/package-image.png";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
@@ -56,7 +54,6 @@ function PackageCard(props) {
             <div className="flex items-center justify-between">
               <p
                 className="text-lg font-bold text-primary"
-                // onClick={props.onClick}
               >
                 {name}
               </p>
@@ -85,7 +82,6 @@ function PackageCard(props) {
               <div className="flex items-center justify-between">
               <p
                 className="text-lg font-bold text-primary"
-                // onClick={props.onClick}
               >
                 dd
               </p>

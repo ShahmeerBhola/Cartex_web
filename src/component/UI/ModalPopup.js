@@ -7,7 +7,6 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  // width: widow ? widow : 400,
   height: 'fit-content',
   maxWidth: '90%',
   bgcolor: 'background.paper',
@@ -17,7 +16,6 @@ const style = {
 };
 
 export default function ModalPopup({modal, setModal, children,  widow}) {
-//   const [open, setOpen] = React.useState(false);
   const handleClose = () => setModal(false);
   return (
       <Modal

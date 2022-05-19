@@ -135,7 +135,6 @@ function  LocalAirport({ step, setStep }) {
                         <option value={index}>+{index+1}</option>
                       ))
                     }
-                    {/* <option value="+1">+1</option> */}
                   </select>
                 </label>
               </span>
@@ -186,9 +185,6 @@ function  LocalAirport({ step, setStep }) {
             />
 
             <div className="flex flex-row lg:gap-2 gap-7 relative">
-              {/* <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
-                Select Time Slot
-              </h2> */}
               <SelectBox
               setToggler={setToggler6}
               toggler={toggler6}
@@ -247,9 +243,6 @@ function  LocalAirport({ step, setStep }) {
                     Select City of Service
                   </div>
                 )}
-                {/* {type===2&&( <div className="text-xs lg:text-[15px] text-[#F47521] font-bold">
-                  Arrival City
-                </div>)} */}
                 <div className="text-xs lg:text-[15px] text-[#F47521] font-bold"></div>
                 <KeyboardArrowDownIcon className="text-[#F47521]" />
               </div>
@@ -353,9 +346,6 @@ function  LocalAirport({ step, setStep }) {
                 29 October, 2021
               </button>
             </div>
-            {/* <h3
-                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
-                  >KIAL Bangalore</h3> */}
           </div>
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -396,7 +386,6 @@ function  LocalAirport({ step, setStep }) {
                         active && "!text-[#1A7DC1]"
                       }`}
                     >
-                      {/* bg-[#1A7DC1] */}
                       <AddSharpIcon fontSize="small" />
                       <CurrencyRupeeIcon fontSize="small" />
                       <span className="text-base ">80</span>
@@ -519,9 +508,6 @@ function  LocalAirport({ step, setStep }) {
                 Apply Coupon
               </button>
             </div>
-            {/* <h3
-                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
-                  >KIAL Bangalore</h3> */}
           </div>
         </div>
         {/* agreement section */}

@@ -2,10 +2,8 @@ import React,{useState} from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
-import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
-import Packing from "../../Images/Airport/Baggage/Packing.png";
 import SelectBoxs from "../../component/SelectBoxs";
 import SelectAddress from "../../component/SelectAddress";
 import SelectBox from "../../component/SelectBox";
@@ -137,10 +135,6 @@ function OlaCarter() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler} toggler={toggler} toggle={toggle} data={ 'Select Bags'}/>
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Up to 2 Bags</option>
-                    <option value="+1">Up to 4 Bags</option>
-                  </select> */}
             <h2 className="text-xs text-[#CCCCCC]">Check in Bags up to 25kg</h2>
           </div>
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
@@ -152,14 +146,8 @@ function OlaCarter() {
             </div>
             <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={'Select Date'} />
             
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Thursday, 28 October, 2021</option>
-                    <option value="+1">Thursday, 29 October, 2021</option>
-                  </select> */}
            <div className="flex flex-row gap-2 relative">
-              {/* <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
-                Select Time Slot
-              </h2> */}
+
               <SelectBox
               setToggler={setToggler6}
               toggler={toggler6}
@@ -186,11 +174,6 @@ function OlaCarter() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler2} toggler={toggler2} toggle={airports} data={'Arrival Terminal'} topp={true} />
-            
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
           </div>
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -200,11 +183,6 @@ function OlaCarter() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectAddress toggle={address} toggler={toggler3} setToggler={setToggler3} data={'Select Address'} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option disabled selected value> Fill /provide drop address</option>
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
           </div>
         </div>
         {/* details */}

@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
-import FlightLandIcon from "@mui/icons-material/FlightLand";
+
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import Bags from "../../Images/Airport/Baggage/Bags.png";
-import Cab from "../../Images/Airport/Baggage/Cab.png";
-import Luggage from "../../Images/Airport/Baggage/Luggage.png";
-import Plane from "../../Images/Airport/Baggage/Plane.png";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
-import AddSharpIcon from "@mui/icons-material/AddSharp";
 import ControlledCheckbox from "../../components/ControlledChecked";
 import { useNavigate } from "react-router-dom";
 import SelectBoxs from "../../component/SelectBoxs";
@@ -19,21 +13,6 @@ function LocalParcels() {
   number=[...Array(99).keys()]
   const navigate = useNavigate();
   const [type, setType] = React.useState(1);
-  // const [toggler, setToggler] = useState(false);
-  // const [toggler1, setToggler1] = useState(false);
-  // const [toggler2, setToggler2] = useState(false);
-  // const [toggler3, setToggler3] = useState(false);
-  // const [toggler4, setToggler4] = useState(false);
-  // const toggle = ["<8 kgs ", "<5 kgs"];
-  // const city = ["Banglore", "New Dehli"];
-  // const airports = ["KIAL Banglore", "New Dehli"];
-  // const time = ["9:00 pm", "10:00 pm"];
-  // const date = [
-  //   "Thursday, 28 October, 2021",
-  //   "Friday, 29 October, 2021",
-  //   "Saturday, 30 October, 2021",
-  //   "Sunday, 31 October, 2021",
-  // ];
   const [toggler, setToggler] = useState(false)
   const [toggler1, setToggler1] = useState(false)
   const [toggler2, setToggler2] = useState(false)
@@ -126,11 +105,6 @@ function LocalParcels() {
               data={"<10 kgs "}
               extraData={"Weights"}
             />
-
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Up to 2 Bags</option>
-                    <option value="+1">Up to 4 Bags</option>
-                  </select>  */}
           </div>
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2 flex flex-col justify-between">
             <div className="flex flex-row justify-between ">
@@ -145,15 +119,7 @@ function LocalParcels() {
               toggle={date}
               data={"Select Date"}
             />
-
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none",paddingBottom:"5px"}} >
-                    <option value="+1">Thursday, 28 October, 2021</option>
-                    <option value="+1">Thursday, 29 October, 2021</option>
-                  </select> */}
            <div className="flex flex-row gap-2 relative">
-              {/* <h2 className="text-xs mt-1 text-[#1A7DC1]  ">
-                Select Time Slot
-              </h2> */}
               <SelectBox
               setToggler={setToggler6}
               toggler={toggler6}
@@ -225,9 +191,6 @@ function LocalParcels() {
                 Apply Coupon
               </button>
             </div>
-            {/* <h3
-                    className="outline-0 w-full font-bold text:lg md:text-lg border-[#fff] text-black"
-                  >KIAL Bangalore</h3> */}
           </div>
           <h2 className="text-xs lg:text-sm">
             Fragile Charges will be applied for all electronics and TVs in

@@ -112,10 +112,7 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler1} toggler={toggler1} toggle={date} data={'Select Date'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Thursday, 28 October, 2021</option>
-                    <option value="+1">Thursday, 29 October, 2021</option>
-                  </select> */}
+
           </div>
           <div className="flex flex-col gap-2 w-full lg:w-1/2 ">
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
@@ -154,10 +151,7 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler8} toggler={toggler8} toggle={city} extraData={'Select Arrival airport'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
+ 
           </div>
         </div>
        
@@ -177,10 +171,6 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler4} toggler={toggler4} toggle={date} extraData={'Select Departure Date'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-                    <option value="+1">Thursday, 28 October, 2021</option>
-                    <option value="+1">Thursday, 29 October, 2021</option>
-                  </select> */}
           </div>
          <div className="flex flex-col gap-2 w-full lg:w-1/2">
          <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 ">
@@ -209,10 +199,6 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler6} toggler={toggler6} toggle={city} extraData={'Select Departure city'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
           </div>
           <div className="relative rounded-lg border-[#CCCCCC] py-2 border-2  px-2 w-full lg:w-1/2">
             <div className="flex flex-row justify-between">
@@ -222,10 +208,6 @@ function CityTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectBoxs setToggler={setToggler7} toggler={toggler7} toggle={city} extraData={'Select Departure airport'} topp={true} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-              <option value="+1">Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
           </div>
         </div>
         <div className="font-bold text-xs lg:text-sm py-3">

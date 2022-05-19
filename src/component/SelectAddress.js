@@ -3,17 +3,13 @@ import React,{useState} from 'react'
 
 function SelectAddress({toggle,toggler,setToggler,data}) {
     const [eventType, setEventType] = useState(data)
-    // const toggle=["adress","sdahua"];
   return (
     <div className='w-full '>
     <div className=' flex flex-col w-full'> 
     <div className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" onClick={()=>setToggler(true)} >
       <h3 defaultValue ={eventType}>{eventType}</h3>
             </div>
-            {/* <select className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option value="+1">Thursday, 28 October, 2021</option>
-            <option value="+1">Thursday, 29 October, 2021</option>
-          </select> */}
+           
     {
       toggler && ( <div className={`absolute flex flex-col z-10 p-4 inset-x-0 top-[85px] mt-2 w-full overflow-hidden  rounded-2xl text-xl font-normal shadow-2xl border-primary bg-white ${true && 'top-[62px]'}`}>
           <div className='flex flex-row justify-between items-center '>
@@ -34,10 +30,6 @@ function SelectAddress({toggle,toggler,setToggler,data}) {
 
     </div>)
 }
-    {/* section2 */}
-    {/* <div className="bg-transparent outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] text-black cursor-pointer" >
-      <h3 defaultValue ="Address">{eventType}</h3>
-            </div> */}
 
     {
       toggler && ( <div className={`absolute top-[340px] flex flex-col z-10 inset-x-0  mt-2 w-full overflow-hidden  rounded-2xl text-xl font-normal shadow-2xl border-primary h-[225px] overflow-y-auto bg-white ${false && 'top-[62px]'}`}>

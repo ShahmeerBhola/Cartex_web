@@ -49,7 +49,6 @@ const OrderDetail = () => {
           <div className='font-bold text-2xl'>Pickup Details </div>
           <div className='text-[17px]' >Let's meet at the right place</div>
             <div className='text-[17px] font-bold pt-2' >Pickup Details</div>
-            {/* <hr className='  w-full' style={{ height: "1px", backgroundColor: "#707070", border: "0px" }} /> */}
             <div className='border-t-2 rounded-lg w-full'></div>
             <div className='border-2 rounded-lg flex flex-col gap-3 '>
               <div className='flex flex-row justify-start items-center w-full pl-3 pt-3'>
@@ -124,7 +123,6 @@ Bengaluru, Karnataka 560010, India</div>
           <div className='font-bold text-2xl'>Delivery Details </div>
           <div className='text-[17px]' >Let's deliver at the right place</div>
             <div className='text-[17px] font-bold pt-2' >Delivery Details</div>
-            {/* <hr className='  w-full' style={{ height: "1px", backgroundColor: "#707070", border: "0px" }} /> */}
             <div className='border-t-2 rounded-lg w-full'></div>
             <div className='border-2 rounded-lg flex flex-col gap-3 '>
               <div className='flex flex-row justify-start items-center w-full pl-3 pt-3'>

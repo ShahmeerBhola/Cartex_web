@@ -216,7 +216,6 @@ function Abouts() {
             <div className={`${active==0 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(0)}>
               <div className={`${active==0 && '!text-[#F47521]' } text-white  sm:p-1 md:p-2 lg:p-4 font-bold sm:text-base cursor-pointer md:text-2xl text-center`} >Air Transfer</div>
             </div>
-            {/* bg-[#1A7DC1]   */}
             <div className={`${active==1 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(1)}>
               <div className={`${active==1 && '!text-[#F47521]' }  text-white  sm:p-1 md:p-2 lg:p-4 font-bold sm:text-base cursor-pointer md:text-2xl text-center`}>Rush Chargo</div>
             </div><div className={`${active==2 && '!bg-white'} bg-[#1A7DC1] rounded-full mt-2 border-2 border-white`} onClick={()=>setActive(2)}>

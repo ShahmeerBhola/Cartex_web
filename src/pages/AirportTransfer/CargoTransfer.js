@@ -187,11 +187,6 @@ function CargoTransfer() {
               <KeyboardArrowDownIcon className="text-[#F47521]" />
             </div>
             <SelectAddress toggle={address} toggler={toggler4} setToggler={setToggler4} data={'Select Address'} />
-            {/* <select className="bg-none outline-0 w-full font-bold text-lg lg:text-lg border-[#fff] cursor-pointer " style={{WebkitAppearance:"none", MozAppearance:"none",background:"none",backgroundColor:"none"}} >
-            <option disabled selected value> Fill /provide drop address</option>
-              <option value="+1">KIAL Bangalore</option>
-              <option value="+1">New Dehli</option>
-            </select> */}
           </div>
           <div className=" flex flex-row items-center justify-start gap-2 lg:w-full my-2 whitespace-nowrap">
             <InfoOutlinedIcon className="text-[#FF0000]" />

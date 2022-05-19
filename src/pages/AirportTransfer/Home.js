@@ -19,7 +19,6 @@ import Interterminals from "./InterTerminal";
 import LocalParcels from "./LocalParcels";
 import LocalAirport from "./LocalAirport";
 import OlaCarter from "./OlaCarter";
-import MainAirportTransfer from "../../component/MainAirportTransfer";
 import { useMediaQuery } from "@mui/material";
 import Safety from "../../component/Safety";
 import Footer from "../../component/Footer";
@@ -165,9 +164,7 @@ function Home() {
             {step===3 && <CargoTransfer/>}
             {step===4 && <CityTransfer/>}
             {step===5 && <Interterminals/>}
-            {/* {
-              props.children
-            } */}
+            
            
           </div>
         </div>
@@ -188,7 +185,6 @@ function Home() {
     </div>  
       </div>
     </div>
-     {/* <Footer/> */}
     </>
   );
 }

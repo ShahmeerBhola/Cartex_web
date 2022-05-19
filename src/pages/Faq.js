@@ -88,9 +88,6 @@ const Faq = () => {
                 <div>
                   <ChevronRightOutlinedIcon/>
                 </div>
-                
-                {/* <PersonOutlineIcon/>
-              Account */}
               </div>
 
 
@@ -115,8 +112,7 @@ const Faq = () => {
                 <div>
                   <ChevronRightOutlinedIcon/>
                 </div>
-                {/* <PhoneAndroidOutlinedIcon/>
-              Order */}
+
               </div>
         <div className='border-t-2 rounded-lg w-full '></div>
 
@@ -135,8 +131,6 @@ const Faq = () => {
                 <div>
                   <ChevronRightOutlinedIcon/>
                 </div>
-                {/* <LocalAtmOutlinedIcon/>
-              Payment */}
               </div>
         <div className='border-t-2 rounded-lg w-full '></div>
 

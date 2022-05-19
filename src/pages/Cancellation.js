@@ -43,45 +43,6 @@ function Cancellation() {
     </tr>
   </tbody>
 </table>
-          {/* <div className="flex flex-row  pt-2 w-full">
-            <div className="flex flex-col  border-[#FFFFFF] h-auto   font-normal text-base w-1/2">
-              <p className="border   px-2 py-2">
-                Up to 24 hours before start time of scheduled slot
-              </p>
-              <p className="border   px-2 py-2">
-              Between 24 Hours to 12 Hours of start time of schedule Slot.    
-              </p>
-              <p className="border   px-2 py-2">
-                Under 12 hours of start time of schedule Slot or no update from passenger on location information up to 16 hours from departure time.  No response from the location contact or customer at pick up location, after 15 minutes of waiting will be considered as cancelled after slot time schedule.
-              </p>
-              <p className="border   px-2 py-2">
-              Post Pick up: No show at the airport after 6 hours Gate meet time.
-
-              </p>
-              <p className="border   px-2 py-2">
-              Post Pick up: Delayed show of up to 10 hours after gate meet time.
-
-              </p>
-            </div>
-            <div className="flex flex-col border-[#FFFFFF] h-auto font-normal text-base w-1/2">
-              <p className="border px-2 py-2">
-              No cancellation Fee. 100% refund back to source account
-              </p>
-              <p className="border px-2 py-2">
-              The order can be rescheduled to another day of travel of up to 5 days for self or to another nominated user. Please write to customercare@carterporter.in with Order# and the revised date of service and time of departure at least 36 hours before time of departure.
-              </p>
-              <p className="border px-2 py-2">
-              The cancellation charges are 100% of order amount citing no response at location
-
-              </p>
-              <p className="border px-2 py-2">
-              Reschedule order will be made with same order value and rescheduled back for delivery at the location of pick up. Local delivery to another location or delivery at the airport again same order value charges will apply for rescheduled order.
-              </p>
-              <p className="border px-2 py-2">
-              Reschedule order will be made with local delivery charges will apply for rescheduled order for luggage storage services.
-              </p>
-            </div>
-          </div> */}
         </div>
        
       </div>

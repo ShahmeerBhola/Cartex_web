@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import profilepic from "../Images/Profile/profileimg.png"
 import customerService from "../Images/Profile/customer-service.png"
 import Card from '../component/UI/Card'
 import { useNavigate } from 'react-router-dom'
 import Footer from '../component/Footer'
 
-// class="flex flex-col md:flex-row mx-auto w-10/12 md:w-11/12 gap-2 md:gap-2"
 function Profile() {
     const navigate=useNavigate()
     return (
@@ -30,9 +28,6 @@ function Profile() {
             </div>
          
         </Card>
-        {/* <div className='bg-white flex flex-row md:mx-10 p-5 rounded-xl w-3/4 shadow-lg h-[348px]'>
-          
-            {/* <div className='bg-white flex flex-row  rounded-xl w-1/4 shadow-lg justify-center items-center h-[260px]'> */}
             <Card css="w-full  lg:w-1/4  h-[260px] justify-center items-center ">
                 <div className='flex flex-col justify-center items-center '>
                 <img className='h-[108px] w-[108px] ' src={customerService} alt="customer care" ></img>
